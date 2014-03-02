@@ -85,7 +85,7 @@ public class TubeImporter
         try ( Transaction tx = db.beginTx() )
         {
             ExecutionResult result = executionEngine.execute(
-                    "MATCH (startStation:Station { stationName: 'WATERLOO'}), " +
+                    "MATCH (startStation:Station { stationName: 'KINGS CROSS'}), " +
                             "(destinationStation:Station { stationName: 'OVAL'})\n" +
                             "return startStation, destinationStation" );
             Map<String, Object> row = result.iterator().next();
@@ -114,27 +114,27 @@ public class TubeImporter
                 System.out.println(path);
                 System.out.println( "duration = " + path.weight() );
 
-                System.out.print(startStation.getProperty("stationName"));
-                                                
-                for ( Node node : path.nodes() )
-                {
-                    if (node.hasLabel( label("InPlatform") )) {
-                        Node station = node.getSingleRelationship(withName("AT"), Direction.OUTGOING).getEndNode();
-                        Node direction = node.getSingleRelationship(withName("ON"), Direction.OUTGOING).getEndNode();
+                for (Relationship relationship : path.relationships()) {
+                    if(relationship.isType(withName("AT"))) {
+                        Node platform = relationship.getStartNode();
+                        Node direction = platform.getSingleRelationship(withName("ON"), Direction.OUTGOING).getEndNode();
                         Node line = direction.getSingleRelationship(withName("DIRECTION"), Direction.INCOMING).getStartNode();
-                        System.out.print(" - [" + line.getProperty("lineName") + " " + direction.getProperty("direction") + "] - " + station.getProperty("stationName")) ;
+
+                        Node station = relationship.getEndNode();
+                        Object stationName = station.getProperty("stationName");
+
+                        System.out.println(stationName  + " " + line.getProperty("lineName") + " " + direction.getProperty("direction"));
                     }
 
-                    if (node.hasLabel( label("OutPlatform") ))
-                    {
-                        Node station = node.getSingleRelationship(withName("AT"), Direction.OUTGOING).getEndNode();
+                    if(relationship.isType(withName("WAIT"))) {
+                        Node platform1 = relationship.getStartNode();
+                        Node platform1Direction = platform1.getSingleRelationship(withName("ON"), Direction.OUTGOING).getEndNode();
+                        Node platform1Line = platform1Direction.getSingleRelationship(withName("DIRECTION"), Direction.INCOMING).getStartNode();
+                        Node platform1Station = platform1.getSingleRelationship(withName("AT"), Direction.OUTGOING).getEndNode();
 
-                        if(!(station.equals(startStation) || station.equals(destinationStation))) {
-                            System.out.print(station.getProperty("stationName"));
-                        }
+                        System.out.println(platform1Station.getProperty("stationName") + " " + platform1Line.getProperty("lineName") + " " + platform1Direction.getProperty("direction") );
                     }
                 }
-                System.out.println();
             }
             tx.success();
             long end = System.currentTimeMillis();
