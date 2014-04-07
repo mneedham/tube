@@ -22,7 +22,19 @@
   <dependency>
     <groupId>org.neo4j</groupId>
     <artifactId>neo4j</artifactId>
-    <version>2.0.0</version>
+    <version>2.1.0-M01</version>
+  </dependency>
+  <dependency>
+    <groupId>com.googlecode.totallylazy</groupId>
+    <artifactId>totallylazy</artifactId>
+    <version>1049</version>
   </dependency>
 </dependencies>
+
+  <repositories>
+    <repository>
+      <id>repo.bodar.com</id>
+      <url>http://repo.bodar.com</url>
+    </repository>
+  </repositories>
 </project>
