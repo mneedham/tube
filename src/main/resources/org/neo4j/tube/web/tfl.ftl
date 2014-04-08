@@ -757,7 +757,9 @@
         <td class="logo">
           <div class="tube-icon centred hide-text">tube</div>
         </td>
-        <td class="description">${instruction}</td>
+        <td class="description">
+          <span class="${instruction.line?lower_case} line-text">${instruction.line} line</span> ${instruction.direction} to ${instruction.station}
+        </td>
       </tr>
 
     </#list>

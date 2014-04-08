@@ -90,46 +90,35 @@ public class TubeSearch
             tx.success();
             long end = System.currentTimeMillis();
 
-            List<String> instructions = new ArrayList<>(  );
-            List<Instruction> instructions2 = new ArrayList<>(  );
+            List<Instruction> instructions = new ArrayList<>(  );
 
             Sequence<Stop> routeSeq = sequence( route );
 
-            String nextInstruction = "";
-            InstructionBuilder nextInstruction2 = null;
-            if ( routeSeq.size() == 0 )
-            {
-                instructions.add( "No route found" );
-            }
-            else
+            InstructionBuilder nextInstruction = null;
+            if ( routeSeq.size() > 0 )
             {
                 String line = null;
                 for ( Stop stop : routeSeq )
                 {
                     if ( line == null )
                     {
-                        nextInstruction2 = new InstructionBuilder().line( stop.line ).direction( stop.direction );
-                        nextInstruction += stop.line + " " + stop.direction + " to ";
+                        nextInstruction = new InstructionBuilder().line( stop.line ).direction( stop.direction );
                         line = stop.line;
                     }
 
                     if ( !stop.line.equals( line ) )
                     {
-                        nextInstruction2.endStation(stop.station);
-                        instructions2.add( nextInstruction2.build());
-                        instructions.add( nextInstruction + stop.station );
-                        nextInstruction = stop.line + " " + stop.direction + " to ";
-                        nextInstruction2 = new InstructionBuilder().line( stop.line ).direction( stop.direction );
+                        nextInstruction.endStation( stop.station );
+                        instructions.add( nextInstruction.build() );
+                        nextInstruction = new InstructionBuilder().line( stop.line ).direction( stop.direction );
                         line = stop.line;
                     }
                 }
                 Stop lastStop = routeSeq.last();
-                nextInstruction += lastStop.station;
-                instructions2.add(nextInstruction2.endStation( lastStop.station ).build());
-                instructions.add(nextInstruction);
+                instructions.add( nextInstruction.endStation( lastStop.station ).build() );
             }
 
-            return new TubeSearchResult(instructions, instructions2);
+            return new TubeSearchResult(instructions);
         }
     }
 

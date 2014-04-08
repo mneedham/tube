@@ -4,13 +4,15 @@ import java.util.List;
 
 import com.google.common.base.Optional;
 
+import org.neo4j.tube.Instruction;
+
 public class Results
 {
     private Optional<String> fromStation;
     private Optional<String> toStation;
-    private List<String> instructions;
+    private List<Instruction> instructions;
 
-    public Results( Optional<String> fromStation, Optional<String> toStation, List<String> instructions )
+    public Results( Optional<String> fromStation, Optional<String> toStation, List<Instruction> instructions )
     {
         this.fromStation = fromStation;
         this.toStation = toStation;
@@ -27,7 +29,7 @@ public class Results
         return toStation.or( "None Specified" );
     }
 
-    public List<String> getInstructions()
+    public List<Instruction> getInstructions()
     {
         return instructions;
     }

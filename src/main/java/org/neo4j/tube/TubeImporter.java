@@ -48,8 +48,13 @@ public class TubeImporter
             {
                 String from = stations.first();
                 String to = stations.second();
-                List<Instruction> instructions = tubeSearch.between( from, to, expander ).getInstructions2();
+                List<Instruction> instructions = tubeSearch.between( from, to, expander ).getInstructions();
                 System.out.println("From: " + from + ", To: " + to);
+
+                if(instructions.size() == 0) {
+                    System.out.println("No route found");
+                }
+
                 for ( Instruction instruction : instructions )
                 {
                     System.out.println(instruction);
