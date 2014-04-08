@@ -48,13 +48,13 @@ public class TubeSearch
             PathFinder<WeightedPath> shortestPath = GraphAlgoFactory.aStar( expander, runningTime(),
                     new NaiveEstimateEvaluator() );
             Pair<Node, Node> stationNodes = getStations( executionEngine, from, to );
-            long start = System.currentTimeMillis();
             Iterable<WeightedPath> paths = shortestPath.findAllPaths( stationNodes.first(), stationNodes.second() );
 
             List<Stop> route = new ArrayList<>();
+            double totalDuration = 0;
             for ( WeightedPath path : paths )
             {
-                System.out.println( "duration = " + path.weight() );
+                totalDuration = path.weight();
 
                 for ( Relationship relationship : path.relationships() )
                 {
@@ -88,7 +88,6 @@ public class TubeSearch
                 }
             }
             tx.success();
-            long end = System.currentTimeMillis();
 
             List<Instruction> instructions = new ArrayList<>(  );
 
@@ -118,7 +117,7 @@ public class TubeSearch
                 instructions.add( nextInstruction.endStation( lastStop.station ).build() );
             }
 
-            return new TubeSearchResult(instructions);
+            return new TubeSearchResult(totalDuration, instructions);
         }
     }
 

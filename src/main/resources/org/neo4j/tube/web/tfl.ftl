@@ -731,7 +731,7 @@
   <div class="clearfix">
     <div class="time-box"><span class="title">Departs</span><span class="time">13:41</span></div>
     <div class="time-box"><span class="title">Arrives</span><span class="time">14:41</span></div>
-    <div class="journey-time"><span class="visually-hidden">Total time: </span>1<span class="time-units">hr&nbsp;</span>0<span
+    <div class="journey-time"><span class="visually-hidden">Total time: </span>${results.duration}<span
         class="time-units">min</span></div>
   </div>
   <div class="price-and-details clearfix">

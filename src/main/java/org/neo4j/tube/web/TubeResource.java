@@ -12,6 +12,7 @@ import com.google.common.base.Optional;
 
 import org.neo4j.tube.Instruction;
 import org.neo4j.tube.TubeSearch;
+import org.neo4j.tube.TubeSearchResult;
 
 import static org.neo4j.tube.TubeImporter.allConnections;
 
@@ -34,7 +35,8 @@ public class TubeResource {
     @Timed
     @Path( "/tube" )
     public ResultsView search(@QueryParam("from") Optional<String> fromStation, @QueryParam( "to" ) Optional<String> toStation) {
-        List<Instruction> instructions = tubeSearch.between( fromStation.get(), toStation.get(), allConnections() ).getInstructions();
-        return new ResultsView( new Results(fromStation, toStation, instructions));
+        TubeSearchResult tubeSearchResult = tubeSearch.between( fromStation.get(), toStation.get(), allConnections() );
+        List<Instruction> instructions = tubeSearchResult.getInstructions();
+        return new ResultsView( new Results(fromStation, toStation, tubeSearchResult));
     }
 }

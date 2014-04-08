@@ -5,18 +5,19 @@ import java.util.List;
 import com.google.common.base.Optional;
 
 import org.neo4j.tube.Instruction;
+import org.neo4j.tube.TubeSearchResult;
 
 public class Results
 {
     private Optional<String> fromStation;
     private Optional<String> toStation;
-    private List<Instruction> instructions;
+    private TubeSearchResult tubeSearchResult;
 
-    public Results( Optional<String> fromStation, Optional<String> toStation, List<Instruction> instructions )
+    public Results( Optional<String> fromStation, Optional<String> toStation, TubeSearchResult tubeSearchResult )
     {
         this.fromStation = fromStation;
         this.toStation = toStation;
-        this.instructions = instructions;
+        this.tubeSearchResult = tubeSearchResult;
     }
 
     public String getFromStation()
@@ -31,6 +32,11 @@ public class Results
 
     public List<Instruction> getInstructions()
     {
-        return instructions;
+        return tubeSearchResult.getInstructions();
+    }
+
+    public double getDuration()
+    {
+        return tubeSearchResult.getDuration();
     }
 }
