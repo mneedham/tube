@@ -6,6 +6,7 @@ public class InstructionBuilder
     private String line;
     private String direction;
     private String station;
+    private double duration;
 
     public InstructionBuilder line( String line )
     {
@@ -25,7 +26,12 @@ public class InstructionBuilder
         return this;
     }
 
+    public InstructionBuilder duration(double duration) {
+        this.duration = duration;
+        return this;
+    }
+
     public Instruction build() {
-        return new Instruction(line, direction, station);
+        return new Instruction(line, direction, station, duration);
     }
 }

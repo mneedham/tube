@@ -32,12 +32,12 @@ public class TubeImporter
         TubeSearch tubeSearch = new TubeSearch( STORE_DIR );
 
         Sequence<Pair<String, String>> pairsOfStations = sequence(
-                Pair.pair( "AMERSHAM", "MORDEN" ),
-                Pair.pair( "AMERSHAM", "UPMINSTER BRIDGE" ),
-                Pair.pair( "GRANGE HILL", "EMBANKMENT" ),
-                Pair.pair( "PADDINGTON", "SOUTHWARK" ),
-                Pair.pair( "HEATHROW 123", "SOUTHWARK" ),
-                Pair.pair( "OVAL", "HEATHROW 123" )
+//                Pair.pair( "AMERSHAM", "MORDEN" )
+//                Pair.pair( "AMERSHAM", "UPMINSTER BRIDGE" ),
+                Pair.pair( "GRANGE HILL", "EMBANKMENT" )
+//                Pair.pair( "PADDINGTON", "SOUTHWARK" )
+//                Pair.pair( "HEATHROW 123", "SOUTHWARK" ),
+//                Pair.pair( "OVAL", "HEATHROW 123" )
         );
 
         Sequence<PathExpander> expanders = sequence( allConnections(), skipSomeConnections() );
@@ -48,8 +48,10 @@ public class TubeImporter
             {
                 String from = stations.first();
                 String to = stations.second();
-                List<Instruction> instructions = tubeSearch.between( from, to, expander ).getInstructions();
+                TubeSearchResult tubeSearchResult = tubeSearch.between( from, to, expander );
+                List<Instruction> instructions = tubeSearchResult.getInstructions();
                 System.out.println("From: " + from + ", To: " + to);
+                System.out.println("Duration: " + tubeSearchResult.getDuration());
 
                 if(instructions.size() == 0) {
                     System.out.println("No route found");
@@ -57,7 +59,7 @@ public class TubeImporter
 
                 for ( Instruction instruction : instructions )
                 {
-                    System.out.println(instruction);
+                    System.out.println(instruction + " -> " + instruction.getDuration());
                 }
                 System.out.println("***********************************");
             }

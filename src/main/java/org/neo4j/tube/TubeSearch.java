@@ -56,8 +56,15 @@ public class TubeSearch
             {
                 totalDuration = path.weight();
 
+                double durationSinceLastStop = 0;
                 for ( Relationship relationship : path.relationships() )
                 {
+                    if ( relationship.isType( withName( "TRAIN" ) ) || relationship.isType( withName( "WAIT" ) ) )
+                    {
+                        double duration = (double) relationship.getProperty( "runningTime" );
+                        durationSinceLastStop += duration;
+                    }
+
                     if ( relationship.isType( withName( "AT" ) ) )
                     {
                         Node platform = relationship.getStartNode();
@@ -67,7 +74,8 @@ public class TubeSearch
                         String stationName = relationship.getEndNode().getProperty( "stationName" ).toString();
                         String lineName = line.getProperty( "lineName" ).toString();
                         String directionName = direction.getProperty( "direction" ).toString();
-                        route.add( new Stop( stationName, lineName, directionName ) );
+                        route.add( new Stop( stationName, lineName, directionName, durationSinceLastStop ) );
+                        durationSinceLastStop = 0;
                     }
 
                     if ( relationship.isType( withName( "WAIT" ) ) )
@@ -83,42 +91,53 @@ public class TubeSearch
                         String stationName = platform1Station.getProperty( "stationName" ).toString();
                         String lineName = platform1Line.getProperty( "lineName" ).toString();
                         String direction = platform1Direction.getProperty( "direction" ).toString();
-                        route.add( new Stop( stationName, lineName, direction ) );
+                        route.add( new Stop( stationName, lineName, direction, durationSinceLastStop ) );
+                        durationSinceLastStop = 0;
                     }
                 }
             }
             tx.success();
 
-            List<Instruction> instructions = new ArrayList<>(  );
-
-            Sequence<Stop> routeSeq = sequence( route );
-
-            InstructionBuilder nextInstruction = null;
-            if ( routeSeq.size() > 0 )
-            {
-                String line = null;
-                for ( Stop stop : routeSeq )
-                {
-                    if ( line == null )
-                    {
-                        nextInstruction = new InstructionBuilder().line( stop.line ).direction( stop.direction );
-                        line = stop.line;
-                    }
-
-                    if ( !stop.line.equals( line ) )
-                    {
-                        nextInstruction.endStation( stop.station );
-                        instructions.add( nextInstruction.build() );
-                        nextInstruction = new InstructionBuilder().line( stop.line ).direction( stop.direction );
-                        line = stop.line;
-                    }
-                }
-                Stop lastStop = routeSeq.last();
-                instructions.add( nextInstruction.endStation( lastStop.station ).build() );
-            }
+            List<Instruction> instructions = asInstructions( route );
 
             return new TubeSearchResult(totalDuration, instructions);
         }
+    }
+
+    public static List<Instruction> asInstructions( List<Stop> route )
+    {
+        List<Instruction> instructions = new ArrayList<>(  );
+
+        Sequence<Stop> routeSeq = sequence( route );
+
+        InstructionBuilder nextInstruction = null;
+        double duration = 0;
+        if ( routeSeq.size() > 0 )
+        {
+            String line = null;
+            for ( Stop stop : routeSeq )
+            {
+                duration += stop.getDurationSinceLastStop();
+                if ( line == null )
+                {
+                    nextInstruction = new InstructionBuilder().line( stop.getLine() ).direction( stop.getDirection() );
+                    line = stop.getLine();
+                }
+
+                if ( !stop.getLine().equals( line ) )
+                {
+                    nextInstruction.endStation( stop.getStation() ).duration( duration );
+                    instructions.add( nextInstruction.build() );
+
+                    nextInstruction = new InstructionBuilder().line( stop.getLine() ).direction( stop.getDirection() );
+                    duration = 0;
+                    line = stop.getLine();
+                }
+            }
+            Stop lastStop = routeSeq.last();
+            instructions.add( nextInstruction.endStation( lastStop.getStation() ).duration( duration ).build() );
+        }
+        return instructions;
     }
 
     private static class NaiveEstimateEvaluator implements EstimateEvaluator<Double>
@@ -127,31 +146,6 @@ public class TubeSearch
         public Double getCost( Node node, Node goal )
         {
             return 1.0;
-        }
-    }
-
-    static class Stop
-    {
-        private String station;
-        private String line;
-        private String direction;
-
-        Stop( String station, String line, String direction )
-        {
-
-            this.station = station;
-            this.line = line;
-            this.direction = direction;
-        }
-
-        @Override
-        public String toString()
-        {
-            return "Stop{" +
-                    "station='" + station + '\'' +
-                    ", line='" + line + '\'' +
-                    ", direction='" + direction + '\'' +
-                    '}';
         }
     }
 
