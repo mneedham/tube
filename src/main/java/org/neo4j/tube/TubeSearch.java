@@ -4,8 +4,12 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
+import com.googlecode.totallylazy.Callable1;
+import com.googlecode.totallylazy.Callable2;
 import com.googlecode.totallylazy.Pair;
 import com.googlecode.totallylazy.Sequence;
+import com.googlecode.totallylazy.Sequences;
+import com.googlecode.totallylazy.numbers.Numbers;
 
 import org.neo4j.cypher.javacompat.ExecutionEngine;
 import org.neo4j.cypher.javacompat.ExecutionResult;
@@ -140,6 +144,62 @@ public class TubeSearch
         return instructions;
     }
 
+    public static List<Instruction> asInstructionsAlt(List<Stop> stops) {
+        final Sequence<Stop> stopsAsSeq = sequence( stops );
+        Pair<Sequence<Stop>, Sequence<Instruction>> result = stopsAsSeq.foldLeft( Pair.pair( Sequences
+                .<Stop>sequence(), Sequences.<Instruction>sequence() ),
+                new Callable2<Pair<Sequence<Stop>, Sequence<Instruction>>, Stop, Pair<Sequence<Stop>,
+                        Sequence<Instruction>>>()
+
+                {
+                    @Override
+                    public Pair<Sequence<Stop>, Sequence<Instruction>> call( Pair<Sequence<Stop>,
+                            Sequence<Instruction>> acc, Stop stop ) throws Exception
+                    {
+                        Sequence<Stop> stops = acc.first();
+                        if ( stops.isEmpty() )
+                        {
+                            return Pair.pair( sequence( stop ), acc.second() );
+                        }
+                        else if ( stop.getStation().equals( stopsAsSeq.last().getStation() ) )
+                        {
+                            Stop lastStop = stops.last();
+                            Instruction i = new Instruction( lastStop.getLine(), lastStop.getDirection(),
+                                    stopsAsSeq.last().getStation(), calculateDuration( stops ).doubleValue() );
+                            return Pair.pair( Sequences.<Stop>sequence(), acc.second().add( i ) );
+                        }
+                        else
+                        {
+                            Stop lastStop = stops.last();
+                            if ( !lastStop.getLine().equals( stop.getLine() ) )
+                            {
+                                Instruction i = new Instruction( lastStop.getLine(), lastStop.getDirection(),
+                                        lastStop.getStation(), calculateDuration( stops ).doubleValue() );
+                                return Pair.pair( Sequences.<Stop>sequence(), acc.second().add( i ) );
+                            }
+                            else
+                            {
+
+                                    return Pair.pair( stops.add( stop ), acc.second() );
+                            }
+                        }
+                    }
+                } );
+        return result.second().toList();
+    }
+
+    private static Number calculateDuration( Sequence<Stop> stops )
+    {
+        return stops.map( new Callable1<Stop, Double>()
+        {
+            @Override
+            public Double call( Stop stop ) throws Exception
+            {
+                return stop.getDurationSinceLastStop();
+            }
+        } ).reduce( Numbers.sum() );
+    }
+
     private static class NaiveEstimateEvaluator implements EstimateEvaluator<Double>
     {
         @Override
@@ -154,7 +214,7 @@ public class TubeSearch
         ExecutionResult result = executionEngine.execute(
                 "MATCH (startStation:Station { stationName: {from}}), " +
                         "(destinationStation:Station { stationName: {to}})\n" +
-                        "return startStation, destinationStation", MapUtil.map( "from", from, "to", to ) );
+                        "return startStation, destinationStation", MapUtil.map( "from", from.toUpperCase(), "to", to.toUpperCase() ) );
         Map<String, Object> row = result.iterator().next();
         Node startStation = (Node) row.get( "startStation" );
         Node destinationStation = (Node) row.get( "destinationStation" );

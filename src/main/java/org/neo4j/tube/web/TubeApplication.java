@@ -27,7 +27,7 @@ public class TubeApplication extends Application<TubeConfiguration>
 
     @Override
     public void run(TubeConfiguration configuration,Environment environment) {
-        TubeSearch tubeSearch = new TubeSearch( "/Users/markneedham/Downloads/neo4j-community-2.1.0-M01/data/graph.db" );
+        TubeSearch tubeSearch = new TubeSearch( "/Users/markneedham/test-bench/databases/005/neo4j-community-2.1.0-M01/data/graph.db" );
 
         final TubeResource resource = new TubeResource(
                 tubeSearch

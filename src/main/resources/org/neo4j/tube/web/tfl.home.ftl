@@ -143,7 +143,7 @@
 
 <div class="r no-margin">
 
-  <form autocomplete="off" action="/tube" method="get" id="jp-search-form" class="publictransport"
+  <form autocomplete="off" action="/tube" method="post" class="publictransport"
         novalidate="novalidate">
     <input data-val="true" data-val-required="The IsAsync field is required." id="IsAsync" name="IsAsync" type="hidden"
            value="true">
@@ -173,8 +173,8 @@
                     style="position: absolute; top: 0px; left: 0px; border-color: transparent; box-shadow: none; background-attachment: scroll; background-clip: border-box; background-color: rgb(255, 255, 255); background-image: none; background-origin: padding-box; background-size: auto; background-position: 0% 0%; background-repeat: repeat repeat;">
 
                   <input
-                    autocorrect="off"  id="from" name="from" placeholder="From"
-                    type="text" value="OVAL"
+                    id="from" name="from" placeholder="From"
+                    type="text"
                     style="position: relative; vertical-align: top; background-color: transparent;">
 
                   <span
@@ -184,15 +184,7 @@
 
                 </div>
 
-                <span class="field-validation-error geolocation-error hidden">&nbsp;</span><span
-                  class="field-validation-valid" data-valmsg-for="From" data-valmsg-replace="true"></span><input
-                  id="FromGeolocation" name="FromGeolocation" type="hidden" value="">
-
-                <input id="ToGeolocation"
-                                                                                            name="ToGeolocation"
-                                                                                            type="hidden"
-                                                                                            value=""><input
-                  id="ViaGeolocation" name="ViaGeolocation" type="hidden" value=""></div>
+           </div>
               <div style="padding:24px;"></div>
               <label
                   class="heading visually-hidden" for="To">To:</label>
@@ -204,7 +196,7 @@
 
 
                 <input autocorrect="off" data-to-id="1001286" data-val="true" data-val-required="The To: field is required." id="to"
-         name="to" placeholder="To" type="text" value="SOUTHWARK" autocomplete="off"
+         name="to" placeholder="To" type="text" autocomplete="off"
          data-to-modes="[&quot;train&quot;,&quot;bus&quot;]" data-dataset-name="journey-planner-suggestions"
          class="tt-query" spellcheck="false" dir="auto"
          style="position: relative; vertical-align: top; background-color: transparent;"><span
@@ -221,7 +213,7 @@
   <input type="submit" class="primary-button plan-journey-button" value="Plan My Journey"></div></fieldset><div class="journey-result-summary"><div class="from-to-wrapper"><div class="summary-row clearfix"><span class="label">From:</span><strong>Oval</strong></div><div class="summary-row clearfix"><span class="label">To:</span><strong>Sutton</strong></div></div><div class="summary-row clearfix"><span class="label">Leaving:</span><strong>Tuesday 8<sup>th</sup> Apr, 13:45
 </strong></div><div class="summary-row"><button class="secondary-button edit-button">Edit</button></div><div class="travel-preferences clearfix"><div class="left-shadow"></div><div class="scroller"><div><span>Travel preferences: </span><strong class="travelpreferences-cycling">I want a cycle only route</strong><strong class="travelpreferences-walking">Average
   walking speed</strong><strong class="travelpreferences-publictransport">Showing the fastest routes
-</strong> <strong class="travelpreferences-publictransport">Using Tube, Bus, DLR and 3 others</strong> <strong class="travelpreferences-publictransport">Max walk time 40 mins</strong></div></div><div class="right-shadow"></div></div></div></div></div><div id="more-journey-options"><div><fieldset><legend class="visually-hidden">More options</legend><fieldset class="jp-mode-publictransport"><legend class="visually-hidden">Journey Preference</legend><label class="heading" for="JourneyPreference">Which type of route do you want to see?</label><div class="selector route-type"><span>The fastest routes
+</strong> <strong class="travelpreferences-publictransport">Using Tube</strong> <strong class="travelpreferences-publictransport">Max walk time 40 mins</strong></div></div><div class="right-shadow"></div></div></div></div></div><div id="more-journey-options"><div><fieldset><legend class="visually-hidden">More options</legend><fieldset class="jp-mode-publictransport"><legend class="visually-hidden">Journey Preference</legend><label class="heading" for="JourneyPreference">Which type of route do you want to see?</label><div class="selector route-type"><span>The fastest routes
 </span><select data-jumpback="#NationalSearch" id="JourneyPreference" name="JourneyPreference" title="The fastest routes
 "><option selected="selected" value="leasttime">The fastest routes
 </option><option value="leastinterchange">Routes with fewest changes

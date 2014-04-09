@@ -526,11 +526,9 @@
                 <span class="label">From:</span><strong>${results.fromStation?html}</strong></div>
               <div class="summary-row clearfix"><span class="label">To:</span><strong>${results.toStation?html}</strong></div>
             </div>
-            <div class="summary-row clearfix"><span class="label">Leaving:</span><strong>Tuesday 8<sup>th</sup> Apr,
-              13:45
-            </strong></div>
+            <div class="summary-row clearfix"><span class="label">Leaving:</span><strong>At some stage</strong></div>
             <div class="summary-row">
-              <button class="secondary-button edit-button">Edit</button>
+
             </div>
             <div class="travel-preferences clearfix">
               <div class="left-shadow"></div>
@@ -538,7 +536,7 @@
                 <div><span>Travel preferences: </span><strong class="travelpreferences-cycling">I want a cycle only
                   route</strong><strong class="travelpreferences-walking">Average
                   walking speed</strong><strong class="travelpreferences-publictransport">Showing the fastest routes
-                </strong> <strong class="travelpreferences-publictransport">Using Tube, Bus, DLR and 3 others</strong>
+                </strong> <strong class="travelpreferences-publictransport">Using Tube</strong>
                   <strong class="travelpreferences-publictransport">Max walk time 40 mins</strong></div>
               </div>
               <div class="right-shadow"></div>
@@ -722,10 +720,9 @@
 
   <div class="journey-summary">
     <ul class="journey-steps clearfix">
-
-      <li class="tube-icon  hide-text">Northern line to Morden Underground Station<span
-          class="northern"></span></li>
-      <li class="bus-icon  hide-text">164 bus to Sutton Station<span class="bus"></span></li>
+      <#list results.instructions as instruction>
+        <li class="tube-icon  hide-text">${instruction.line} line to ${instruction.station} Underground Station <span class="${instruction.line?lower_case}"></span></li>
+      </#list>
     </ul>
   </div>
   <div class="clearfix">
@@ -753,7 +750,7 @@
 
     <#list results.instructions as instruction>
       <tr>
-        <td class="time"><strong>22 mins</strong></td>
+        <td class="time"><strong>${instruction.duration} mins</strong></td>
         <td class="logo">
           <div class="tube-icon centred hide-text">tube</div>
         </td>

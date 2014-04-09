@@ -22,7 +22,7 @@ import static org.neo4j.graphdb.DynamicRelationshipType.withName;
 
 public class TubeImporter
 {
-    private static final String STORE_DIR = "/Users/markneedham/Downloads/neo4j-community-2.1.0-M01/data/graph.db";
+    private static final String STORE_DIR = "/Users/markneedham/test-bench/databases/005/neo4j-community-2.1.0-M01/data/graph.db";
     private static final Label IN_PLATFORM = DynamicLabel.label( "InPlatform" );
     private static final Label OUT_PLATFORM = DynamicLabel.label( "OutPlatform" );
     private static final DynamicRelationshipType AT = withName( "AT" );
@@ -34,7 +34,7 @@ public class TubeImporter
         Sequence<Pair<String, String>> pairsOfStations = sequence(
 //                Pair.pair( "AMERSHAM", "MORDEN" )
 //                Pair.pair( "AMERSHAM", "UPMINSTER BRIDGE" ),
-                Pair.pair( "GRANGE HILL", "EMBANKMENT" )
+                Pair.pair( "OVAL", "HIGH BARNET" )
 //                Pair.pair( "PADDINGTON", "SOUTHWARK" )
 //                Pair.pair( "HEATHROW 123", "SOUTHWARK" ),
 //                Pair.pair( "OVAL", "HEATHROW 123" )

@@ -30,9 +30,9 @@ public class Instruction
         return station;
     }
 
-    public double getDuration()
+    public int getDuration()
     {
-        return duration;
+        return (int) duration;
     }
 
     @Override

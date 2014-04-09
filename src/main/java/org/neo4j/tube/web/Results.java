@@ -9,11 +9,11 @@ import org.neo4j.tube.TubeSearchResult;
 
 public class Results
 {
-    private Optional<String> fromStation;
-    private Optional<String> toStation;
+    private String fromStation;
+    private String toStation;
     private TubeSearchResult tubeSearchResult;
 
-    public Results( Optional<String> fromStation, Optional<String> toStation, TubeSearchResult tubeSearchResult )
+    public Results( String fromStation, String toStation, TubeSearchResult tubeSearchResult )
     {
         this.fromStation = fromStation;
         this.toStation = toStation;
@@ -22,12 +22,12 @@ public class Results
 
     public String getFromStation()
     {
-        return fromStation.or( "None Specified" );
+        return fromStation;
     }
 
     public String getToStation()
     {
-        return toStation.or( "None Specified" );
+        return toStation;
     }
 
     public List<Instruction> getInstructions()

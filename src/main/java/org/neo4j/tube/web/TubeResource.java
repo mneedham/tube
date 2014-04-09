@@ -1,7 +1,9 @@
 package org.neo4j.tube.web;
 
 import java.util.List;
+import javax.ws.rs.FormParam;
 import javax.ws.rs.GET;
+import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.QueryParam;
@@ -31,11 +33,11 @@ public class TubeResource {
         return new HomeView(  );
     }
 
-    @GET
+    @POST
     @Timed
     @Path( "/tube" )
-    public ResultsView search(@QueryParam("from") Optional<String> fromStation, @QueryParam( "to" ) Optional<String> toStation) {
-        TubeSearchResult tubeSearchResult = tubeSearch.between( fromStation.get(), toStation.get(), allConnections() );
+    public ResultsView search(@FormParam("from") String fromStation, @FormParam( "to" ) String toStation) {
+        TubeSearchResult tubeSearchResult = tubeSearch.between( fromStation, toStation, allConnections() );
         List<Instruction> instructions = tubeSearchResult.getInstructions();
         return new ResultsView( new Results(fromStation, toStation, tubeSearchResult));
     }
