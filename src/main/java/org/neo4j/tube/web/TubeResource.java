@@ -1,22 +1,19 @@
 package org.neo4j.tube.web;
 
-import java.util.List;
-import javax.ws.rs.FormParam;
 import javax.ws.rs.GET;
-import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
 
 import com.codahale.metrics.annotation.Timed;
-import com.google.common.base.Optional;
 
-import org.neo4j.tube.Instruction;
 import org.neo4j.tube.TubeSearch;
 import org.neo4j.tube.TubeSearchResult;
 
 import static org.neo4j.tube.TubeImporter.allConnections;
+import static org.neo4j.tube.TubeImporter.avoidLine;
+import static org.neo4j.tube.TubeImporter.avoidStationsBeginningWith;
 
 @Path("/")
 @Produces(MediaType.TEXT_HTML)
@@ -33,12 +30,21 @@ public class TubeResource {
         return new HomeView(  );
     }
 
-    @POST
+    @GET
     @Timed
     @Path( "/tube" )
-    public ResultsView search(@FormParam("from") String fromStation, @FormParam( "to" ) String toStation) {
-        TubeSearchResult tubeSearchResult = tubeSearch.between( fromStation, toStation, allConnections() );
-        List<Instruction> instructions = tubeSearchResult.getInstructions();
+    public ResultsView search(@QueryParam("from") String fromStation, @QueryParam( "to" ) String toStation, @QueryParam( "lineToAvoid" ) String lineToAvoid) {
+
+        TubeSearchResult tubeSearchResult;
+        if ( lineToAvoid.equals( "None" ) )
+        {
+            tubeSearchResult = tubeSearch.between( fromStation, toStation, allConnections() );
+        }
+        else
+        {
+            tubeSearchResult = tubeSearch.between( fromStation, toStation, avoidLine( lineToAvoid ) );
+        }
+
         return new ResultsView( new Results(fromStation, toStation, tubeSearchResult));
     }
 }

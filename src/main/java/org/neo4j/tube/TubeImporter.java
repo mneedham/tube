@@ -17,6 +17,7 @@ import org.neo4j.kernel.StandardExpander;
 
 import static com.googlecode.totallylazy.Sequences.sequence;
 
+import static org.neo4j.graphdb.Direction.INCOMING;
 import static org.neo4j.graphdb.Direction.OUTGOING;
 import static org.neo4j.graphdb.DynamicRelationshipType.withName;
 
@@ -40,7 +41,7 @@ public class TubeImporter
 //                Pair.pair( "OVAL", "HEATHROW 123" )
         );
 
-        Sequence<PathExpander> expanders = sequence( allConnections(), skipSomeConnections() );
+        Sequence<PathExpander> expanders = sequence( allConnections(), avoidStationsBeginningWith( "B" ) );
 
         for ( Pair<String, String> stations : pairsOfStations )
         {
@@ -66,7 +67,7 @@ public class TubeImporter
         }
     }
 
-    public static PathExpander skipSomeConnections()
+    public static PathExpander avoidStationsBeginningWith( final String chars )
     {
         StandardExpander expander = StandardExpander.create(
                 withName( "AT" ), Direction.BOTH,
@@ -80,7 +81,35 @@ public class TubeImporter
                         if(item.hasLabel( IN_PLATFORM ) || item.hasLabel( OUT_PLATFORM )) {
                             Node station = item.getSingleRelationship( AT, OUTGOING).getEndNode();
                             String stationName = station.getProperty( "stationName" ).toString();
-                            return !stationName.startsWith( "B" );
+                            return !stationName.startsWith( chars );
+                        }
+                        else
+                        {
+                            return true;
+                        }
+                    }
+                } );
+
+        return StandardExpander.toPathExpander( expander );
+    }
+
+    public static PathExpander avoidLine( final String lineToAvoid )
+    {
+        StandardExpander expander = StandardExpander.create(
+                withName( "AT" ), Direction.BOTH,
+                withName( "TRAIN" ), OUTGOING,
+                withName( "WAIT" ), OUTGOING )
+                .addNodeFilter( new Predicate<Node>()
+                {
+                    @Override
+                    public boolean accept( Node item )
+                    {
+                        if(item.hasLabel( IN_PLATFORM ) || item.hasLabel( OUT_PLATFORM )) {
+                            Node direction = item.getSingleRelationship( withName( "ON" ), OUTGOING ).getEndNode();
+                            Node line = direction.getSingleRelationship( withName( "DIRECTION" ), INCOMING ).getStartNode();
+
+                            String lineName = line.getProperty( "lineName" ).toString();
+                            return !lineName.contains( lineToAvoid );
                         }
                         else
                         {
@@ -100,9 +129,4 @@ public class TubeImporter
                 withName( "WAIT" ), OUTGOING );
         return StandardExpander.toPathExpander( expander );
     }
-
-
-
-
 }
-

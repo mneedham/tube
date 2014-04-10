@@ -143,12 +143,8 @@
 
 <div class="r no-margin">
 
-  <form autocomplete="off" action="/tube" method="post" class="publictransport"
+  <form autocomplete="off" action="/tube" method="get" class="publictransport"
         novalidate="novalidate">
-    <input data-val="true" data-val-required="The IsAsync field is required." id="IsAsync" name="IsAsync" type="hidden"
-           value="true">
-    <input id="JpType" name="JpType" type="hidden" value="publictransport">
-
     <div class="journey-form">
       <div class="basic-journey-options">
         <div id="plan-a-journey" class="editing"><span class="visually-hidden">Plan a journey by:</span>
@@ -159,7 +155,7 @@
                 data-jumpback=".show-mobile-search:visible, #search-button:visible">Public transport</a></li>
 
           </ul>
-          <fieldset>
+          <fieldset style="padding-bottom: 5px;">
             <legend class="visually-hidden">Journey preferences</legend>
             <div class="from-and-to clearfix"><label class="heading visually-hidden" for="From">From:</label>
 
@@ -207,6 +203,31 @@
               </div>
               <span class="field-validation-valid" data-valmsg-for="To" data-valmsg-replace="true"></span></div>
 
+            <div class="time-options clearfix">
+              <div class="time-defaults"><p><strong>Leaving:</strong> <span>now</span></p><a href="javascript:void(0)"
+                                                                                             class="change-departure-time">change
+                time</a></div>
+              <div class="change-time-options">
+                <div class="clearfix">
+                  <ul class="horizontal-toggle-buttons leaving-or-arriving clearfix">
+                    <li class="selected"><label>Lines To Avoid</label></li>
+
+                  </ul>
+                </div>
+                <div class="hours-mins clearfix">
+                  <div class="selector date-of-departure"><label class="visually-hidden" for="LineToAvoid">Lines to Avoid</label>
+                    <select id="LineToAvoid" name="lineToAvoid" title="Today">
+                      <option selected="selected" value="None">Use All Lines</option>
+                      <option  value="Northern">Northern</option>
+                      <option  value="Jubilee">Jubilee</option>
+
+                    </select>
+
+                   </div>
+
+                </div>
+              </div>
+            </div>
 
             <div class="clearfix update-buttons">
 
@@ -214,11 +235,13 @@
 </strong></div><div class="summary-row"><button class="secondary-button edit-button">Edit</button></div><div class="travel-preferences clearfix"><div class="left-shadow"></div><div class="scroller"><div><span>Travel preferences: </span><strong class="travelpreferences-cycling">I want a cycle only route</strong><strong class="travelpreferences-walking">Average
   walking speed</strong><strong class="travelpreferences-publictransport">Showing the fastest routes
 </strong> <strong class="travelpreferences-publictransport">Using Tube</strong> <strong class="travelpreferences-publictransport">Max walk time 40 mins</strong></div></div><div class="right-shadow"></div></div></div></div></div><div id="more-journey-options"><div><fieldset><legend class="visually-hidden">More options</legend><fieldset class="jp-mode-publictransport"><legend class="visually-hidden">Journey Preference</legend><label class="heading" for="JourneyPreference">Which type of route do you want to see?</label><div class="selector route-type"><span>The fastest routes
-</span><select data-jumpback="#NationalSearch" id="JourneyPreference" name="JourneyPreference" title="The fastest routes
+</span>
+      <select data-jumpback="#NationalSearch" id="JourneyPreference" name="JourneyPreference" title="The fastest routes
 "><option selected="selected" value="leasttime">The fastest routes
 </option><option value="leastinterchange">Routes with fewest changes
 </option><option value="leastwalking">Routes with least walking
-</option></select></div></fieldset><fieldset class="checkbox-list modes-of-transport jp-mode-publictransport"><div class="select-deselect-option"><a href="javascript:void(0);" class="select-all">Select all</a></div><legend class="bold">Travelling by</legend><label class="visually-hidden" for="Mode">Travelling by</label><select class="to-checkbox-list two-col with-logos select-all" data-val="true" data-val-required="The Travelling by field is required." id="Mode" multiple="multiple" name="Mode" style="display: none;"><option selected="selected" value="tube">Tube
+</option></select></div></fieldset><fieldset class="checkbox-list modes-of-transport jp-mode-publictransport"><div class="select-deselect-option"><a href="javascript:void(0);" class="select-all">Select all</a></div><legend class="bold">Travelling by</legend><label class="visually-hidden" for="Mode">Travelling by</label>
+      <select class="to-checkbox-list two-col with-logos select-all" data-val="true" data-val-required="The Travelling by field is required." id="Mode" multiple="multiple" name="Mode" style="display: none;"><option selected="selected" value="tube">Tube
 </option><option selected="selected" value="bus">Bus
 </option><option selected="selected" value="dlr">DLR
 </option><option selected="selected" value="river-bus">River Bus
