@@ -1,0 +1,1874 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<TransXChange CreationDateTime="2015-05-21T03:37:27.2598973+01:00" ModificationDateTime="2015-05-21T03:37:27.2598973+01:00" Modification="new" FileName="tfl_33-RB6_-2-y05.xml" RevisionNumber="3" SchemaVersion="2.1" xml:lang="en" xsi:schemaLocation="http://www.transxchange.org.uk/ http://www.transxchange.org.uk/schema/2.1/TransXChange_general.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.transxchange.org.uk/">
+	<NptgLocalities>
+		<AnnotatedNptgLocalityRef>
+			<NptgLocalityRef>N0077638</NptgLocalityRef>
+			<LocalityName>Canary Wharf</LocalityName>
+		</AnnotatedNptgLocalityRef>
+		<AnnotatedNptgLocalityRef>
+			<NptgLocalityRef>N0077694</NptgLocalityRef>
+			<LocalityName>London Bridge</LocalityName>
+		</AnnotatedNptgLocalityRef>
+		<AnnotatedNptgLocalityRef>
+			<NptgLocalityRef>N0060501</NptgLocalityRef>
+			<LocalityName>Southwark</LocalityName>
+		</AnnotatedNptgLocalityRef>
+		<AnnotatedNptgLocalityRef>
+			<NptgLocalityRef>N0077631</NptgLocalityRef>
+			<LocalityName>Blackfriars</LocalityName>
+		</AnnotatedNptgLocalityRef>
+		<AnnotatedNptgLocalityRef>
+			<NptgLocalityRef>N0077659</NptgLocalityRef>
+			<LocalityName>Embankment</LocalityName>
+		</AnnotatedNptgLocalityRef>
+		<AnnotatedNptgLocalityRef>
+			<NptgLocalityRef>E0034648</NptgLocalityRef>
+			<LocalityName>Vauxhall (London)</LocalityName>
+		</AnnotatedNptgLocalityRef>
+		<AnnotatedNptgLocalityRef>
+			<NptgLocalityRef>N0060502</NptgLocalityRef>
+			<LocalityName>Chelsea</LocalityName>
+		</AnnotatedNptgLocalityRef>
+		<AnnotatedNptgLocalityRef>
+			<NptgLocalityRef>E0034389</NptgLocalityRef>
+			<LocalityName>Sands End</LocalityName>
+		</AnnotatedNptgLocalityRef>
+		<AnnotatedNptgLocalityRef>
+			<NptgLocalityRef>E0034912</NptgLocalityRef>
+			<LocalityName>Wandsworth</LocalityName>
+		</AnnotatedNptgLocalityRef>
+		<AnnotatedNptgLocalityRef>
+			<NptgLocalityRef>E0034898</NptgLocalityRef>
+			<LocalityName>Putney</LocalityName>
+		</AnnotatedNptgLocalityRef>
+	</NptgLocalities>
+	<StopPoints>
+		<StopPoint CreationDateTime="2013-08-29T00:00:00">
+			<AtcoCode>9300CAW1</AtcoCode>
+			<Descriptor>
+				<CommonName>Canary Wharf Pier</CommonName>
+			</Descriptor>
+			<Place>
+				<NptgLocalityRef>N0077638</NptgLocalityRef>
+				<Location Precision="1m">
+					<Easting>536924</Easting>
+					<Northing>180295</Northing>
+				</Location>
+			</Place>
+			<StopClassification>
+				<StopType>FBT</StopType>
+				<OffStreet>
+					<Ferry>
+						<Berth />
+					</Ferry>
+				</OffStreet>
+			</StopClassification>
+			<AdministrativeAreaRef>000</AdministrativeAreaRef>
+			<Notes>Canary Wharf Pier</Notes>
+		</StopPoint>
+		<StopPoint CreationDateTime="2013-08-29T00:00:00">
+			<AtcoCode>9300LBR1</AtcoCode>
+			<Descriptor>
+				<CommonName>London Bridge City Pier</CommonName>
+			</Descriptor>
+			<Place>
+				<NptgLocalityRef>N0077694</NptgLocalityRef>
+				<Location Precision="1m">
+					<Easting>532995</Easting>
+					<Northing>180387</Northing>
+				</Location>
+			</Place>
+			<StopClassification>
+				<StopType>FBT</StopType>
+				<OffStreet>
+					<Ferry>
+						<Berth />
+					</Ferry>
+				</OffStreet>
+			</StopClassification>
+			<AdministrativeAreaRef>000</AdministrativeAreaRef>
+			<Notes>London Bridge City Pier</Notes>
+		</StopPoint>
+		<StopPoint CreationDateTime="2013-08-29T00:00:00">
+			<AtcoCode>9300SWK1</AtcoCode>
+			<Descriptor>
+				<CommonName>Bankside Pier</CommonName>
+			</Descriptor>
+			<Place>
+				<NptgLocalityRef>N0060501</NptgLocalityRef>
+				<Location Precision="1m">
+					<Easting>532195</Easting>
+					<Northing>180579</Northing>
+				</Location>
+			</Place>
+			<StopClassification>
+				<StopType>FBT</StopType>
+				<OffStreet>
+					<Ferry>
+						<Berth />
+					</Ferry>
+				</OffStreet>
+			</StopClassification>
+			<AdministrativeAreaRef>000</AdministrativeAreaRef>
+			<Notes>Bankside Pier</Notes>
+		</StopPoint>
+		<StopPoint CreationDateTime="2013-08-29T00:00:00">
+			<AtcoCode>9300BFR1</AtcoCode>
+			<Descriptor>
+				<CommonName>Blackfriars Pier</CommonName>
+			</Descriptor>
+			<Place>
+				<NptgLocalityRef>N0077631</NptgLocalityRef>
+				<Location Precision="1m">
+					<Easting>531607</Easting>
+					<Northing>180770</Northing>
+				</Location>
+			</Place>
+			<StopClassification>
+				<StopType>FBT</StopType>
+				<OffStreet>
+					<Ferry>
+						<Berth />
+					</Ferry>
+				</OffStreet>
+			</StopClassification>
+			<AdministrativeAreaRef>000</AdministrativeAreaRef>
+			<Notes>Blackfriars Pier</Notes>
+		</StopPoint>
+		<StopPoint CreationDateTime="2013-08-29T00:00:00">
+			<AtcoCode>9300EMB1</AtcoCode>
+			<Descriptor>
+				<CommonName>Embankment Pier</CommonName>
+			</Descriptor>
+			<Place>
+				<NptgLocalityRef>N0077659</NptgLocalityRef>
+				<Location Precision="1m">
+					<Easting>530484</Easting>
+					<Northing>180388</Northing>
+				</Location>
+			</Place>
+			<StopClassification>
+				<StopType>FBT</StopType>
+				<OffStreet>
+					<Ferry>
+						<Berth />
+					</Ferry>
+				</OffStreet>
+			</StopClassification>
+			<AdministrativeAreaRef>000</AdministrativeAreaRef>
+			<Notes>Embankment Pier</Notes>
+		</StopPoint>
+		<StopPoint CreationDateTime="2014-02-25T00:00:00">
+			<AtcoCode>9300SGW1</AtcoCode>
+			<Descriptor>
+				<CommonName>St. George Wharf Pier</CommonName>
+			</Descriptor>
+			<Place>
+				<NptgLocalityRef>E0034648</NptgLocalityRef>
+				<Location Precision="1m">
+					<Easting>530139</Easting>
+					<Northing>178039</Northing>
+				</Location>
+			</Place>
+			<StopClassification>
+				<StopType>FBT</StopType>
+				<OffStreet>
+					<Ferry>
+						<Berth />
+					</Ferry>
+				</OffStreet>
+			</StopClassification>
+			<AdministrativeAreaRef>000</AdministrativeAreaRef>
+			<Notes>St. George Wharf Pier</Notes>
+		</StopPoint>
+		<StopPoint CreationDateTime="2013-08-29T00:00:00">
+			<AtcoCode>9300BSE1</AtcoCode>
+			<Descriptor>
+				<CommonName>Cadogan Pier</CommonName>
+			</Descriptor>
+			<Place>
+				<NptgLocalityRef>N0060502</NptgLocalityRef>
+				<Location Precision="1m">
+					<Easting>527600</Easting>
+					<Northing>177641</Northing>
+				</Location>
+			</Place>
+			<StopClassification>
+				<StopType>FBT</StopType>
+				<OffStreet>
+					<Ferry>
+						<Berth />
+					</Ferry>
+				</OffStreet>
+			</StopClassification>
+			<AdministrativeAreaRef>000</AdministrativeAreaRef>
+			<Notes>Cadogan Pier</Notes>
+		</StopPoint>
+		<StopPoint CreationDateTime="2013-08-29T00:00:00">
+			<AtcoCode>9300CHP1</AtcoCode>
+			<Descriptor>
+				<CommonName>Chelsea Harbour Pier</CommonName>
+			</Descriptor>
+			<Place>
+				<NptgLocalityRef>E0034389</NptgLocalityRef>
+				<Location Precision="1m">
+					<Easting>526530</Easting>
+					<Northing>176620</Northing>
+				</Location>
+			</Place>
+			<StopClassification>
+				<StopType>FBT</StopType>
+				<OffStreet>
+					<Ferry>
+						<Berth />
+					</Ferry>
+				</OffStreet>
+			</StopClassification>
+			<AdministrativeAreaRef>000</AdministrativeAreaRef>
+			<Notes>Chelsea Harbour Pier</Notes>
+		</StopPoint>
+		<StopPoint CreationDateTime="2013-08-29T00:00:00">
+			<AtcoCode>9300WRQ1</AtcoCode>
+			<Descriptor>
+				<CommonName>Wandsworth Riverside Quarter Pier</CommonName>
+			</Descriptor>
+			<Place>
+				<NptgLocalityRef>E0034912</NptgLocalityRef>
+				<Location Precision="1m">
+					<Easting>525253</Easting>
+					<Northing>175325</Northing>
+				</Location>
+			</Place>
+			<StopClassification>
+				<StopType>FBT</StopType>
+				<OffStreet>
+					<Ferry>
+						<Berth />
+					</Ferry>
+				</OffStreet>
+			</StopClassification>
+			<AdministrativeAreaRef>000</AdministrativeAreaRef>
+			<Notes>Wandsworth Riverside Quarter Pier</Notes>
+		</StopPoint>
+		<StopPoint CreationDateTime="2013-08-29T00:00:00">
+			<AtcoCode>9300PUT1</AtcoCode>
+			<Descriptor>
+				<CommonName>Putney Pier</CommonName>
+			</Descriptor>
+			<Place>
+				<NptgLocalityRef>E0034898</NptgLocalityRef>
+				<Location Precision="1m">
+					<Easting>524108</Easting>
+					<Northing>175735</Northing>
+				</Location>
+			</Place>
+			<StopClassification>
+				<StopType>FBT</StopType>
+				<OffStreet>
+					<Ferry>
+						<Berth />
+					</Ferry>
+				</OffStreet>
+			</StopClassification>
+			<AdministrativeAreaRef>000</AdministrativeAreaRef>
+			<Notes>Putney Pier</Notes>
+		</StopPoint>
+	</StopPoints>
+	<RouteSections>
+		<RouteSection id="RS_33-RB6-_-y05-2-O-1">
+			<RouteLink id="RL_33-RB6-_-y05-2-O-1-1">
+				<From>
+					<StopPointRef>9300PUT1</StopPointRef>
+				</From>
+				<To>
+					<StopPointRef>9300WRQ1</StopPointRef>
+				</To>
+				<Direction>outbound</Direction>
+			</RouteLink>
+			<RouteLink id="RL_33-RB6-_-y05-2-O-1-2">
+				<From>
+					<StopPointRef>9300WRQ1</StopPointRef>
+				</From>
+				<To>
+					<StopPointRef>9300CHP1</StopPointRef>
+				</To>
+				<Direction>outbound</Direction>
+			</RouteLink>
+			<RouteLink id="RL_33-RB6-_-y05-2-O-1-3">
+				<From>
+					<StopPointRef>9300CHP1</StopPointRef>
+				</From>
+				<To>
+					<StopPointRef>9300BSE1</StopPointRef>
+				</To>
+				<Direction>outbound</Direction>
+			</RouteLink>
+			<RouteLink id="RL_33-RB6-_-y05-2-O-1-4">
+				<From>
+					<StopPointRef>9300BSE1</StopPointRef>
+				</From>
+				<To>
+					<StopPointRef>9300SGW1</StopPointRef>
+				</To>
+				<Direction>outbound</Direction>
+			</RouteLink>
+			<RouteLink id="RL_33-RB6-_-y05-2-O-1-5">
+				<From>
+					<StopPointRef>9300SGW1</StopPointRef>
+				</From>
+				<To>
+					<StopPointRef>9300EMB1</StopPointRef>
+				</To>
+				<Direction>outbound</Direction>
+			</RouteLink>
+			<RouteLink id="RL_33-RB6-_-y05-2-O-1-6">
+				<From>
+					<StopPointRef>9300EMB1</StopPointRef>
+				</From>
+				<To>
+					<StopPointRef>9300BFR1</StopPointRef>
+				</To>
+				<Distance>1590</Distance>
+				<Direction>outbound</Direction>
+			</RouteLink>
+			<RouteLink id="RL_33-RB6-_-y05-2-O-1-7">
+				<From>
+					<StopPointRef>9300BFR1</StopPointRef>
+				</From>
+				<To>
+					<StopPointRef>9300LBR1</StopPointRef>
+				</To>
+				<Direction>outbound</Direction>
+			</RouteLink>
+			<RouteLink id="RL_33-RB6-_-y05-2-O-1-8">
+				<From>
+					<StopPointRef>9300LBR1</StopPointRef>
+				</From>
+				<To>
+					<StopPointRef>9300CAW1</StopPointRef>
+				</To>
+				<Distance>4428</Distance>
+				<Direction>outbound</Direction>
+			</RouteLink>
+		</RouteSection>
+		<RouteSection id="RS_33-RB6-_-y05-2-I-2">
+			<RouteLink id="RL_33-RB6-_-y05-2-I-2-1">
+				<From>
+					<StopPointRef>9300BFR1</StopPointRef>
+				</From>
+				<To>
+					<StopPointRef>9300EMB1</StopPointRef>
+				</To>
+				<Distance>1590</Distance>
+				<Direction>inbound</Direction>
+			</RouteLink>
+			<RouteLink id="RL_33-RB6-_-y05-2-I-2-2">
+				<From>
+					<StopPointRef>9300EMB1</StopPointRef>
+				</From>
+				<To>
+					<StopPointRef>9300SGW1</StopPointRef>
+				</To>
+				<Direction>inbound</Direction>
+			</RouteLink>
+			<RouteLink id="RL_33-RB6-_-y05-2-I-2-3">
+				<From>
+					<StopPointRef>9300SGW1</StopPointRef>
+				</From>
+				<To>
+					<StopPointRef>9300BSE1</StopPointRef>
+				</To>
+				<Direction>inbound</Direction>
+			</RouteLink>
+			<RouteLink id="RL_33-RB6-_-y05-2-I-2-4">
+				<From>
+					<StopPointRef>9300BSE1</StopPointRef>
+				</From>
+				<To>
+					<StopPointRef>9300CHP1</StopPointRef>
+				</To>
+				<Direction>inbound</Direction>
+			</RouteLink>
+			<RouteLink id="RL_33-RB6-_-y05-2-I-2-5">
+				<From>
+					<StopPointRef>9300CHP1</StopPointRef>
+				</From>
+				<To>
+					<StopPointRef>9300WRQ1</StopPointRef>
+				</To>
+				<Direction>inbound</Direction>
+			</RouteLink>
+			<RouteLink id="RL_33-RB6-_-y05-2-I-2-6">
+				<From>
+					<StopPointRef>9300WRQ1</StopPointRef>
+				</From>
+				<To>
+					<StopPointRef>9300PUT1</StopPointRef>
+				</To>
+				<Direction>inbound</Direction>
+			</RouteLink>
+		</RouteSection>
+		<RouteSection id="RS_33-RB6-_-y05-2-I-3">
+			<RouteLink id="RL_33-RB6-_-y05-2-I-3-1">
+				<From>
+					<StopPointRef>9300CAW1</StopPointRef>
+				</From>
+				<To>
+					<StopPointRef>9300LBR1</StopPointRef>
+				</To>
+				<Distance>4428</Distance>
+				<Direction>inbound</Direction>
+			</RouteLink>
+			<RouteLink id="RL_33-RB6-_-y05-2-I-3-2">
+				<From>
+					<StopPointRef>9300LBR1</StopPointRef>
+				</From>
+				<To>
+					<StopPointRef>9300SWK1</StopPointRef>
+				</To>
+				<Distance>954</Distance>
+				<Direction>inbound</Direction>
+			</RouteLink>
+			<RouteLink id="RL_33-RB6-_-y05-2-I-3-3">
+				<From>
+					<StopPointRef>9300SWK1</StopPointRef>
+				</From>
+				<To>
+					<StopPointRef>9300BFR1</StopPointRef>
+				</To>
+				<Distance>623</Distance>
+				<Direction>inbound</Direction>
+			</RouteLink>
+			<RouteLink id="RL_33-RB6-_-y05-2-I-3-4">
+				<From>
+					<StopPointRef>9300BFR1</StopPointRef>
+				</From>
+				<To>
+					<StopPointRef>9300EMB1</StopPointRef>
+				</To>
+				<Distance>1590</Distance>
+				<Direction>inbound</Direction>
+			</RouteLink>
+			<RouteLink id="RL_33-RB6-_-y05-2-I-3-5">
+				<From>
+					<StopPointRef>9300EMB1</StopPointRef>
+				</From>
+				<To>
+					<StopPointRef>9300SGW1</StopPointRef>
+				</To>
+				<Direction>inbound</Direction>
+			</RouteLink>
+			<RouteLink id="RL_33-RB6-_-y05-2-I-3-6">
+				<From>
+					<StopPointRef>9300SGW1</StopPointRef>
+				</From>
+				<To>
+					<StopPointRef>9300BSE1</StopPointRef>
+				</To>
+				<Direction>inbound</Direction>
+			</RouteLink>
+			<RouteLink id="RL_33-RB6-_-y05-2-I-3-7">
+				<From>
+					<StopPointRef>9300BSE1</StopPointRef>
+				</From>
+				<To>
+					<StopPointRef>9300CHP1</StopPointRef>
+				</To>
+				<Direction>inbound</Direction>
+			</RouteLink>
+			<RouteLink id="RL_33-RB6-_-y05-2-I-3-8">
+				<From>
+					<StopPointRef>9300CHP1</StopPointRef>
+				</From>
+				<To>
+					<StopPointRef>9300WRQ1</StopPointRef>
+				</To>
+				<Direction>inbound</Direction>
+			</RouteLink>
+			<RouteLink id="RL_33-RB6-_-y05-2-I-3-9">
+				<From>
+					<StopPointRef>9300WRQ1</StopPointRef>
+				</From>
+				<To>
+					<StopPointRef>9300PUT1</StopPointRef>
+				</To>
+				<Direction>inbound</Direction>
+			</RouteLink>
+		</RouteSection>
+		<RouteSection id="RS_33-RB6-_-y05-2-O-5">
+			<RouteLink id="RL_33-RB6-_-y05-2-O-5-1">
+				<From>
+					<StopPointRef>9300PUT1</StopPointRef>
+				</From>
+				<To>
+					<StopPointRef>9300WRQ1</StopPointRef>
+				</To>
+				<Direction>outbound</Direction>
+			</RouteLink>
+			<RouteLink id="RL_33-RB6-_-y05-2-O-5-2">
+				<From>
+					<StopPointRef>9300WRQ1</StopPointRef>
+				</From>
+				<To>
+					<StopPointRef>9300CHP1</StopPointRef>
+				</To>
+				<Direction>outbound</Direction>
+			</RouteLink>
+			<RouteLink id="RL_33-RB6-_-y05-2-O-5-3">
+				<From>
+					<StopPointRef>9300CHP1</StopPointRef>
+				</From>
+				<To>
+					<StopPointRef>9300BSE1</StopPointRef>
+				</To>
+				<Direction>outbound</Direction>
+			</RouteLink>
+			<RouteLink id="RL_33-RB6-_-y05-2-O-5-4">
+				<From>
+					<StopPointRef>9300BSE1</StopPointRef>
+				</From>
+				<To>
+					<StopPointRef>9300SGW1</StopPointRef>
+				</To>
+				<Direction>outbound</Direction>
+			</RouteLink>
+			<RouteLink id="RL_33-RB6-_-y05-2-O-5-5">
+				<From>
+					<StopPointRef>9300SGW1</StopPointRef>
+				</From>
+				<To>
+					<StopPointRef>9300EMB1</StopPointRef>
+				</To>
+				<Direction>outbound</Direction>
+			</RouteLink>
+			<RouteLink id="RL_33-RB6-_-y05-2-O-5-6">
+				<From>
+					<StopPointRef>9300EMB1</StopPointRef>
+				</From>
+				<To>
+					<StopPointRef>9300BFR1</StopPointRef>
+				</To>
+				<Distance>1590</Distance>
+				<Direction>outbound</Direction>
+			</RouteLink>
+		</RouteSection>
+	</RouteSections>
+	<Routes>
+		<Route id="R_33-RB6-_-y05-2-O-1">
+			<PrivateCode>R_33-RB6-_-y05-2-O-1</PrivateCode>
+			<Description>Putney Pier - Canary Wharf Pier</Description>
+			<RouteSectionRef>RS_33-RB6-_-y05-2-O-1</RouteSectionRef>
+		</Route>
+		<Route id="R_33-RB6-_-y05-2-I-2">
+			<PrivateCode>R_33-RB6-_-y05-2-I-2</PrivateCode>
+			<Description>Blackfriars Pier - Putney Pier</Description>
+			<RouteSectionRef>RS_33-RB6-_-y05-2-I-2</RouteSectionRef>
+		</Route>
+		<Route id="R_33-RB6-_-y05-2-I-3">
+			<PrivateCode>R_33-RB6-_-y05-2-I-3</PrivateCode>
+			<Description>Canary Wharf Pier - Putney Pier</Description>
+			<RouteSectionRef>RS_33-RB6-_-y05-2-I-3</RouteSectionRef>
+		</Route>
+		<Route id="R_33-RB6-_-y05-2-O-5">
+			<PrivateCode>R_33-RB6-_-y05-2-O-5</PrivateCode>
+			<Description>Putney Pier - Blackfriars Pier</Description>
+			<RouteSectionRef>RS_33-RB6-_-y05-2-O-5</RouteSectionRef>
+		</Route>
+	</Routes>
+	<JourneyPatternSections>
+		<JourneyPatternSection id="JPS_33-RB6-_-y05-2-12-5-O">
+			<JourneyPatternTimingLink id="JPL_33-RB6-_-y05-2-12-O-5-2">
+				<From SequenceNumber="1">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300PUT1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</From>
+				<To SequenceNumber="2">
+					<Activity>pass</Activity>
+					<StopPointRef>9300WRQ1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</To>
+				<RouteLinkRef>RL_33-RB6-_-y05-2-O-5-1</RouteLinkRef>
+				<RunTime>PT5M</RunTime>
+			</JourneyPatternTimingLink>
+			<JourneyPatternTimingLink id="JPL_33-RB6-_-y05-2-12-O-5-3">
+				<From SequenceNumber="2">
+					<Activity>pass</Activity>
+					<StopPointRef>9300WRQ1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</From>
+				<To SequenceNumber="3">
+					<Activity>pass</Activity>
+					<StopPointRef>9300CHP1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</To>
+				<RouteLinkRef>RL_33-RB6-_-y05-2-O-5-2</RouteLinkRef>
+				<RunTime>PT10M</RunTime>
+			</JourneyPatternTimingLink>
+			<JourneyPatternTimingLink id="JPL_33-RB6-_-y05-2-12-O-5-4">
+				<From SequenceNumber="3">
+					<Activity>pass</Activity>
+					<StopPointRef>9300CHP1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</From>
+				<To SequenceNumber="4">
+					<Activity>pass</Activity>
+					<StopPointRef>9300BSE1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</To>
+				<RouteLinkRef>RL_33-RB6-_-y05-2-O-5-3</RouteLinkRef>
+				<RunTime>PT7M</RunTime>
+			</JourneyPatternTimingLink>
+			<JourneyPatternTimingLink id="JPL_33-RB6-_-y05-2-12-O-5-5">
+				<From SequenceNumber="4">
+					<Activity>pass</Activity>
+					<StopPointRef>9300BSE1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</From>
+				<To SequenceNumber="5">
+					<Activity>pass</Activity>
+					<StopPointRef>9300SGW1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</To>
+				<RouteLinkRef>RL_33-RB6-_-y05-2-O-5-4</RouteLinkRef>
+				<RunTime>PT8M</RunTime>
+			</JourneyPatternTimingLink>
+			<JourneyPatternTimingLink id="JPL_33-RB6-_-y05-2-12-O-5-6">
+				<From SequenceNumber="5">
+					<Activity>pass</Activity>
+					<StopPointRef>9300SGW1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</From>
+				<To SequenceNumber="6">
+					<Activity>pass</Activity>
+					<StopPointRef>9300EMB1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</To>
+				<RouteLinkRef>RL_33-RB6-_-y05-2-O-5-5</RouteLinkRef>
+				<RunTime>PT7M</RunTime>
+			</JourneyPatternTimingLink>
+			<JourneyPatternTimingLink id="JPL_33-RB6-_-y05-2-12-O-5-7">
+				<From SequenceNumber="6">
+					<Activity>pass</Activity>
+					<StopPointRef>9300EMB1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</From>
+				<To SequenceNumber="7">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300BFR1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</To>
+				<RouteLinkRef>RL_33-RB6-_-y05-2-O-5-6</RouteLinkRef>
+				<RunTime>PT5M</RunTime>
+			</JourneyPatternTimingLink>
+		</JourneyPatternSection>
+		<JourneyPatternSection id="JPS_33-RB6-_-y05-2-1-1-O">
+			<JourneyPatternTimingLink id="JPL_33-RB6-_-y05-2-1-O-1-2">
+				<From SequenceNumber="1">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300PUT1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</From>
+				<To SequenceNumber="2">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300WRQ1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</To>
+				<RouteLinkRef>RL_33-RB6-_-y05-2-O-1-1</RouteLinkRef>
+				<RunTime>PT5M</RunTime>
+			</JourneyPatternTimingLink>
+			<JourneyPatternTimingLink id="JPL_33-RB6-_-y05-2-1-O-1-3">
+				<From SequenceNumber="2">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300WRQ1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</From>
+				<To SequenceNumber="3">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300CHP1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</To>
+				<RouteLinkRef>RL_33-RB6-_-y05-2-O-1-2</RouteLinkRef>
+				<RunTime>PT10M</RunTime>
+			</JourneyPatternTimingLink>
+			<JourneyPatternTimingLink id="JPL_33-RB6-_-y05-2-1-O-1-4">
+				<From SequenceNumber="3">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300CHP1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</From>
+				<To SequenceNumber="4">
+					<Activity>pass</Activity>
+					<StopPointRef>9300BSE1</StopPointRef>
+					<TimingStatus>OTH</TimingStatus>
+				</To>
+				<RouteLinkRef>RL_33-RB6-_-y05-2-O-1-3</RouteLinkRef>
+				<RunTime>PT7M30S</RunTime>
+			</JourneyPatternTimingLink>
+			<JourneyPatternTimingLink id="JPL_33-RB6-_-y05-2-1-O-1-5">
+				<From SequenceNumber="4">
+					<Activity>pass</Activity>
+					<StopPointRef>9300BSE1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</From>
+				<To SequenceNumber="5">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300SGW1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</To>
+				<RouteLinkRef>RL_33-RB6-_-y05-2-O-1-4</RouteLinkRef>
+				<RunTime>PT7M30S</RunTime>
+			</JourneyPatternTimingLink>
+			<JourneyPatternTimingLink id="JPL_33-RB6-_-y05-2-1-O-1-6">
+				<From SequenceNumber="5">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300SGW1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</From>
+				<To SequenceNumber="6">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300EMB1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</To>
+				<RouteLinkRef>RL_33-RB6-_-y05-2-O-1-5</RouteLinkRef>
+				<RunTime>PT7M</RunTime>
+			</JourneyPatternTimingLink>
+			<JourneyPatternTimingLink id="JPL_33-RB6-_-y05-2-1-O-1-7">
+				<From SequenceNumber="6">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300EMB1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</From>
+				<To SequenceNumber="7">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300BFR1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</To>
+				<RouteLinkRef>RL_33-RB6-_-y05-2-O-1-6</RouteLinkRef>
+				<RunTime>PT5M</RunTime>
+			</JourneyPatternTimingLink>
+			<JourneyPatternTimingLink id="JPL_33-RB6-_-y05-2-1-O-1-8">
+				<From SequenceNumber="7">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300BFR1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</From>
+				<To SequenceNumber="8">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300LBR1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</To>
+				<RouteLinkRef>RL_33-RB6-_-y05-2-O-1-7</RouteLinkRef>
+				<RunTime>PT6M</RunTime>
+			</JourneyPatternTimingLink>
+			<JourneyPatternTimingLink id="JPL_33-RB6-_-y05-2-1-O-1-9">
+				<From SequenceNumber="8">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300LBR1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</From>
+				<To SequenceNumber="9">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300CAW1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</To>
+				<RouteLinkRef>RL_33-RB6-_-y05-2-O-1-8</RouteLinkRef>
+				<RunTime>PT9M</RunTime>
+			</JourneyPatternTimingLink>
+		</JourneyPatternSection>
+		<JourneyPatternSection id="JPS_33-RB6-_-y05-2-2-1-O">
+			<JourneyPatternTimingLink id="JPL_33-RB6-_-y05-2-2-O-1-2">
+				<From SequenceNumber="1">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300PUT1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</From>
+				<To SequenceNumber="2">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300WRQ1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</To>
+				<RouteLinkRef>RL_33-RB6-_-y05-2-O-1-1</RouteLinkRef>
+				<RunTime>PT5M</RunTime>
+			</JourneyPatternTimingLink>
+			<JourneyPatternTimingLink id="JPL_33-RB6-_-y05-2-2-O-1-3">
+				<From SequenceNumber="2">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300WRQ1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</From>
+				<To SequenceNumber="3">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300CHP1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</To>
+				<RouteLinkRef>RL_33-RB6-_-y05-2-O-1-2</RouteLinkRef>
+				<RunTime>PT10M</RunTime>
+			</JourneyPatternTimingLink>
+			<JourneyPatternTimingLink id="JPL_33-RB6-_-y05-2-2-O-1-4">
+				<From SequenceNumber="3">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300CHP1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</From>
+				<To SequenceNumber="4">
+					<Activity>pass</Activity>
+					<StopPointRef>9300BSE1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</To>
+				<RouteLinkRef>RL_33-RB6-_-y05-2-O-1-3</RouteLinkRef>
+				<RunTime>PT7M</RunTime>
+			</JourneyPatternTimingLink>
+			<JourneyPatternTimingLink id="JPL_33-RB6-_-y05-2-2-O-1-5">
+				<From SequenceNumber="4">
+					<Activity>pass</Activity>
+					<StopPointRef>9300BSE1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</From>
+				<To SequenceNumber="5">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300SGW1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</To>
+				<RouteLinkRef>RL_33-RB6-_-y05-2-O-1-4</RouteLinkRef>
+				<RunTime>PT8M</RunTime>
+			</JourneyPatternTimingLink>
+			<JourneyPatternTimingLink id="JPL_33-RB6-_-y05-2-2-O-1-6">
+				<From SequenceNumber="5">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300SGW1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</From>
+				<To SequenceNumber="6">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300EMB1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</To>
+				<RouteLinkRef>RL_33-RB6-_-y05-2-O-1-5</RouteLinkRef>
+				<RunTime>PT7M</RunTime>
+			</JourneyPatternTimingLink>
+			<JourneyPatternTimingLink id="JPL_33-RB6-_-y05-2-2-O-1-7">
+				<From SequenceNumber="6">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300EMB1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</From>
+				<To SequenceNumber="7">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300BFR1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</To>
+				<RouteLinkRef>RL_33-RB6-_-y05-2-O-1-6</RouteLinkRef>
+				<RunTime>PT5M</RunTime>
+			</JourneyPatternTimingLink>
+			<JourneyPatternTimingLink id="JPL_33-RB6-_-y05-2-2-O-1-8">
+				<From SequenceNumber="7">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300BFR1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</From>
+				<To SequenceNumber="8">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300LBR1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</To>
+				<RouteLinkRef>RL_33-RB6-_-y05-2-O-1-7</RouteLinkRef>
+				<RunTime>PT6M</RunTime>
+			</JourneyPatternTimingLink>
+			<JourneyPatternTimingLink id="JPL_33-RB6-_-y05-2-2-O-1-9">
+				<From SequenceNumber="8">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300LBR1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</From>
+				<To SequenceNumber="9">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300CAW1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</To>
+				<RouteLinkRef>RL_33-RB6-_-y05-2-O-1-8</RouteLinkRef>
+				<RunTime>PT11M</RunTime>
+			</JourneyPatternTimingLink>
+		</JourneyPatternSection>
+		<JourneyPatternSection id="JPS_33-RB6-_-y05-2-9-5-O">
+			<JourneyPatternTimingLink id="JPL_33-RB6-_-y05-2-9-O-5-2">
+				<From SequenceNumber="1">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300PUT1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</From>
+				<To SequenceNumber="2">
+					<Activity>pass</Activity>
+					<StopPointRef>9300WRQ1</StopPointRef>
+					<TimingStatus>OTH</TimingStatus>
+				</To>
+				<RouteLinkRef>RL_33-RB6-_-y05-2-O-5-1</RouteLinkRef>
+				<RunTime>PT5M20S</RunTime>
+			</JourneyPatternTimingLink>
+			<JourneyPatternTimingLink id="JPL_33-RB6-_-y05-2-9-O-5-3">
+				<From SequenceNumber="2">
+					<Activity>pass</Activity>
+					<StopPointRef>9300WRQ1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</From>
+				<To SequenceNumber="3">
+					<Activity>pass</Activity>
+					<StopPointRef>9300CHP1</StopPointRef>
+					<TimingStatus>OTH</TimingStatus>
+				</To>
+				<RouteLinkRef>RL_33-RB6-_-y05-2-O-5-2</RouteLinkRef>
+				<RunTime>PT5M20S</RunTime>
+			</JourneyPatternTimingLink>
+			<JourneyPatternTimingLink id="JPL_33-RB6-_-y05-2-9-O-5-4">
+				<From SequenceNumber="3">
+					<Activity>pass</Activity>
+					<StopPointRef>9300CHP1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</From>
+				<To SequenceNumber="4">
+					<Activity>pass</Activity>
+					<StopPointRef>9300BSE1</StopPointRef>
+					<TimingStatus>OTH</TimingStatus>
+				</To>
+				<RouteLinkRef>RL_33-RB6-_-y05-2-O-5-3</RouteLinkRef>
+				<RunTime>PT5M20S</RunTime>
+			</JourneyPatternTimingLink>
+			<JourneyPatternTimingLink id="JPL_33-RB6-_-y05-2-9-O-5-5">
+				<From SequenceNumber="4">
+					<Activity>pass</Activity>
+					<StopPointRef>9300BSE1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</From>
+				<To SequenceNumber="5">
+					<Activity>pass</Activity>
+					<StopPointRef>9300SGW1</StopPointRef>
+					<TimingStatus>OTH</TimingStatus>
+				</To>
+				<RouteLinkRef>RL_33-RB6-_-y05-2-O-5-4</RouteLinkRef>
+				<RunTime>PT5M20S</RunTime>
+			</JourneyPatternTimingLink>
+			<JourneyPatternTimingLink id="JPL_33-RB6-_-y05-2-9-O-5-6">
+				<From SequenceNumber="5">
+					<Activity>pass</Activity>
+					<StopPointRef>9300SGW1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</From>
+				<To SequenceNumber="6">
+					<Activity>pass</Activity>
+					<StopPointRef>9300EMB1</StopPointRef>
+					<TimingStatus>OTH</TimingStatus>
+				</To>
+				<RouteLinkRef>RL_33-RB6-_-y05-2-O-5-5</RouteLinkRef>
+				<RunTime>PT5M20S</RunTime>
+			</JourneyPatternTimingLink>
+			<JourneyPatternTimingLink id="JPL_33-RB6-_-y05-2-9-O-5-7">
+				<From SequenceNumber="6">
+					<Activity>pass</Activity>
+					<StopPointRef>9300EMB1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</From>
+				<To SequenceNumber="7">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300BFR1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</To>
+				<RouteLinkRef>RL_33-RB6-_-y05-2-O-5-6</RouteLinkRef>
+				<RunTime>PT5M20S</RunTime>
+			</JourneyPatternTimingLink>
+		</JourneyPatternSection>
+		<JourneyPatternSection id="JPS_33-RB6-_-y05-2-15-2-I">
+			<JourneyPatternTimingLink id="JPL_33-RB6-_-y05-2-15-I-2-2">
+				<From SequenceNumber="1">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300BFR1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</From>
+				<To SequenceNumber="2">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300EMB1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</To>
+				<RouteLinkRef>RL_33-RB6-_-y05-2-I-2-1</RouteLinkRef>
+				<RunTime>PT5M</RunTime>
+			</JourneyPatternTimingLink>
+			<JourneyPatternTimingLink id="JPL_33-RB6-_-y05-2-15-I-2-3">
+				<From SequenceNumber="2">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300EMB1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</From>
+				<To SequenceNumber="3">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300SGW1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</To>
+				<RouteLinkRef>RL_33-RB6-_-y05-2-I-2-2</RouteLinkRef>
+				<RunTime>PT7M</RunTime>
+			</JourneyPatternTimingLink>
+			<JourneyPatternTimingLink id="JPL_33-RB6-_-y05-2-15-I-2-4">
+				<From SequenceNumber="3">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300SGW1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</From>
+				<To SequenceNumber="4">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300BSE1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</To>
+				<RouteLinkRef>RL_33-RB6-_-y05-2-I-2-3</RouteLinkRef>
+				<RunTime>PT8M</RunTime>
+			</JourneyPatternTimingLink>
+			<JourneyPatternTimingLink id="JPL_33-RB6-_-y05-2-15-I-2-5">
+				<From SequenceNumber="4">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300BSE1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</From>
+				<To SequenceNumber="5">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300CHP1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</To>
+				<RouteLinkRef>RL_33-RB6-_-y05-2-I-2-4</RouteLinkRef>
+				<RunTime>PT7M</RunTime>
+			</JourneyPatternTimingLink>
+			<JourneyPatternTimingLink id="JPL_33-RB6-_-y05-2-15-I-2-6">
+				<From SequenceNumber="5">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300CHP1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</From>
+				<To SequenceNumber="6">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300WRQ1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</To>
+				<RouteLinkRef>RL_33-RB6-_-y05-2-I-2-5</RouteLinkRef>
+				<RunTime>PT10M</RunTime>
+			</JourneyPatternTimingLink>
+			<JourneyPatternTimingLink id="JPL_33-RB6-_-y05-2-15-I-2-7">
+				<From SequenceNumber="6">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300WRQ1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</From>
+				<To SequenceNumber="7">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300PUT1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</To>
+				<RouteLinkRef>RL_33-RB6-_-y05-2-I-2-6</RouteLinkRef>
+				<RunTime>PT5M</RunTime>
+			</JourneyPatternTimingLink>
+		</JourneyPatternSection>
+		<JourneyPatternSection id="JPS_33-RB6-_-y05-2-4-3-I">
+			<JourneyPatternTimingLink id="JPL_33-RB6-_-y05-2-4-I-3-2">
+				<From SequenceNumber="1">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300CAW1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</From>
+				<To SequenceNumber="2">
+					<Activity>pass</Activity>
+					<StopPointRef>9300LBR1</StopPointRef>
+					<TimingStatus>OTH</TimingStatus>
+				</To>
+				<RouteLinkRef>RL_33-RB6-_-y05-2-I-3-1</RouteLinkRef>
+				<RunTime>PT5M</RunTime>
+			</JourneyPatternTimingLink>
+			<JourneyPatternTimingLink id="JPL_33-RB6-_-y05-2-4-I-3-3">
+				<From SequenceNumber="2">
+					<Activity>pass</Activity>
+					<StopPointRef>9300LBR1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</From>
+				<To SequenceNumber="3">
+					<Activity>pass</Activity>
+					<StopPointRef>9300SWK1</StopPointRef>
+					<TimingStatus>OTH</TimingStatus>
+				</To>
+				<RouteLinkRef>RL_33-RB6-_-y05-2-I-3-2</RouteLinkRef>
+				<RunTime>PT5M</RunTime>
+			</JourneyPatternTimingLink>
+			<JourneyPatternTimingLink id="JPL_33-RB6-_-y05-2-4-I-3-4">
+				<From SequenceNumber="3">
+					<Activity>pass</Activity>
+					<StopPointRef>9300SWK1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</From>
+				<To SequenceNumber="4">
+					<Activity>pass</Activity>
+					<StopPointRef>9300BFR1</StopPointRef>
+					<TimingStatus>OTH</TimingStatus>
+				</To>
+				<RouteLinkRef>RL_33-RB6-_-y05-2-I-3-3</RouteLinkRef>
+				<RunTime>PT5M</RunTime>
+			</JourneyPatternTimingLink>
+			<JourneyPatternTimingLink id="JPL_33-RB6-_-y05-2-4-I-3-5">
+				<From SequenceNumber="4">
+					<Activity>pass</Activity>
+					<StopPointRef>9300BFR1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</From>
+				<To SequenceNumber="5">
+					<Activity>pass</Activity>
+					<StopPointRef>9300EMB1</StopPointRef>
+					<TimingStatus>OTH</TimingStatus>
+				</To>
+				<RouteLinkRef>RL_33-RB6-_-y05-2-I-3-4</RouteLinkRef>
+				<RunTime>PT5M</RunTime>
+			</JourneyPatternTimingLink>
+			<JourneyPatternTimingLink id="JPL_33-RB6-_-y05-2-4-I-3-6">
+				<From SequenceNumber="5">
+					<Activity>pass</Activity>
+					<StopPointRef>9300EMB1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</From>
+				<To SequenceNumber="6">
+					<Activity>pass</Activity>
+					<StopPointRef>9300SGW1</StopPointRef>
+					<TimingStatus>OTH</TimingStatus>
+				</To>
+				<RouteLinkRef>RL_33-RB6-_-y05-2-I-3-5</RouteLinkRef>
+				<RunTime>PT5M</RunTime>
+			</JourneyPatternTimingLink>
+			<JourneyPatternTimingLink id="JPL_33-RB6-_-y05-2-4-I-3-7">
+				<From SequenceNumber="6">
+					<Activity>pass</Activity>
+					<StopPointRef>9300SGW1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</From>
+				<To SequenceNumber="7">
+					<Activity>pass</Activity>
+					<StopPointRef>9300BSE1</StopPointRef>
+					<TimingStatus>OTH</TimingStatus>
+				</To>
+				<RouteLinkRef>RL_33-RB6-_-y05-2-I-3-6</RouteLinkRef>
+				<RunTime>PT5M</RunTime>
+			</JourneyPatternTimingLink>
+			<JourneyPatternTimingLink id="JPL_33-RB6-_-y05-2-4-I-3-8">
+				<From SequenceNumber="7">
+					<Activity>pass</Activity>
+					<StopPointRef>9300BSE1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</From>
+				<To SequenceNumber="8">
+					<Activity>pass</Activity>
+					<StopPointRef>9300CHP1</StopPointRef>
+					<TimingStatus>OTH</TimingStatus>
+				</To>
+				<RouteLinkRef>RL_33-RB6-_-y05-2-I-3-7</RouteLinkRef>
+				<RunTime>PT5M</RunTime>
+			</JourneyPatternTimingLink>
+			<JourneyPatternTimingLink id="JPL_33-RB6-_-y05-2-4-I-3-9">
+				<From SequenceNumber="8">
+					<Activity>pass</Activity>
+					<StopPointRef>9300CHP1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</From>
+				<To SequenceNumber="9">
+					<Activity>pass</Activity>
+					<StopPointRef>9300WRQ1</StopPointRef>
+					<TimingStatus>OTH</TimingStatus>
+				</To>
+				<RouteLinkRef>RL_33-RB6-_-y05-2-I-3-8</RouteLinkRef>
+				<RunTime>PT5M</RunTime>
+			</JourneyPatternTimingLink>
+			<JourneyPatternTimingLink id="JPL_33-RB6-_-y05-2-4-I-3-10">
+				<From SequenceNumber="9">
+					<Activity>pass</Activity>
+					<StopPointRef>9300WRQ1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</From>
+				<To SequenceNumber="10">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300PUT1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</To>
+				<RouteLinkRef>RL_33-RB6-_-y05-2-I-3-9</RouteLinkRef>
+				<RunTime>PT5M</RunTime>
+			</JourneyPatternTimingLink>
+		</JourneyPatternSection>
+		<JourneyPatternSection id="JPS_33-RB6-_-y05-2-6-2-I">
+			<JourneyPatternTimingLink id="JPL_33-RB6-_-y05-2-6-I-2-2">
+				<From SequenceNumber="1">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300BFR1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</From>
+				<To SequenceNumber="2">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300EMB1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</To>
+				<RouteLinkRef>RL_33-RB6-_-y05-2-I-2-1</RouteLinkRef>
+				<RunTime>PT4M</RunTime>
+			</JourneyPatternTimingLink>
+			<JourneyPatternTimingLink id="JPL_33-RB6-_-y05-2-6-I-2-3">
+				<From SequenceNumber="2">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300EMB1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</From>
+				<To SequenceNumber="3">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300SGW1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</To>
+				<RouteLinkRef>RL_33-RB6-_-y05-2-I-2-2</RouteLinkRef>
+				<RunTime>PT9M</RunTime>
+			</JourneyPatternTimingLink>
+			<JourneyPatternTimingLink id="JPL_33-RB6-_-y05-2-6-I-2-4">
+				<From SequenceNumber="3">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300SGW1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</From>
+				<To SequenceNumber="4">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300BSE1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</To>
+				<RouteLinkRef>RL_33-RB6-_-y05-2-I-2-3</RouteLinkRef>
+				<RunTime>PT8M</RunTime>
+			</JourneyPatternTimingLink>
+			<JourneyPatternTimingLink id="JPL_33-RB6-_-y05-2-6-I-2-5">
+				<From SequenceNumber="4">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300BSE1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</From>
+				<To SequenceNumber="5">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300CHP1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</To>
+				<RouteLinkRef>RL_33-RB6-_-y05-2-I-2-4</RouteLinkRef>
+				<RunTime>PT7M</RunTime>
+			</JourneyPatternTimingLink>
+			<JourneyPatternTimingLink id="JPL_33-RB6-_-y05-2-6-I-2-6">
+				<From SequenceNumber="5">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300CHP1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</From>
+				<To SequenceNumber="6">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300WRQ1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</To>
+				<RouteLinkRef>RL_33-RB6-_-y05-2-I-2-5</RouteLinkRef>
+				<RunTime>PT10M</RunTime>
+			</JourneyPatternTimingLink>
+			<JourneyPatternTimingLink id="JPL_33-RB6-_-y05-2-6-I-2-7">
+				<From SequenceNumber="6">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300WRQ1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</From>
+				<To SequenceNumber="7">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300PUT1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</To>
+				<RouteLinkRef>RL_33-RB6-_-y05-2-I-2-6</RouteLinkRef>
+				<RunTime>PT5M</RunTime>
+			</JourneyPatternTimingLink>
+		</JourneyPatternSection>
+		<JourneyPatternSection id="JPS_33-RB6-_-y05-2-5-3-I">
+			<JourneyPatternTimingLink id="JPL_33-RB6-_-y05-2-5-I-3-2">
+				<From SequenceNumber="1">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300CAW1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</From>
+				<To SequenceNumber="2">
+					<Activity>pass</Activity>
+					<StopPointRef>9300LBR1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</To>
+				<RouteLinkRef>RL_33-RB6-_-y05-2-I-3-1</RouteLinkRef>
+				<RunTime>PT9M</RunTime>
+			</JourneyPatternTimingLink>
+			<JourneyPatternTimingLink id="JPL_33-RB6-_-y05-2-5-I-3-3">
+				<From SequenceNumber="2">
+					<Activity>pass</Activity>
+					<StopPointRef>9300LBR1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</From>
+				<To SequenceNumber="3">
+					<Activity>pass</Activity>
+					<StopPointRef>9300SWK1</StopPointRef>
+					<TimingStatus>OTH</TimingStatus>
+				</To>
+				<RouteLinkRef>RL_33-RB6-_-y05-2-I-3-2</RouteLinkRef>
+				<RunTime>PT3M</RunTime>
+			</JourneyPatternTimingLink>
+			<JourneyPatternTimingLink id="JPL_33-RB6-_-y05-2-5-I-3-4">
+				<From SequenceNumber="3">
+					<Activity>pass</Activity>
+					<StopPointRef>9300SWK1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</From>
+				<To SequenceNumber="4">
+					<Activity>pass</Activity>
+					<StopPointRef>9300BFR1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</To>
+				<RouteLinkRef>RL_33-RB6-_-y05-2-I-3-3</RouteLinkRef>
+				<RunTime>PT3M</RunTime>
+			</JourneyPatternTimingLink>
+			<JourneyPatternTimingLink id="JPL_33-RB6-_-y05-2-5-I-3-5">
+				<From SequenceNumber="4">
+					<Activity>pass</Activity>
+					<StopPointRef>9300BFR1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</From>
+				<To SequenceNumber="5">
+					<Activity>pass</Activity>
+					<StopPointRef>9300EMB1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</To>
+				<RouteLinkRef>RL_33-RB6-_-y05-2-I-3-4</RouteLinkRef>
+				<RunTime>PT5M</RunTime>
+			</JourneyPatternTimingLink>
+			<JourneyPatternTimingLink id="JPL_33-RB6-_-y05-2-5-I-3-6">
+				<From SequenceNumber="5">
+					<Activity>pass</Activity>
+					<StopPointRef>9300EMB1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</From>
+				<To SequenceNumber="6">
+					<Activity>pass</Activity>
+					<StopPointRef>9300SGW1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</To>
+				<RouteLinkRef>RL_33-RB6-_-y05-2-I-3-5</RouteLinkRef>
+				<RunTime>PT7M</RunTime>
+			</JourneyPatternTimingLink>
+			<JourneyPatternTimingLink id="JPL_33-RB6-_-y05-2-5-I-3-7">
+				<From SequenceNumber="6">
+					<Activity>pass</Activity>
+					<StopPointRef>9300SGW1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</From>
+				<To SequenceNumber="7">
+					<Activity>pass</Activity>
+					<StopPointRef>9300BSE1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</To>
+				<RouteLinkRef>RL_33-RB6-_-y05-2-I-3-6</RouteLinkRef>
+				<RunTime>PT8M</RunTime>
+			</JourneyPatternTimingLink>
+			<JourneyPatternTimingLink id="JPL_33-RB6-_-y05-2-5-I-3-8">
+				<From SequenceNumber="7">
+					<Activity>pass</Activity>
+					<StopPointRef>9300BSE1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</From>
+				<To SequenceNumber="8">
+					<Activity>pass</Activity>
+					<StopPointRef>9300CHP1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</To>
+				<RouteLinkRef>RL_33-RB6-_-y05-2-I-3-7</RouteLinkRef>
+				<RunTime>PT7M</RunTime>
+			</JourneyPatternTimingLink>
+			<JourneyPatternTimingLink id="JPL_33-RB6-_-y05-2-5-I-3-9">
+				<From SequenceNumber="8">
+					<Activity>pass</Activity>
+					<StopPointRef>9300CHP1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</From>
+				<To SequenceNumber="9">
+					<Activity>pass</Activity>
+					<StopPointRef>9300WRQ1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</To>
+				<RouteLinkRef>RL_33-RB6-_-y05-2-I-3-8</RouteLinkRef>
+				<RunTime>PT10M</RunTime>
+			</JourneyPatternTimingLink>
+			<JourneyPatternTimingLink id="JPL_33-RB6-_-y05-2-5-I-3-10">
+				<From SequenceNumber="9">
+					<Activity>pass</Activity>
+					<StopPointRef>9300WRQ1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</From>
+				<To SequenceNumber="10">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300PUT1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</To>
+				<RouteLinkRef>RL_33-RB6-_-y05-2-I-3-9</RouteLinkRef>
+				<RunTime>PT5M</RunTime>
+			</JourneyPatternTimingLink>
+		</JourneyPatternSection>
+	</JourneyPatternSections>
+	<Operators>
+		<Operator id="OId_CV">
+			<OperatorCode>CV</OperatorCode>
+			<OperatorShortName>KPMG THAMES CLIPPERS</OperatorShortName>
+			<OperatorNameOnLicence>KPMG THAMES CLIPPERS</OperatorNameOnLicence>
+			<TradingName>KPMG THAMES CLIPPERS</TradingName>
+		</Operator>
+	</Operators>
+	<Services>
+		<Service>
+			<ServiceCode>33-RB6-_-y05-2</ServiceCode>
+			<PrivateCode>33-RB6-_-y05-2</PrivateCode>
+			<Lines>
+				<Line id="33-RB6-_-y05-2">
+					<LineName>RB6</LineName>
+				</Line>
+			</Lines>
+			<OperatingPeriod>
+				<StartDate>2015-01-02</StartDate>
+				<EndDate>2015-12-31</EndDate>
+			</OperatingPeriod>
+			<OperatingProfile>
+				<RegularDayType>
+					<DaysOfWeek>
+						<MondayToFriday />
+					</DaysOfWeek>
+				</RegularDayType>
+				<SpecialDaysOperation>
+					<DaysOfNonOperation>
+						<DateRange>
+							<StartDate>2015-05-04</StartDate>
+							<EndDate>2015-05-04</EndDate>
+						</DateRange>
+						<DateRange>
+							<StartDate>2015-05-25</StartDate>
+							<EndDate>2015-05-25</EndDate>
+						</DateRange>
+						<DateRange>
+							<StartDate>2015-08-24</StartDate>
+							<EndDate>2015-08-24</EndDate>
+						</DateRange>
+						<DateRange>
+							<StartDate>2015-12-25</StartDate>
+							<EndDate>2015-12-25</EndDate>
+						</DateRange>
+						<DateRange>
+							<StartDate>2015-12-28</StartDate>
+							<EndDate>2015-12-28</EndDate>
+						</DateRange>
+					</DaysOfNonOperation>
+				</SpecialDaysOperation>
+			</OperatingProfile>
+			<RegisteredOperatorRef>OId_CV</RegisteredOperatorRef>
+			<StopRequirements>
+				<NoNewStopsRequired />
+			</StopRequirements>
+			<Mode>ferry</Mode>
+			<Description>Putney - Chelsea - Blackfriars</Description>
+			<StandardService>
+				<Origin>Putney Pier</Origin>
+				<Destination>Canary Wharf Pier</Destination>
+				<JourneyPattern id="JP_33-RB6-_-y05-2-12-O-5">
+					<Direction>outbound</Direction>
+					<Operational>
+						<VehicleType>
+							<VehicleTypeCode>FE</VehicleTypeCode>
+							<Description>Ferry</Description>
+						</VehicleType>
+					</Operational>
+					<RouteRef>R_33-RB6-_-y05-2-O-5</RouteRef>
+					<JourneyPatternSectionRefs>JPS_33-RB6-_-y05-2-12-5-O</JourneyPatternSectionRefs>
+				</JourneyPattern>
+				<JourneyPattern id="JP_33-RB6-_-y05-2-1-O-1">
+					<Direction>outbound</Direction>
+					<Operational>
+						<VehicleType>
+							<VehicleTypeCode>FE</VehicleTypeCode>
+							<Description>Ferry</Description>
+						</VehicleType>
+					</Operational>
+					<RouteRef>R_33-RB6-_-y05-2-O-1</RouteRef>
+					<JourneyPatternSectionRefs>JPS_33-RB6-_-y05-2-1-1-O</JourneyPatternSectionRefs>
+				</JourneyPattern>
+				<JourneyPattern id="JP_33-RB6-_-y05-2-2-O-1">
+					<Direction>outbound</Direction>
+					<Operational>
+						<VehicleType>
+							<VehicleTypeCode>FE</VehicleTypeCode>
+							<Description>Ferry</Description>
+						</VehicleType>
+					</Operational>
+					<RouteRef>R_33-RB6-_-y05-2-O-1</RouteRef>
+					<JourneyPatternSectionRefs>JPS_33-RB6-_-y05-2-2-1-O</JourneyPatternSectionRefs>
+				</JourneyPattern>
+				<JourneyPattern id="JP_33-RB6-_-y05-2-9-O-5">
+					<Direction>outbound</Direction>
+					<Operational>
+						<VehicleType>
+							<VehicleTypeCode>FE</VehicleTypeCode>
+							<Description>Ferry</Description>
+						</VehicleType>
+					</Operational>
+					<RouteRef>R_33-RB6-_-y05-2-O-5</RouteRef>
+					<JourneyPatternSectionRefs>JPS_33-RB6-_-y05-2-9-5-O</JourneyPatternSectionRefs>
+				</JourneyPattern>
+				<JourneyPattern id="JP_33-RB6-_-y05-2-15-I-2">
+					<Direction>inbound</Direction>
+					<RouteRef>R_33-RB6-_-y05-2-I-2</RouteRef>
+					<JourneyPatternSectionRefs>JPS_33-RB6-_-y05-2-15-2-I</JourneyPatternSectionRefs>
+				</JourneyPattern>
+				<JourneyPattern id="JP_33-RB6-_-y05-2-4-I-3">
+					<Direction>inbound</Direction>
+					<RouteRef>R_33-RB6-_-y05-2-I-3</RouteRef>
+					<JourneyPatternSectionRefs>JPS_33-RB6-_-y05-2-4-3-I</JourneyPatternSectionRefs>
+				</JourneyPattern>
+				<JourneyPattern id="JP_33-RB6-_-y05-2-6-I-2">
+					<Direction>inbound</Direction>
+					<RouteRef>R_33-RB6-_-y05-2-I-2</RouteRef>
+					<JourneyPatternSectionRefs>JPS_33-RB6-_-y05-2-6-2-I</JourneyPatternSectionRefs>
+				</JourneyPattern>
+				<JourneyPattern id="JP_33-RB6-_-y05-2-5-I-3">
+					<Direction>inbound</Direction>
+					<RouteRef>R_33-RB6-_-y05-2-I-3</RouteRef>
+					<JourneyPatternSectionRefs>JPS_33-RB6-_-y05-2-5-3-I</JourneyPatternSectionRefs>
+				</JourneyPattern>
+			</StandardService>
+		</Service>
+	</Services>
+	<VehicleJourneys>
+		<VehicleJourney>
+			<PrivateCode>tfl-33-RB6-_-y05-2-10003-T0</PrivateCode>
+			<Operational>
+				<VehicleType>
+					<VehicleTypeCode>FE</VehicleTypeCode>
+					<Description>Ferry</Description>
+				</VehicleType>
+			</Operational>
+			<VehicleJourneyCode>VJ_33-RB6-_-y05-2-10003-T0</VehicleJourneyCode>
+			<ServiceRef>33-RB6-_-y05-2</ServiceRef>
+			<LineRef>33-RB6-_-y05-2</LineRef>
+			<JourneyPatternRef>JP_33-RB6-_-y05-2-12-O-5</JourneyPatternRef>
+			<DepartureTime>06:30:00</DepartureTime>
+		</VehicleJourney>
+		<VehicleJourney>
+			<PrivateCode>tfl-33-RB6-_-y05-2-10024-T0</PrivateCode>
+			<Operational>
+				<VehicleType>
+					<VehicleTypeCode>FE</VehicleTypeCode>
+					<Description>Ferry</Description>
+				</VehicleType>
+			</Operational>
+			<VehicleJourneyCode>VJ_33-RB6-_-y05-2-10024-T0</VehicleJourneyCode>
+			<ServiceRef>33-RB6-_-y05-2</ServiceRef>
+			<LineRef>33-RB6-_-y05-2</LineRef>
+			<JourneyPatternRef>JP_33-RB6-_-y05-2-1-O-1</JourneyPatternRef>
+			<DepartureTime>06:00:00</DepartureTime>
+		</VehicleJourney>
+		<VehicleJourney>
+			<PrivateCode>tfl-33-RB6-_-y05-2-10026-T0</PrivateCode>
+			<Operational>
+				<VehicleType>
+					<VehicleTypeCode>FE</VehicleTypeCode>
+					<Description>Ferry</Description>
+				</VehicleType>
+			</Operational>
+			<VehicleJourneyCode>VJ_33-RB6-_-y05-2-10026-T0</VehicleJourneyCode>
+			<ServiceRef>33-RB6-_-y05-2</ServiceRef>
+			<LineRef>33-RB6-_-y05-2</LineRef>
+			<JourneyPatternRef>JP_33-RB6-_-y05-2-12-O-5</JourneyPatternRef>
+			<DepartureTime>07:00:00</DepartureTime>
+		</VehicleJourney>
+		<VehicleJourney>
+			<PrivateCode>tfl-33-RB6-_-y05-2-10027-T0</PrivateCode>
+			<Operational>
+				<VehicleType>
+					<VehicleTypeCode>FE</VehicleTypeCode>
+					<Description>Ferry</Description>
+				</VehicleType>
+			</Operational>
+			<VehicleJourneyCode>VJ_33-RB6-_-y05-2-10027-T0</VehicleJourneyCode>
+			<ServiceRef>33-RB6-_-y05-2</ServiceRef>
+			<LineRef>33-RB6-_-y05-2</LineRef>
+			<JourneyPatternRef>JP_33-RB6-_-y05-2-12-O-5</JourneyPatternRef>
+			<DepartureTime>07:30:00</DepartureTime>
+		</VehicleJourney>
+		<VehicleJourney>
+			<PrivateCode>tfl-33-RB6-_-y05-2-10028-T0</PrivateCode>
+			<Operational>
+				<VehicleType>
+					<VehicleTypeCode>FE</VehicleTypeCode>
+					<Description>Ferry</Description>
+				</VehicleType>
+			</Operational>
+			<VehicleJourneyCode>VJ_33-RB6-_-y05-2-10028-T0</VehicleJourneyCode>
+			<ServiceRef>33-RB6-_-y05-2</ServiceRef>
+			<LineRef>33-RB6-_-y05-2</LineRef>
+			<JourneyPatternRef>JP_33-RB6-_-y05-2-2-O-1</JourneyPatternRef>
+			<DepartureTime>07:53:00</DepartureTime>
+		</VehicleJourney>
+		<VehicleJourney>
+			<PrivateCode>tfl-33-RB6-_-y05-2-10029-T0</PrivateCode>
+			<Operational>
+				<VehicleType>
+					<VehicleTypeCode>FE</VehicleTypeCode>
+					<Description>Ferry</Description>
+				</VehicleType>
+			</Operational>
+			<VehicleJourneyCode>VJ_33-RB6-_-y05-2-10029-T0</VehicleJourneyCode>
+			<ServiceRef>33-RB6-_-y05-2</ServiceRef>
+			<LineRef>33-RB6-_-y05-2</LineRef>
+			<JourneyPatternRef>JP_33-RB6-_-y05-2-12-O-5</JourneyPatternRef>
+			<DepartureTime>08:02:00</DepartureTime>
+		</VehicleJourney>
+		<VehicleJourney>
+			<PrivateCode>tfl-33-RB6-_-y05-2-10030-T0</PrivateCode>
+			<Operational>
+				<VehicleType>
+					<VehicleTypeCode>FE</VehicleTypeCode>
+					<Description>Ferry</Description>
+				</VehicleType>
+			</Operational>
+			<VehicleJourneyCode>VJ_33-RB6-_-y05-2-10030-T0</VehicleJourneyCode>
+			<ServiceRef>33-RB6-_-y05-2</ServiceRef>
+			<LineRef>33-RB6-_-y05-2</LineRef>
+			<JourneyPatternRef>JP_33-RB6-_-y05-2-12-O-5</JourneyPatternRef>
+			<DepartureTime>08:33:00</DepartureTime>
+		</VehicleJourney>
+		<VehicleJourney>
+			<PrivateCode>tfl-33-RB6-_-y05-2-10031-T0</PrivateCode>
+			<Operational>
+				<VehicleType>
+					<VehicleTypeCode>FE</VehicleTypeCode>
+					<Description>Ferry</Description>
+				</VehicleType>
+			</Operational>
+			<VehicleJourneyCode>VJ_33-RB6-_-y05-2-10031-T0</VehicleJourneyCode>
+			<ServiceRef>33-RB6-_-y05-2</ServiceRef>
+			<LineRef>33-RB6-_-y05-2</LineRef>
+			<JourneyPatternRef>JP_33-RB6-_-y05-2-12-O-5</JourneyPatternRef>
+			<DepartureTime>09:00:00</DepartureTime>
+		</VehicleJourney>
+		<VehicleJourney>
+			<PrivateCode>tfl-33-RB6-_-y05-2-10032-T0</PrivateCode>
+			<Operational>
+				<VehicleType>
+					<VehicleTypeCode>FE</VehicleTypeCode>
+					<Description>Ferry</Description>
+				</VehicleType>
+			</Operational>
+			<VehicleJourneyCode>VJ_33-RB6-_-y05-2-10032-T0</VehicleJourneyCode>
+			<ServiceRef>33-RB6-_-y05-2</ServiceRef>
+			<LineRef>33-RB6-_-y05-2</LineRef>
+			<JourneyPatternRef>JP_33-RB6-_-y05-2-12-O-5</JourneyPatternRef>
+			<DepartureTime>09:35:00</DepartureTime>
+		</VehicleJourney>
+		<VehicleJourney>
+			<PrivateCode>tfl-33-RB6-_-y05-2-10033-T0</PrivateCode>
+			<Operational>
+				<VehicleType>
+					<VehicleTypeCode>FE</VehicleTypeCode>
+					<Description>Ferry</Description>
+				</VehicleType>
+			</Operational>
+			<VehicleJourneyCode>VJ_33-RB6-_-y05-2-10033-T0</VehicleJourneyCode>
+			<ServiceRef>33-RB6-_-y05-2</ServiceRef>
+			<LineRef>33-RB6-_-y05-2</LineRef>
+			<JourneyPatternRef>JP_33-RB6-_-y05-2-12-O-5</JourneyPatternRef>
+			<DepartureTime>17:39:00</DepartureTime>
+		</VehicleJourney>
+		<VehicleJourney>
+			<PrivateCode>tfl-33-RB6-_-y05-2-10034-T0</PrivateCode>
+			<Operational>
+				<VehicleType>
+					<VehicleTypeCode>FE</VehicleTypeCode>
+					<Description>Ferry</Description>
+				</VehicleType>
+			</Operational>
+			<VehicleJourneyCode>VJ_33-RB6-_-y05-2-10034-T0</VehicleJourneyCode>
+			<ServiceRef>33-RB6-_-y05-2</ServiceRef>
+			<LineRef>33-RB6-_-y05-2</LineRef>
+			<JourneyPatternRef>JP_33-RB6-_-y05-2-12-O-5</JourneyPatternRef>
+			<DepartureTime>18:05:00</DepartureTime>
+		</VehicleJourney>
+		<VehicleJourney>
+			<PrivateCode>tfl-33-RB6-_-y05-2-10035-T0</PrivateCode>
+			<Operational>
+				<VehicleType>
+					<VehicleTypeCode>FE</VehicleTypeCode>
+					<Description>Ferry</Description>
+				</VehicleType>
+			</Operational>
+			<VehicleJourneyCode>VJ_33-RB6-_-y05-2-10035-T0</VehicleJourneyCode>
+			<ServiceRef>33-RB6-_-y05-2</ServiceRef>
+			<LineRef>33-RB6-_-y05-2</LineRef>
+			<JourneyPatternRef>JP_33-RB6-_-y05-2-12-O-5</JourneyPatternRef>
+			<DepartureTime>19:12:00</DepartureTime>
+		</VehicleJourney>
+		<VehicleJourney>
+			<PrivateCode>tfl-33-RB6-_-y05-2-10037-T0</PrivateCode>
+			<Operational>
+				<VehicleType>
+					<VehicleTypeCode>FE</VehicleTypeCode>
+					<Description>Ferry</Description>
+				</VehicleType>
+			</Operational>
+			<VehicleJourneyCode>VJ_33-RB6-_-y05-2-10037-T0</VehicleJourneyCode>
+			<ServiceRef>33-RB6-_-y05-2</ServiceRef>
+			<LineRef>33-RB6-_-y05-2</LineRef>
+			<JourneyPatternRef>JP_33-RB6-_-y05-2-12-O-5</JourneyPatternRef>
+			<DepartureTime>20:41:00</DepartureTime>
+		</VehicleJourney>
+		<VehicleJourney>
+			<PrivateCode>tfl-33-RB6-_-y05-2-10038-T0</PrivateCode>
+			<Operational>
+				<VehicleType>
+					<VehicleTypeCode>FE</VehicleTypeCode>
+					<Description>Ferry</Description>
+				</VehicleType>
+			</Operational>
+			<VehicleJourneyCode>VJ_33-RB6-_-y05-2-10038-T0</VehicleJourneyCode>
+			<ServiceRef>33-RB6-_-y05-2</ServiceRef>
+			<LineRef>33-RB6-_-y05-2</LineRef>
+			<JourneyPatternRef>JP_33-RB6-_-y05-2-12-O-5</JourneyPatternRef>
+			<DepartureTime>19:39:00</DepartureTime>
+		</VehicleJourney>
+		<VehicleJourney>
+			<PrivateCode>tfl-33-RB6-_-y05-2-10039-T0</PrivateCode>
+			<Operational>
+				<VehicleType>
+					<VehicleTypeCode>FE</VehicleTypeCode>
+					<Description>Ferry</Description>
+				</VehicleType>
+			</Operational>
+			<VehicleJourneyCode>VJ_33-RB6-_-y05-2-10039-T0</VehicleJourneyCode>
+			<ServiceRef>33-RB6-_-y05-2</ServiceRef>
+			<LineRef>33-RB6-_-y05-2</LineRef>
+			<JourneyPatternRef>JP_33-RB6-_-y05-2-12-O-5</JourneyPatternRef>
+			<DepartureTime>21:10:00</DepartureTime>
+		</VehicleJourney>
+		<VehicleJourney>
+			<PrivateCode>tfl-33-RB6-_-y05-2-10040-T0</PrivateCode>
+			<Operational>
+				<VehicleType>
+					<VehicleTypeCode>FE</VehicleTypeCode>
+					<Description>Ferry</Description>
+				</VehicleType>
+			</Operational>
+			<VehicleJourneyCode>VJ_33-RB6-_-y05-2-10040-T0</VehicleJourneyCode>
+			<ServiceRef>33-RB6-_-y05-2</ServiceRef>
+			<LineRef>33-RB6-_-y05-2</LineRef>
+			<JourneyPatternRef>JP_33-RB6-_-y05-2-9-O-5</JourneyPatternRef>
+			<DepartureTime>18:50:00</DepartureTime>
+		</VehicleJourney>
+		<VehicleJourney>
+			<PrivateCode>tfl-33-RB6-_-y05-2-10041-T0</PrivateCode>
+			<VehicleJourneyCode>VJ_33-RB6-_-y05-2-10041-T0</VehicleJourneyCode>
+			<ServiceRef>33-RB6-_-y05-2</ServiceRef>
+			<LineRef>33-RB6-_-y05-2</LineRef>
+			<JourneyPatternRef>JP_33-RB6-_-y05-2-15-I-2</JourneyPatternRef>
+			<DepartureTime>06:10:00</DepartureTime>
+		</VehicleJourney>
+		<VehicleJourney>
+			<PrivateCode>tfl-33-RB6-_-y05-2-10042-T0</PrivateCode>
+			<VehicleJourneyCode>VJ_33-RB6-_-y05-2-10042-T0</VehicleJourneyCode>
+			<ServiceRef>33-RB6-_-y05-2</ServiceRef>
+			<LineRef>33-RB6-_-y05-2</LineRef>
+			<JourneyPatternRef>JP_33-RB6-_-y05-2-4-I-3</JourneyPatternRef>
+			<DepartureTime>07:00:00</DepartureTime>
+		</VehicleJourney>
+		<VehicleJourney>
+			<PrivateCode>tfl-33-RB6-_-y05-2-10043-T0</PrivateCode>
+			<VehicleJourneyCode>VJ_33-RB6-_-y05-2-10043-T0</VehicleJourneyCode>
+			<ServiceRef>33-RB6-_-y05-2</ServiceRef>
+			<LineRef>33-RB6-_-y05-2</LineRef>
+			<JourneyPatternRef>JP_33-RB6-_-y05-2-15-I-2</JourneyPatternRef>
+			<DepartureTime>07:15:00</DepartureTime>
+		</VehicleJourney>
+		<VehicleJourney>
+			<PrivateCode>tfl-33-RB6-_-y05-2-10044-T0</PrivateCode>
+			<VehicleJourneyCode>VJ_33-RB6-_-y05-2-10044-T0</VehicleJourneyCode>
+			<ServiceRef>33-RB6-_-y05-2</ServiceRef>
+			<LineRef>33-RB6-_-y05-2</LineRef>
+			<JourneyPatternRef>JP_33-RB6-_-y05-2-15-I-2</JourneyPatternRef>
+			<DepartureTime>07:45:00</DepartureTime>
+		</VehicleJourney>
+		<VehicleJourney>
+			<PrivateCode>tfl-33-RB6-_-y05-2-10045-T0</PrivateCode>
+			<VehicleJourneyCode>VJ_33-RB6-_-y05-2-10045-T0</VehicleJourneyCode>
+			<ServiceRef>33-RB6-_-y05-2</ServiceRef>
+			<LineRef>33-RB6-_-y05-2</LineRef>
+			<JourneyPatternRef>JP_33-RB6-_-y05-2-15-I-2</JourneyPatternRef>
+			<DepartureTime>08:15:00</DepartureTime>
+		</VehicleJourney>
+		<VehicleJourney>
+			<PrivateCode>tfl-33-RB6-_-y05-2-10046-T0</PrivateCode>
+			<VehicleJourneyCode>VJ_33-RB6-_-y05-2-10046-T0</VehicleJourneyCode>
+			<ServiceRef>33-RB6-_-y05-2</ServiceRef>
+			<LineRef>33-RB6-_-y05-2</LineRef>
+			<JourneyPatternRef>JP_33-RB6-_-y05-2-15-I-2</JourneyPatternRef>
+			<DepartureTime>08:48:00</DepartureTime>
+		</VehicleJourney>
+		<VehicleJourney>
+			<PrivateCode>tfl-33-RB6-_-y05-2-10047-T0</PrivateCode>
+			<VehicleJourneyCode>VJ_33-RB6-_-y05-2-10047-T0</VehicleJourneyCode>
+			<ServiceRef>33-RB6-_-y05-2</ServiceRef>
+			<LineRef>33-RB6-_-y05-2</LineRef>
+			<JourneyPatternRef>JP_33-RB6-_-y05-2-6-I-2</JourneyPatternRef>
+			<DepartureTime>16:47:00</DepartureTime>
+		</VehicleJourney>
+		<VehicleJourney>
+			<PrivateCode>tfl-33-RB6-_-y05-2-10048-T0</PrivateCode>
+			<VehicleJourneyCode>VJ_33-RB6-_-y05-2-10048-T0</VehicleJourneyCode>
+			<ServiceRef>33-RB6-_-y05-2</ServiceRef>
+			<LineRef>33-RB6-_-y05-2</LineRef>
+			<JourneyPatternRef>JP_33-RB6-_-y05-2-5-I-3</JourneyPatternRef>
+			<DepartureTime>17:50:00</DepartureTime>
+		</VehicleJourney>
+		<VehicleJourney>
+			<PrivateCode>tfl-33-RB6-_-y05-2-10049-T0</PrivateCode>
+			<VehicleJourneyCode>VJ_33-RB6-_-y05-2-10049-T0</VehicleJourneyCode>
+			<ServiceRef>33-RB6-_-y05-2</ServiceRef>
+			<LineRef>33-RB6-_-y05-2</LineRef>
+			<JourneyPatternRef>JP_33-RB6-_-y05-2-15-I-2</JourneyPatternRef>
+			<DepartureTime>18:27:00</DepartureTime>
+		</VehicleJourney>
+		<VehicleJourney>
+			<PrivateCode>tfl-33-RB6-_-y05-2-10050-T0</PrivateCode>
+			<VehicleJourneyCode>VJ_33-RB6-_-y05-2-10050-T0</VehicleJourneyCode>
+			<ServiceRef>33-RB6-_-y05-2</ServiceRef>
+			<LineRef>33-RB6-_-y05-2</LineRef>
+			<JourneyPatternRef>JP_33-RB6-_-y05-2-15-I-2</JourneyPatternRef>
+			<DepartureTime>18:50:00</DepartureTime>
+		</VehicleJourney>
+		<VehicleJourney>
+			<PrivateCode>tfl-33-RB6-_-y05-2-10051-T0</PrivateCode>
+			<VehicleJourneyCode>VJ_33-RB6-_-y05-2-10051-T0</VehicleJourneyCode>
+			<ServiceRef>33-RB6-_-y05-2</ServiceRef>
+			<LineRef>33-RB6-_-y05-2</LineRef>
+			<JourneyPatternRef>JP_33-RB6-_-y05-2-15-I-2</JourneyPatternRef>
+			<DepartureTime>19:25:00</DepartureTime>
+		</VehicleJourney>
+		<VehicleJourney>
+			<PrivateCode>tfl-33-RB6-_-y05-2-10052-T0</PrivateCode>
+			<VehicleJourneyCode>VJ_33-RB6-_-y05-2-10052-T0</VehicleJourneyCode>
+			<ServiceRef>33-RB6-_-y05-2</ServiceRef>
+			<LineRef>33-RB6-_-y05-2</LineRef>
+			<JourneyPatternRef>JP_33-RB6-_-y05-2-15-I-2</JourneyPatternRef>
+			<DepartureTime>19:56:00</DepartureTime>
+		</VehicleJourney>
+		<VehicleJourney>
+			<PrivateCode>tfl-33-RB6-_-y05-2-10053-T0</PrivateCode>
+			<VehicleJourneyCode>VJ_33-RB6-_-y05-2-10053-T0</VehicleJourneyCode>
+			<ServiceRef>33-RB6-_-y05-2</ServiceRef>
+			<LineRef>33-RB6-_-y05-2</LineRef>
+			<JourneyPatternRef>JP_33-RB6-_-y05-2-15-I-2</JourneyPatternRef>
+			<DepartureTime>20:25:00</DepartureTime>
+		</VehicleJourney>
+		<VehicleJourney>
+			<PrivateCode>tfl-33-RB6-_-y05-2-10054-T0</PrivateCode>
+			<VehicleJourneyCode>VJ_33-RB6-_-y05-2-10054-T0</VehicleJourneyCode>
+			<ServiceRef>33-RB6-_-y05-2</ServiceRef>
+			<LineRef>33-RB6-_-y05-2</LineRef>
+			<JourneyPatternRef>JP_33-RB6-_-y05-2-15-I-2</JourneyPatternRef>
+			<DepartureTime>17:20:00</DepartureTime>
+		</VehicleJourney>
+	</VehicleJourneys>
+</TransXChange>

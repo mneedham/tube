@@ -104,12 +104,13 @@ public class TubeImporter
                     @Override
                     public boolean accept( Node item )
                     {
-                        if(item.hasLabel( IN_PLATFORM ) || item.hasLabel( OUT_PLATFORM )) {
+                        if ( item.hasLabel( IN_PLATFORM ) || item.hasLabel( OUT_PLATFORM ) )
+                        {
                             Node direction = item.getSingleRelationship( withName( "ON" ), OUTGOING ).getEndNode();
                             Node line = direction.getSingleRelationship( withName( "DIRECTION" ), INCOMING ).getStartNode();
 
                             String lineName = line.getProperty( "lineName" ).toString();
-                            return !lineName.contains( lineToAvoid );
+                            return !lineName.toLowerCase().contains( lineToAvoid.toLowerCase() );
                         }
                         else
                         {

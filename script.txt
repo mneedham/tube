@@ -1,0 +1,9 @@
+Journeys to try
+
+Morden -> Amersham
+skip Jubilee
+skip Victoria
+
+
+TubeSearch - links through to the A* algorithm
+TubeResource - where we hook up the code to ignore a specific line

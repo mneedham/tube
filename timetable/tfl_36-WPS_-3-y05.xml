@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<TransXChange CreationDateTime="2015-05-21T03:37:45.2348973+01:00" ModificationDateTime="2015-05-21T03:37:45.2348973+01:00" Modification="new" FileName="tfl_36-WPS_-3-y05.xml" RevisionNumber="3" SchemaVersion="2.1" xml:lang="en" xsi:schemaLocation="http://www.transxchange.org.uk/ http://www.transxchange.org.uk/schema/2.1/TransXChange_general.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.transxchange.org.uk/">
+	<NptgLocalities>
+		<AnnotatedNptgLocalityRef>
+			<NptgLocalityRef>E0034760</NptgLocalityRef>
+			<LocalityName>Hampton Court</LocalityName>
+		</AnnotatedNptgLocalityRef>
+		<AnnotatedNptgLocalityRef>
+			<NptgLocalityRef>E0034774</NptgLocalityRef>
+			<LocalityName>Richmond (London)</LocalityName>
+		</AnnotatedNptgLocalityRef>
+		<AnnotatedNptgLocalityRef>
+			<NptgLocalityRef>N0060460</NptgLocalityRef>
+			<LocalityName>Kew (London)</LocalityName>
+		</AnnotatedNptgLocalityRef>
+		<AnnotatedNptgLocalityRef>
+			<NptgLocalityRef>E0034961</NptgLocalityRef>
+			<LocalityName>Westminster</LocalityName>
+		</AnnotatedNptgLocalityRef>
+	</NptgLocalities>
+	<StopPoints>
+		<StopPoint CreationDateTime="2013-08-29T00:00:00">
+			<AtcoCode>9300HCP1</AtcoCode>
+			<Descriptor>
+				<CommonName>Hampton Court Pier</CommonName>
+			</Descriptor>
+			<Place>
+				<NptgLocalityRef>E0034760</NptgLocalityRef>
+				<Location Precision="1m">
+					<Easting>515451</Easting>
+					<Northing>168493</Northing>
+				</Location>
+			</Place>
+			<StopClassification>
+				<StopType>FBT</StopType>
+				<OffStreet>
+					<Ferry>
+						<Berth />
+					</Ferry>
+				</OffStreet>
+			</StopClassification>
+			<AdministrativeAreaRef>000</AdministrativeAreaRef>
+			<Notes>Hampton Court Pier</Notes>
+		</StopPoint>
+		<StopPoint CreationDateTime="2013-08-29T00:00:00">
+			<AtcoCode>9300RLS1</AtcoCode>
+			<Descriptor>
+				<CommonName>Richmond Landing Stage</CommonName>
+			</Descriptor>
+			<Place>
+				<NptgLocalityRef>E0034774</NptgLocalityRef>
+				<Location Precision="1m">
+					<Easting>517790</Easting>
+					<Northing>174484</Northing>
+				</Location>
+			</Place>
+			<StopClassification>
+				<StopType>FBT</StopType>
+				<OffStreet>
+					<Ferry>
+						<Berth />
+					</Ferry>
+				</OffStreet>
+			</StopClassification>
+			<AdministrativeAreaRef>000</AdministrativeAreaRef>
+			<Notes>Richmond Landing Stage</Notes>
+		</StopPoint>
+		<StopPoint CreationDateTime="2013-08-29T00:00:00">
+			<AtcoCode>9300KEW1</AtcoCode>
+			<Descriptor>
+				<CommonName>Kew Pier</CommonName>
+			</Descriptor>
+			<Place>
+				<NptgLocalityRef>N0060460</NptgLocalityRef>
+				<Location Precision="1m">
+					<Easting>519081</Easting>
+					<Northing>177794</Northing>
+				</Location>
+			</Place>
+			<StopClassification>
+				<StopType>FBT</StopType>
+				<OffStreet>
+					<Ferry>
+						<Berth />
+					</Ferry>
+				</OffStreet>
+			</StopClassification>
+			<AdministrativeAreaRef>000</AdministrativeAreaRef>
+			<Notes>Kew Pier</Notes>
+		</StopPoint>
+		<StopPoint CreationDateTime="2013-08-29T00:00:00">
+			<AtcoCode>9300WMR1</AtcoCode>
+			<Descriptor>
+				<CommonName>Westminster Pier</CommonName>
+			</Descriptor>
+			<Place>
+				<NptgLocalityRef>E0034961</NptgLocalityRef>
+				<Location Precision="1m">
+					<Easting>530351</Easting>
+					<Northing>179748</Northing>
+				</Location>
+			</Place>
+			<StopClassification>
+				<StopType>FBT</StopType>
+				<OffStreet>
+					<Ferry>
+						<Berth />
+					</Ferry>
+				</OffStreet>
+			</StopClassification>
+			<AdministrativeAreaRef>000</AdministrativeAreaRef>
+			<Notes>Westminster Pier</Notes>
+		</StopPoint>
+	</StopPoints>
+	<RouteSections>
+		<RouteSection id="RS_36-WPS-_-y05-3-O-1">
+			<RouteLink id="RL_36-WPS-_-y05-3-O-1-1">
+				<From>
+					<StopPointRef>9300WMR1</StopPointRef>
+				</From>
+				<To>
+					<StopPointRef>9300KEW1</StopPointRef>
+				</To>
+				<Distance>18108</Distance>
+				<Direction>outbound</Direction>
+			</RouteLink>
+			<RouteLink id="RL_36-WPS-_-y05-3-O-1-2">
+				<From>
+					<StopPointRef>9300KEW1</StopPointRef>
+				</From>
+				<To>
+					<StopPointRef>9300RLS1</StopPointRef>
+				</To>
+				<Distance>5052</Distance>
+				<Direction>outbound</Direction>
+			</RouteLink>
+			<RouteLink id="RL_36-WPS-_-y05-3-O-1-3">
+				<From>
+					<StopPointRef>9300RLS1</StopPointRef>
+				</From>
+				<To>
+					<StopPointRef>9300HCP1</StopPointRef>
+				</To>
+				<Distance>11704</Distance>
+				<Direction>outbound</Direction>
+			</RouteLink>
+		</RouteSection>
+		<RouteSection id="RS_36-WPS-_-y05-3-I-3">
+			<RouteLink id="RL_36-WPS-_-y05-3-I-3-1">
+				<From>
+					<StopPointRef>9300HCP1</StopPointRef>
+				</From>
+				<To>
+					<StopPointRef>9300RLS1</StopPointRef>
+				</To>
+				<Distance>11704</Distance>
+				<Direction>inbound</Direction>
+			</RouteLink>
+			<RouteLink id="RL_36-WPS-_-y05-3-I-3-2">
+				<From>
+					<StopPointRef>9300RLS1</StopPointRef>
+				</From>
+				<To>
+					<StopPointRef>9300KEW1</StopPointRef>
+				</To>
+				<Distance>5052</Distance>
+				<Direction>inbound</Direction>
+			</RouteLink>
+			<RouteLink id="RL_36-WPS-_-y05-3-I-3-3">
+				<From>
+					<StopPointRef>9300KEW1</StopPointRef>
+				</From>
+				<To>
+					<StopPointRef>9300WMR1</StopPointRef>
+				</To>
+				<Distance>18108</Distance>
+				<Direction>inbound</Direction>
+			</RouteLink>
+		</RouteSection>
+	</RouteSections>
+	<Routes>
+		<Route id="R_36-WPS-_-y05-3-O-1">
+			<PrivateCode>R_36-WPS-_-y05-3-O-1</PrivateCode>
+			<Description>Westminster Pier - Hampton Court Pier</Description>
+			<RouteSectionRef>RS_36-WPS-_-y05-3-O-1</RouteSectionRef>
+		</Route>
+		<Route id="R_36-WPS-_-y05-3-I-3">
+			<PrivateCode>R_36-WPS-_-y05-3-I-3</PrivateCode>
+			<Description>Hampton Court Pier - Westminster Pier</Description>
+			<RouteSectionRef>RS_36-WPS-_-y05-3-I-3</RouteSectionRef>
+		</Route>
+	</Routes>
+	<JourneyPatternSections>
+		<JourneyPatternSection id="JPS_36-WPS-_-y05-3-1-1-O">
+			<JourneyPatternTimingLink id="JPL_36-WPS-_-y05-3-1-O-1-2">
+				<From SequenceNumber="1">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300WMR1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</From>
+				<To SequenceNumber="2">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300KEW1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</To>
+				<RouteLinkRef>RL_36-WPS-_-y05-3-O-1-1</RouteLinkRef>
+				<RunTime>PT1H30M</RunTime>
+			</JourneyPatternTimingLink>
+			<JourneyPatternTimingLink id="JPL_36-WPS-_-y05-3-1-O-1-3">
+				<From SequenceNumber="2">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300KEW1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</From>
+				<To SequenceNumber="3">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300RLS1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</To>
+				<RouteLinkRef>RL_36-WPS-_-y05-3-O-1-2</RouteLinkRef>
+				<RunTime>PT30M</RunTime>
+			</JourneyPatternTimingLink>
+			<JourneyPatternTimingLink id="JPL_36-WPS-_-y05-3-1-O-1-4">
+				<From SequenceNumber="3">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300RLS1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</From>
+				<To SequenceNumber="4">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300HCP1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</To>
+				<RouteLinkRef>RL_36-WPS-_-y05-3-O-1-3</RouteLinkRef>
+				<RunTime>PT1H30M</RunTime>
+			</JourneyPatternTimingLink>
+		</JourneyPatternSection>
+		<JourneyPatternSection id="JPS_36-WPS-_-y05-3-3-3-I">
+			<JourneyPatternTimingLink id="JPL_36-WPS-_-y05-3-3-I-3-2">
+				<From SequenceNumber="1">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300HCP1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</From>
+				<To SequenceNumber="2">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300RLS1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</To>
+				<RouteLinkRef>RL_36-WPS-_-y05-3-I-3-1</RouteLinkRef>
+				<RunTime>PT1H</RunTime>
+			</JourneyPatternTimingLink>
+			<JourneyPatternTimingLink id="JPL_36-WPS-_-y05-3-3-I-3-3">
+				<From SequenceNumber="2">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300RLS1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</From>
+				<To SequenceNumber="3">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300KEW1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</To>
+				<RouteLinkRef>RL_36-WPS-_-y05-3-I-3-2</RouteLinkRef>
+				<RunTime>PT30M</RunTime>
+			</JourneyPatternTimingLink>
+			<JourneyPatternTimingLink id="JPL_36-WPS-_-y05-3-3-I-3-4">
+				<From SequenceNumber="3">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300KEW1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</From>
+				<To SequenceNumber="4">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300WMR1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</To>
+				<RouteLinkRef>RL_36-WPS-_-y05-3-I-3-3</RouteLinkRef>
+				<RunTime>PT1H30M</RunTime>
+			</JourneyPatternTimingLink>
+		</JourneyPatternSection>
+	</JourneyPatternSections>
+	<Operators>
+		<Operator id="OId_WPS">
+			<OperatorCode>WPS</OperatorCode>
+			<OperatorShortName>Westminster Passenger S</OperatorShortName>
+			<OperatorNameOnLicence>Westminster Passenger Service Association</OperatorNameOnLicence>
+			<TradingName>Westminster Passenger Service Association</TradingName>
+		</Operator>
+	</Operators>
+	<Services>
+		<Service>
+			<ServiceCode>36-WPS-_-y05-3</ServiceCode>
+			<PrivateCode>36-WPS-_-y05-3</PrivateCode>
+			<Lines>
+				<Line id="36-WPS-_-y05-3">
+					<LineName>Thames River Boat</LineName>
+				</Line>
+			</Lines>
+			<OperatingPeriod>
+				<StartDate>2015-10-01</StartDate>
+				<EndDate>2015-10-31</EndDate>
+			</OperatingPeriod>
+			<OperatingProfile>
+				<RegularDayType>
+					<DaysOfWeek>
+						<MondayToSunday />
+					</DaysOfWeek>
+				</RegularDayType>
+			</OperatingProfile>
+			<RegisteredOperatorRef>OId_WPS</RegisteredOperatorRef>
+			<StopRequirements>
+				<NoNewStopsRequired />
+			</StopRequirements>
+			<Mode>ferry</Mode>
+			<Description>Westminster - Kew - Hampton Court</Description>
+			<StandardService>
+				<Origin>Westminster Pier</Origin>
+				<Destination>Hampton Court Pier</Destination>
+				<JourneyPattern id="JP_36-WPS-_-y05-3-1-O-1">
+					<Direction>outbound</Direction>
+					<Operational>
+						<VehicleType>
+							<VehicleTypeCode>FE</VehicleTypeCode>
+							<Description>Ferry</Description>
+						</VehicleType>
+					</Operational>
+					<RouteRef>R_36-WPS-_-y05-3-O-1</RouteRef>
+					<JourneyPatternSectionRefs>JPS_36-WPS-_-y05-3-1-1-O</JourneyPatternSectionRefs>
+				</JourneyPattern>
+				<JourneyPattern id="JP_36-WPS-_-y05-3-3-I-3">
+					<Direction>inbound</Direction>
+					<Operational>
+						<VehicleType>
+							<VehicleTypeCode>FE</VehicleTypeCode>
+							<Description>Ferry</Description>
+						</VehicleType>
+					</Operational>
+					<RouteRef>R_36-WPS-_-y05-3-I-3</RouteRef>
+					<JourneyPatternSectionRefs>JPS_36-WPS-_-y05-3-3-3-I</JourneyPatternSectionRefs>
+				</JourneyPattern>
+			</StandardService>
+		</Service>
+	</Services>
+	<VehicleJourneys>
+		<VehicleJourney>
+			<PrivateCode>tfl-36-WPS-_-y05-3-1-TA</PrivateCode>
+			<Operational>
+				<VehicleType>
+					<VehicleTypeCode>FE</VehicleTypeCode>
+					<Description>Ferry</Description>
+				</VehicleType>
+			</Operational>
+			<VehicleJourneyCode>VJ_36-WPS-_-y05-3-1-TA</VehicleJourneyCode>
+			<ServiceRef>36-WPS-_-y05-3</ServiceRef>
+			<LineRef>36-WPS-_-y05-3</LineRef>
+			<JourneyPatternRef>JP_36-WPS-_-y05-3-1-O-1</JourneyPatternRef>
+			<DepartureTime>11:00:00</DepartureTime>
+		</VehicleJourney>
+		<VehicleJourney>
+			<PrivateCode>tfl-36-WPS-_-y05-3-2-TA</PrivateCode>
+			<Operational>
+				<VehicleType>
+					<VehicleTypeCode>FE</VehicleTypeCode>
+					<Description>Ferry</Description>
+				</VehicleType>
+			</Operational>
+			<VehicleJourneyCode>VJ_36-WPS-_-y05-3-2-TA</VehicleJourneyCode>
+			<ServiceRef>36-WPS-_-y05-3</ServiceRef>
+			<LineRef>36-WPS-_-y05-3</LineRef>
+			<JourneyPatternRef>JP_36-WPS-_-y05-3-3-I-3</JourneyPatternRef>
+			<DepartureTime>15:00:00</DepartureTime>
+		</VehicleJourney>
+	</VehicleJourneys>
+</TransXChange>

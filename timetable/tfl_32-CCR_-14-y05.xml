@@ -1,0 +1,1235 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<TransXChange CreationDateTime="2015-05-21T03:37:23.1758973+01:00" ModificationDateTime="2015-05-21T03:37:23.1758973+01:00" Modification="new" FileName="tfl_32-CCR_-14-y05.xml" RevisionNumber="3" SchemaVersion="2.1" xml:lang="en" xsi:schemaLocation="http://www.transxchange.org.uk/ http://www.transxchange.org.uk/schema/2.1/TransXChange_general.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.transxchange.org.uk/">
+	<NptgLocalities>
+		<AnnotatedNptgLocalityRef>
+			<NptgLocalityRef>E0034328</NptgLocalityRef>
+			<LocalityName>Greenwich (London)</LocalityName>
+		</AnnotatedNptgLocalityRef>
+		<AnnotatedNptgLocalityRef>
+			<NptgLocalityRef>N0077729</NptgLocalityRef>
+			<LocalityName>Tower Hill (London)</LocalityName>
+		</AnnotatedNptgLocalityRef>
+		<AnnotatedNptgLocalityRef>
+			<NptgLocalityRef>E0034961</NptgLocalityRef>
+			<LocalityName>Westminster</LocalityName>
+		</AnnotatedNptgLocalityRef>
+		<AnnotatedNptgLocalityRef>
+			<NptgLocalityRef>E0034649</NptgLocalityRef>
+			<LocalityName>Waterloo (London)</LocalityName>
+		</AnnotatedNptgLocalityRef>
+	</NptgLocalities>
+	<StopPoints>
+		<StopPoint CreationDateTime="2013-08-29T00:00:00">
+			<AtcoCode>9300GNW1</AtcoCode>
+			<Descriptor>
+				<CommonName>Greenwich Pier</CommonName>
+			</Descriptor>
+			<Place>
+				<NptgLocalityRef>E0034328</NptgLocalityRef>
+				<Location Precision="1m">
+					<Easting>538310</Easting>
+					<Northing>178012</Northing>
+				</Location>
+			</Place>
+			<StopClassification>
+				<StopType>FBT</StopType>
+				<OffStreet>
+					<Ferry>
+						<Berth />
+					</Ferry>
+				</OffStreet>
+			</StopClassification>
+			<AdministrativeAreaRef>000</AdministrativeAreaRef>
+			<Notes>Greenwich Pier</Notes>
+		</StopPoint>
+		<StopPoint CreationDateTime="2013-08-29T00:00:00">
+			<AtcoCode>9300TMP1</AtcoCode>
+			<Descriptor>
+				<CommonName>Tower Pier</CommonName>
+			</Descriptor>
+			<Place>
+				<NptgLocalityRef>N0077729</NptgLocalityRef>
+				<Location Precision="1m">
+					<Easting>533454</Easting>
+					<Northing>180450</Northing>
+				</Location>
+			</Place>
+			<StopClassification>
+				<StopType>FBT</StopType>
+				<OffStreet>
+					<Ferry>
+						<Berth />
+					</Ferry>
+				</OffStreet>
+			</StopClassification>
+			<AdministrativeAreaRef>000</AdministrativeAreaRef>
+			<Notes>Tower Pier</Notes>
+		</StopPoint>
+		<StopPoint CreationDateTime="2013-08-29T00:00:00">
+			<AtcoCode>9300WMR1</AtcoCode>
+			<Descriptor>
+				<CommonName>Westminster Pier</CommonName>
+			</Descriptor>
+			<Place>
+				<NptgLocalityRef>E0034961</NptgLocalityRef>
+				<Location Precision="1m">
+					<Easting>530351</Easting>
+					<Northing>179748</Northing>
+				</Location>
+			</Place>
+			<StopClassification>
+				<StopType>FBT</StopType>
+				<OffStreet>
+					<Ferry>
+						<Berth />
+					</Ferry>
+				</OffStreet>
+			</StopClassification>
+			<AdministrativeAreaRef>000</AdministrativeAreaRef>
+			<Notes>Westminster Pier</Notes>
+		</StopPoint>
+		<StopPoint CreationDateTime="2013-08-29T00:00:00">
+			<AtcoCode>9300WMP1</AtcoCode>
+			<Descriptor>
+				<CommonName>London Eye Pier</CommonName>
+			</Descriptor>
+			<Place>
+				<NptgLocalityRef>E0034649</NptgLocalityRef>
+				<Location Precision="1m">
+					<Easting>530590</Easting>
+					<Northing>179982</Northing>
+				</Location>
+			</Place>
+			<StopClassification>
+				<StopType>FBT</StopType>
+				<OffStreet>
+					<Ferry>
+						<Berth />
+					</Ferry>
+				</OffStreet>
+			</StopClassification>
+			<AdministrativeAreaRef>000</AdministrativeAreaRef>
+			<Notes>London Eye Pier</Notes>
+		</StopPoint>
+	</StopPoints>
+	<RouteSections>
+		<RouteSection id="RS_32-CCR-_-y05-14-O-2">
+			<RouteLink id="RL_32-CCR-_-y05-14-O-2-1">
+				<From>
+					<StopPointRef>9300WMR1</StopPointRef>
+				</From>
+				<To>
+					<StopPointRef>9300WMP1</StopPointRef>
+				</To>
+				<Distance>371</Distance>
+				<Direction>outbound</Direction>
+			</RouteLink>
+		</RouteSection>
+		<RouteSection id="RS_32-CCR-_-y05-14-I-3">
+			<RouteLink id="RL_32-CCR-_-y05-14-I-3-1">
+				<From>
+					<StopPointRef>9300GNW1</StopPointRef>
+				</From>
+				<To>
+					<StopPointRef>9300TMP1</StopPointRef>
+				</To>
+				<Distance>7098</Distance>
+				<Direction>inbound</Direction>
+			</RouteLink>
+			<RouteLink id="RL_32-CCR-_-y05-14-I-3-2">
+				<From>
+					<StopPointRef>9300TMP1</StopPointRef>
+				</From>
+				<To>
+					<StopPointRef>9300WMR1</StopPointRef>
+				</To>
+				<Distance>3775</Distance>
+				<Direction>inbound</Direction>
+			</RouteLink>
+			<RouteLink id="RL_32-CCR-_-y05-14-I-3-3">
+				<From>
+					<StopPointRef>9300WMR1</StopPointRef>
+				</From>
+				<To>
+					<StopPointRef>9300WMP1</StopPointRef>
+				</To>
+				<Distance>371</Distance>
+				<Direction>inbound</Direction>
+			</RouteLink>
+		</RouteSection>
+		<RouteSection id="RS_32-CCR-_-y05-14-O-7">
+			<RouteLink id="RL_32-CCR-_-y05-14-O-7-1">
+				<From>
+					<StopPointRef>9300WMR1</StopPointRef>
+				</From>
+				<To>
+					<StopPointRef>9300WMP1</StopPointRef>
+				</To>
+				<Distance>371</Distance>
+				<Direction>outbound</Direction>
+			</RouteLink>
+			<RouteLink id="RL_32-CCR-_-y05-14-O-7-2">
+				<From>
+					<StopPointRef>9300WMP1</StopPointRef>
+				</From>
+				<To>
+					<StopPointRef>9300TMP1</StopPointRef>
+				</To>
+				<Distance>3511</Distance>
+				<Direction>outbound</Direction>
+			</RouteLink>
+			<RouteLink id="RL_32-CCR-_-y05-14-O-7-3">
+				<From>
+					<StopPointRef>9300TMP1</StopPointRef>
+				</From>
+				<To>
+					<StopPointRef>9300GNW1</StopPointRef>
+				</To>
+				<Distance>7098</Distance>
+				<Direction>outbound</Direction>
+			</RouteLink>
+		</RouteSection>
+		<RouteSection id="RS_32-CCR-_-y05-14-I-8">
+			<RouteLink id="RL_32-CCR-_-y05-14-I-8-1">
+				<From>
+					<StopPointRef>9300GNW1</StopPointRef>
+				</From>
+				<To>
+					<StopPointRef>9300TMP1</StopPointRef>
+				</To>
+				<Distance>7098</Distance>
+				<Direction>inbound</Direction>
+			</RouteLink>
+			<RouteLink id="RL_32-CCR-_-y05-14-I-8-2">
+				<From>
+					<StopPointRef>9300TMP1</StopPointRef>
+				</From>
+				<To>
+					<StopPointRef>9300WMR1</StopPointRef>
+				</To>
+				<Distance>3775</Distance>
+				<Direction>inbound</Direction>
+			</RouteLink>
+			<RouteLink id="RL_32-CCR-_-y05-14-I-8-3">
+				<From>
+					<StopPointRef>9300WMR1</StopPointRef>
+				</From>
+				<To>
+					<StopPointRef>9300WMP1</StopPointRef>
+				</To>
+				<Distance>371</Distance>
+				<Direction>inbound</Direction>
+			</RouteLink>
+		</RouteSection>
+		<RouteSection id="RS_32-CCR-_-y05-14-O-9">
+			<RouteLink id="RL_32-CCR-_-y05-14-O-9-1">
+				<From>
+					<StopPointRef>9300WMR1</StopPointRef>
+				</From>
+				<To>
+					<StopPointRef>9300WMP1</StopPointRef>
+				</To>
+				<Distance>371</Distance>
+				<Direction>outbound</Direction>
+			</RouteLink>
+			<RouteLink id="RL_32-CCR-_-y05-14-O-9-2">
+				<From>
+					<StopPointRef>9300WMP1</StopPointRef>
+				</From>
+				<To>
+					<StopPointRef>9300TMP1</StopPointRef>
+				</To>
+				<Distance>3511</Distance>
+				<Direction>outbound</Direction>
+			</RouteLink>
+			<RouteLink id="RL_32-CCR-_-y05-14-O-9-3">
+				<From>
+					<StopPointRef>9300TMP1</StopPointRef>
+				</From>
+				<To>
+					<StopPointRef>9300GNW1</StopPointRef>
+				</To>
+				<Distance>7098</Distance>
+				<Direction>outbound</Direction>
+			</RouteLink>
+		</RouteSection>
+		<RouteSection id="RS_32-CCR-_-y05-14-I-10">
+			<RouteLink id="RL_32-CCR-_-y05-14-I-10-1">
+				<From>
+					<StopPointRef>9300GNW1</StopPointRef>
+				</From>
+				<To>
+					<StopPointRef>9300WMR1</StopPointRef>
+				</To>
+				<Direction>inbound</Direction>
+			</RouteLink>
+		</RouteSection>
+		<RouteSection id="RS_32-CCR-_-y05-14-I-11">
+			<RouteLink id="RL_32-CCR-_-y05-14-I-11-1">
+				<From>
+					<StopPointRef>9300TMP1</StopPointRef>
+				</From>
+				<To>
+					<StopPointRef>9300WMR1</StopPointRef>
+				</To>
+				<Distance>3775</Distance>
+				<Direction>inbound</Direction>
+			</RouteLink>
+		</RouteSection>
+	</RouteSections>
+	<Routes>
+		<Route id="R_32-CCR-_-y05-14-O-2">
+			<PrivateCode>R_32-CCR-_-y05-14-O-2</PrivateCode>
+			<Description>Westminster Pier - London Eye Pier</Description>
+			<RouteSectionRef>RS_32-CCR-_-y05-14-O-2</RouteSectionRef>
+		</Route>
+		<Route id="R_32-CCR-_-y05-14-I-3">
+			<PrivateCode>R_32-CCR-_-y05-14-I-3</PrivateCode>
+			<Description>Greenwich Pier - London Eye Pier</Description>
+			<RouteSectionRef>RS_32-CCR-_-y05-14-I-3</RouteSectionRef>
+		</Route>
+		<Route id="R_32-CCR-_-y05-14-O-7">
+			<PrivateCode>R_32-CCR-_-y05-14-O-7</PrivateCode>
+			<Description>Westminster Pier - Greenwich Pier</Description>
+			<RouteSectionRef>RS_32-CCR-_-y05-14-O-7</RouteSectionRef>
+		</Route>
+		<Route id="R_32-CCR-_-y05-14-I-8">
+			<PrivateCode>R_32-CCR-_-y05-14-I-8</PrivateCode>
+			<Description>Greenwich Pier - London Eye Pier</Description>
+			<RouteSectionRef>RS_32-CCR-_-y05-14-I-8</RouteSectionRef>
+		</Route>
+		<Route id="R_32-CCR-_-y05-14-O-9">
+			<PrivateCode>R_32-CCR-_-y05-14-O-9</PrivateCode>
+			<Description>Westminster Pier - Greenwich Pier</Description>
+			<RouteSectionRef>RS_32-CCR-_-y05-14-O-9</RouteSectionRef>
+		</Route>
+		<Route id="R_32-CCR-_-y05-14-I-10">
+			<PrivateCode>R_32-CCR-_-y05-14-I-10</PrivateCode>
+			<Description>Greenwich Pier - Westminster Pier</Description>
+			<RouteSectionRef>RS_32-CCR-_-y05-14-I-10</RouteSectionRef>
+		</Route>
+		<Route id="R_32-CCR-_-y05-14-I-11">
+			<PrivateCode>R_32-CCR-_-y05-14-I-11</PrivateCode>
+			<Description>Tower Pier - Westminster Pier</Description>
+			<RouteSectionRef>RS_32-CCR-_-y05-14-I-11</RouteSectionRef>
+		</Route>
+	</Routes>
+	<JourneyPatternSections>
+		<JourneyPatternSection id="JPS_32-CCR-_-y05-14-23-7-O">
+			<JourneyPatternTimingLink id="JPL_32-CCR-_-y05-14-23-O-7-2">
+				<From SequenceNumber="1">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300WMR1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</From>
+				<To SequenceNumber="2">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300WMP1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</To>
+				<RouteLinkRef>RL_32-CCR-_-y05-14-O-7-1</RouteLinkRef>
+				<RunTime>PT15M</RunTime>
+			</JourneyPatternTimingLink>
+			<JourneyPatternTimingLink id="JPL_32-CCR-_-y05-14-23-O-7-3">
+				<From SequenceNumber="2">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300WMP1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</From>
+				<To SequenceNumber="3">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300TMP1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</To>
+				<RouteLinkRef>RL_32-CCR-_-y05-14-O-7-2</RouteLinkRef>
+				<RunTime>PT40M</RunTime>
+			</JourneyPatternTimingLink>
+			<JourneyPatternTimingLink id="JPL_32-CCR-_-y05-14-23-O-7-4">
+				<From SequenceNumber="3">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300TMP1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</From>
+				<To SequenceNumber="4">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300GNW1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</To>
+				<RouteLinkRef>RL_32-CCR-_-y05-14-O-7-3</RouteLinkRef>
+				<RunTime>PT55M</RunTime>
+			</JourneyPatternTimingLink>
+		</JourneyPatternSection>
+		<JourneyPatternSection id="JPS_32-CCR-_-y05-14-24-8-I">
+			<JourneyPatternTimingLink id="JPL_32-CCR-_-y05-14-24-I-8-2">
+				<From SequenceNumber="1">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300GNW1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</From>
+				<To SequenceNumber="2">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300TMP1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</To>
+				<RouteLinkRef>RL_32-CCR-_-y05-14-I-8-1</RouteLinkRef>
+				<RunTime>PT40M</RunTime>
+			</JourneyPatternTimingLink>
+			<JourneyPatternTimingLink id="JPL_32-CCR-_-y05-14-24-I-8-3">
+				<From SequenceNumber="2">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300TMP1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</From>
+				<To SequenceNumber="3">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300WMR1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</To>
+				<RouteLinkRef>RL_32-CCR-_-y05-14-I-8-2</RouteLinkRef>
+				<RunTime>PT40M</RunTime>
+			</JourneyPatternTimingLink>
+			<JourneyPatternTimingLink id="JPL_32-CCR-_-y05-14-24-I-8-4">
+				<From SequenceNumber="3">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300WMR1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</From>
+				<To SequenceNumber="4">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300WMP1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</To>
+				<RouteLinkRef>RL_32-CCR-_-y05-14-I-8-3</RouteLinkRef>
+				<RunTime>PT15M</RunTime>
+			</JourneyPatternTimingLink>
+		</JourneyPatternSection>
+		<JourneyPatternSection id="JPS_32-CCR-_-y05-14-9-3-I">
+			<JourneyPatternTimingLink id="JPL_32-CCR-_-y05-14-9-I-3-2">
+				<From SequenceNumber="1">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300GNW1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</From>
+				<To SequenceNumber="2">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300TMP1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</To>
+				<RouteLinkRef>RL_32-CCR-_-y05-14-I-3-1</RouteLinkRef>
+				<RunTime>PT40M</RunTime>
+			</JourneyPatternTimingLink>
+			<JourneyPatternTimingLink id="JPL_32-CCR-_-y05-14-9-I-3-3">
+				<From SequenceNumber="2">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300TMP1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</From>
+				<To SequenceNumber="3">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300WMR1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</To>
+				<RouteLinkRef>RL_32-CCR-_-y05-14-I-3-2</RouteLinkRef>
+				<RunTime>PT40M</RunTime>
+			</JourneyPatternTimingLink>
+			<JourneyPatternTimingLink id="JPL_32-CCR-_-y05-14-9-I-3-4">
+				<From SequenceNumber="3">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300WMR1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</From>
+				<To SequenceNumber="4">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300WMP1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</To>
+				<RouteLinkRef>RL_32-CCR-_-y05-14-I-3-3</RouteLinkRef>
+				<RunTime>PT15M</RunTime>
+			</JourneyPatternTimingLink>
+		</JourneyPatternSection>
+		<JourneyPatternSection id="JPS_32-CCR-_-y05-14-10-3-I">
+			<JourneyPatternTimingLink id="JPL_32-CCR-_-y05-14-10-I-3-2">
+				<From SequenceNumber="1">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300GNW1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</From>
+				<To SequenceNumber="2">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300TMP1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</To>
+				<RouteLinkRef>RL_32-CCR-_-y05-14-I-3-1</RouteLinkRef>
+				<RunTime>PT1H</RunTime>
+			</JourneyPatternTimingLink>
+			<JourneyPatternTimingLink id="JPL_32-CCR-_-y05-14-10-I-3-3">
+				<From SequenceNumber="2">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300TMP1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</From>
+				<To SequenceNumber="3">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300WMR1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</To>
+				<RouteLinkRef>RL_32-CCR-_-y05-14-I-3-2</RouteLinkRef>
+				<RunTime>PT40M</RunTime>
+			</JourneyPatternTimingLink>
+			<JourneyPatternTimingLink id="JPL_32-CCR-_-y05-14-10-I-3-4">
+				<From SequenceNumber="3">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300WMR1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</From>
+				<To SequenceNumber="4">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300WMP1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</To>
+				<RouteLinkRef>RL_32-CCR-_-y05-14-I-3-3</RouteLinkRef>
+				<RunTime>PT15M</RunTime>
+			</JourneyPatternTimingLink>
+		</JourneyPatternSection>
+		<JourneyPatternSection id="JPS_32-CCR-_-y05-14-24-9-O">
+			<JourneyPatternTimingLink id="JPL_32-CCR-_-y05-14-24-O-9-2">
+				<From SequenceNumber="1">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300WMR1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</From>
+				<To SequenceNumber="2">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300WMP1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</To>
+				<RouteLinkRef>RL_32-CCR-_-y05-14-O-9-1</RouteLinkRef>
+				<RunTime>PT15M</RunTime>
+			</JourneyPatternTimingLink>
+			<JourneyPatternTimingLink id="JPL_32-CCR-_-y05-14-24-O-9-3">
+				<From SequenceNumber="2">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300WMP1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</From>
+				<To SequenceNumber="3">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300TMP1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</To>
+				<RouteLinkRef>RL_32-CCR-_-y05-14-O-9-2</RouteLinkRef>
+				<RunTime>PT40M</RunTime>
+			</JourneyPatternTimingLink>
+			<JourneyPatternTimingLink id="JPL_32-CCR-_-y05-14-24-O-9-4">
+				<From SequenceNumber="3">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300TMP1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</From>
+				<To SequenceNumber="4">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300GNW1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</To>
+				<RouteLinkRef>RL_32-CCR-_-y05-14-O-9-3</RouteLinkRef>
+				<RunTime>PT55M</RunTime>
+			</JourneyPatternTimingLink>
+		</JourneyPatternSection>
+		<JourneyPatternSection id="JPS_32-CCR-_-y05-14-7-2-O">
+			<JourneyPatternTimingLink id="JPL_32-CCR-_-y05-14-7-O-2-2">
+				<From SequenceNumber="1">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300WMR1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</From>
+				<To SequenceNumber="2">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300WMP1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</To>
+				<RouteLinkRef>RL_32-CCR-_-y05-14-O-2-1</RouteLinkRef>
+				<RunTime>PT15M</RunTime>
+			</JourneyPatternTimingLink>
+		</JourneyPatternSection>
+		<JourneyPatternSection id="JPS_32-CCR-_-y05-14-25-10-I">
+			<JourneyPatternTimingLink id="JPL_32-CCR-_-y05-14-25-I-10-2">
+				<From SequenceNumber="1">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300GNW1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</From>
+				<To SequenceNumber="2">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300WMR1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</To>
+				<RouteLinkRef>RL_32-CCR-_-y05-14-I-10-1</RouteLinkRef>
+				<RunTime>PT1H20M</RunTime>
+			</JourneyPatternTimingLink>
+		</JourneyPatternSection>
+		<JourneyPatternSection id="JPS_32-CCR-_-y05-14-15-11-I">
+			<JourneyPatternTimingLink id="JPL_32-CCR-_-y05-14-15-I-11-2">
+				<From SequenceNumber="1">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300TMP1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</From>
+				<To SequenceNumber="2">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300WMR1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</To>
+				<RouteLinkRef>RL_32-CCR-_-y05-14-I-11-1</RouteLinkRef>
+				<RunTime>PT40M</RunTime>
+			</JourneyPatternTimingLink>
+		</JourneyPatternSection>
+	</JourneyPatternSections>
+	<Operators>
+		<Operator id="OId_CCR">
+			<OperatorCode>CCR</OperatorCode>
+			<OperatorShortName>City Cruises</OperatorShortName>
+			<OperatorNameOnLicence>City Cruises</OperatorNameOnLicence>
+			<TradingName>City Cruises</TradingName>
+		</Operator>
+	</Operators>
+	<Services>
+		<Service>
+			<ServiceCode>32-CCR-_-y05-14</ServiceCode>
+			<PrivateCode>32-CCR-_-y05-14</PrivateCode>
+			<Lines>
+				<Line id="32-CCR-_-y05-14">
+					<LineName>City Cruises</LineName>
+				</Line>
+			</Lines>
+			<OperatingPeriod>
+				<StartDate>2015-07-13</StartDate>
+				<EndDate>2015-09-06</EndDate>
+			</OperatingPeriod>
+			<OperatingProfile>
+				<RegularDayType>
+					<DaysOfWeek>
+						<MondayToSunday />
+					</DaysOfWeek>
+				</RegularDayType>
+			</OperatingProfile>
+			<RegisteredOperatorRef>OId_CCR</RegisteredOperatorRef>
+			<StopRequirements>
+				<NoNewStopsRequired />
+			</StopRequirements>
+			<Mode>ferry</Mode>
+			<Description>Westminster - Greenwich</Description>
+			<StandardService>
+				<Origin>Westminster Pier</Origin>
+				<Destination>Greenwich Pier</Destination>
+				<JourneyPattern id="JP_32-CCR-_-y05-14-23-O-7">
+					<Direction>outbound</Direction>
+					<Operational>
+						<VehicleType>
+							<VehicleTypeCode>FW</VehicleTypeCode>
+							<Description>Ferry (Wheelchair accessible)</Description>
+						</VehicleType>
+					</Operational>
+					<RouteRef>R_32-CCR-_-y05-14-O-7</RouteRef>
+					<JourneyPatternSectionRefs>JPS_32-CCR-_-y05-14-23-7-O</JourneyPatternSectionRefs>
+				</JourneyPattern>
+				<JourneyPattern id="JP_32-CCR-_-y05-14-24-I-8">
+					<Direction>inbound</Direction>
+					<Operational>
+						<VehicleType>
+							<VehicleTypeCode>FW</VehicleTypeCode>
+							<Description>Ferry (Wheelchair accessible)</Description>
+						</VehicleType>
+					</Operational>
+					<RouteRef>R_32-CCR-_-y05-14-I-8</RouteRef>
+					<JourneyPatternSectionRefs>JPS_32-CCR-_-y05-14-24-8-I</JourneyPatternSectionRefs>
+				</JourneyPattern>
+				<JourneyPattern id="JP_32-CCR-_-y05-14-9-I-3">
+					<Direction>inbound</Direction>
+					<Operational>
+						<VehicleType>
+							<VehicleTypeCode>FW</VehicleTypeCode>
+							<Description>Ferry (Wheelchair accessible)</Description>
+						</VehicleType>
+					</Operational>
+					<RouteRef>R_32-CCR-_-y05-14-I-3</RouteRef>
+					<JourneyPatternSectionRefs>JPS_32-CCR-_-y05-14-9-3-I</JourneyPatternSectionRefs>
+				</JourneyPattern>
+				<JourneyPattern id="JP_32-CCR-_-y05-14-10-I-3">
+					<Direction>inbound</Direction>
+					<Operational>
+						<VehicleType>
+							<VehicleTypeCode>FW</VehicleTypeCode>
+							<Description>Ferry (Wheelchair accessible)</Description>
+						</VehicleType>
+					</Operational>
+					<RouteRef>R_32-CCR-_-y05-14-I-3</RouteRef>
+					<JourneyPatternSectionRefs>JPS_32-CCR-_-y05-14-10-3-I</JourneyPatternSectionRefs>
+				</JourneyPattern>
+				<JourneyPattern id="JP_32-CCR-_-y05-14-24-O-9">
+					<Direction>outbound</Direction>
+					<Operational>
+						<VehicleType>
+							<VehicleTypeCode>FW</VehicleTypeCode>
+							<Description>Ferry (Wheelchair accessible)</Description>
+						</VehicleType>
+					</Operational>
+					<RouteRef>R_32-CCR-_-y05-14-O-9</RouteRef>
+					<JourneyPatternSectionRefs>JPS_32-CCR-_-y05-14-24-9-O</JourneyPatternSectionRefs>
+				</JourneyPattern>
+				<JourneyPattern id="JP_32-CCR-_-y05-14-7-O-2">
+					<Direction>outbound</Direction>
+					<Operational>
+						<VehicleType>
+							<VehicleTypeCode>FW</VehicleTypeCode>
+							<Description>Ferry (Wheelchair accessible)</Description>
+						</VehicleType>
+					</Operational>
+					<RouteRef>R_32-CCR-_-y05-14-O-2</RouteRef>
+					<JourneyPatternSectionRefs>JPS_32-CCR-_-y05-14-7-2-O</JourneyPatternSectionRefs>
+				</JourneyPattern>
+				<JourneyPattern id="JP_32-CCR-_-y05-14-25-I-10">
+					<Direction>inbound</Direction>
+					<Operational>
+						<VehicleType>
+							<VehicleTypeCode>FW</VehicleTypeCode>
+							<Description>Ferry (Wheelchair accessible)</Description>
+						</VehicleType>
+					</Operational>
+					<RouteRef>R_32-CCR-_-y05-14-I-10</RouteRef>
+					<JourneyPatternSectionRefs>JPS_32-CCR-_-y05-14-25-10-I</JourneyPatternSectionRefs>
+				</JourneyPattern>
+				<JourneyPattern id="JP_32-CCR-_-y05-14-15-I-11">
+					<Direction>inbound</Direction>
+					<Operational>
+						<VehicleType>
+							<VehicleTypeCode>FW</VehicleTypeCode>
+							<Description>Ferry (Wheelchair accessible)</Description>
+						</VehicleType>
+					</Operational>
+					<RouteRef>R_32-CCR-_-y05-14-I-11</RouteRef>
+					<JourneyPatternSectionRefs>JPS_32-CCR-_-y05-14-15-11-I</JourneyPatternSectionRefs>
+				</JourneyPattern>
+			</StandardService>
+		</Service>
+	</Services>
+	<VehicleJourneys>
+		<VehicleJourney>
+			<PrivateCode>tfl-32-CCR-_-y05-14-90-TA</PrivateCode>
+			<Operational>
+				<VehicleType>
+					<VehicleTypeCode>FW</VehicleTypeCode>
+					<Description>Ferry (Wheelchair accessible)</Description>
+				</VehicleType>
+			</Operational>
+			<VehicleJourneyCode>VJ_32-CCR-_-y05-14-90-TA</VehicleJourneyCode>
+			<ServiceRef>32-CCR-_-y05-14</ServiceRef>
+			<LineRef>32-CCR-_-y05-14</LineRef>
+			<JourneyPatternRef>JP_32-CCR-_-y05-14-23-O-7</JourneyPatternRef>
+			<DepartureTime>09:30:00</DepartureTime>
+		</VehicleJourney>
+		<VehicleJourney>
+			<PrivateCode>tfl-32-CCR-_-y05-14-110-TA</PrivateCode>
+			<Operational>
+				<VehicleType>
+					<VehicleTypeCode>FW</VehicleTypeCode>
+					<Description>Ferry (Wheelchair accessible)</Description>
+				</VehicleType>
+			</Operational>
+			<VehicleJourneyCode>VJ_32-CCR-_-y05-14-110-TA</VehicleJourneyCode>
+			<ServiceRef>32-CCR-_-y05-14</ServiceRef>
+			<LineRef>32-CCR-_-y05-14</LineRef>
+			<JourneyPatternRef>JP_32-CCR-_-y05-14-24-I-8</JourneyPatternRef>
+			<DepartureTime>10:10:00</DepartureTime>
+		</VehicleJourney>
+		<VehicleJourney>
+			<PrivateCode>tfl-32-CCR-_-y05-14-112-TA</PrivateCode>
+			<Operational>
+				<VehicleType>
+					<VehicleTypeCode>FW</VehicleTypeCode>
+					<Description>Ferry (Wheelchair accessible)</Description>
+				</VehicleType>
+			</Operational>
+			<VehicleJourneyCode>VJ_32-CCR-_-y05-14-112-TA</VehicleJourneyCode>
+			<ServiceRef>32-CCR-_-y05-14</ServiceRef>
+			<LineRef>32-CCR-_-y05-14</LineRef>
+			<JourneyPatternRef>JP_32-CCR-_-y05-14-9-I-3</JourneyPatternRef>
+			<DepartureTime>10:50:00</DepartureTime>
+		</VehicleJourney>
+		<VehicleJourney>
+			<PrivateCode>tfl-32-CCR-_-y05-14-113-TA</PrivateCode>
+			<Operational>
+				<VehicleType>
+					<VehicleTypeCode>FW</VehicleTypeCode>
+					<Description>Ferry (Wheelchair accessible)</Description>
+				</VehicleType>
+			</Operational>
+			<VehicleJourneyCode>VJ_32-CCR-_-y05-14-113-TA</VehicleJourneyCode>
+			<ServiceRef>32-CCR-_-y05-14</ServiceRef>
+			<LineRef>32-CCR-_-y05-14</LineRef>
+			<JourneyPatternRef>JP_32-CCR-_-y05-14-9-I-3</JourneyPatternRef>
+			<DepartureTime>11:20:00</DepartureTime>
+		</VehicleJourney>
+		<VehicleJourney>
+			<PrivateCode>tfl-32-CCR-_-y05-14-114-TA</PrivateCode>
+			<Operational>
+				<VehicleType>
+					<VehicleTypeCode>FW</VehicleTypeCode>
+					<Description>Ferry (Wheelchair accessible)</Description>
+				</VehicleType>
+			</Operational>
+			<VehicleJourneyCode>VJ_32-CCR-_-y05-14-114-TA</VehicleJourneyCode>
+			<ServiceRef>32-CCR-_-y05-14</ServiceRef>
+			<LineRef>32-CCR-_-y05-14</LineRef>
+			<JourneyPatternRef>JP_32-CCR-_-y05-14-9-I-3</JourneyPatternRef>
+			<DepartureTime>11:50:00</DepartureTime>
+		</VehicleJourney>
+		<VehicleJourney>
+			<PrivateCode>tfl-32-CCR-_-y05-14-115-TA</PrivateCode>
+			<Operational>
+				<VehicleType>
+					<VehicleTypeCode>FW</VehicleTypeCode>
+					<Description>Ferry (Wheelchair accessible)</Description>
+				</VehicleType>
+			</Operational>
+			<VehicleJourneyCode>VJ_32-CCR-_-y05-14-115-TA</VehicleJourneyCode>
+			<ServiceRef>32-CCR-_-y05-14</ServiceRef>
+			<LineRef>32-CCR-_-y05-14</LineRef>
+			<JourneyPatternRef>JP_32-CCR-_-y05-14-9-I-3</JourneyPatternRef>
+			<DepartureTime>12:20:00</DepartureTime>
+		</VehicleJourney>
+		<VehicleJourney>
+			<PrivateCode>tfl-32-CCR-_-y05-14-116-TA</PrivateCode>
+			<Operational>
+				<VehicleType>
+					<VehicleTypeCode>FW</VehicleTypeCode>
+					<Description>Ferry (Wheelchair accessible)</Description>
+				</VehicleType>
+			</Operational>
+			<VehicleJourneyCode>VJ_32-CCR-_-y05-14-116-TA</VehicleJourneyCode>
+			<ServiceRef>32-CCR-_-y05-14</ServiceRef>
+			<LineRef>32-CCR-_-y05-14</LineRef>
+			<JourneyPatternRef>JP_32-CCR-_-y05-14-9-I-3</JourneyPatternRef>
+			<DepartureTime>12:50:00</DepartureTime>
+		</VehicleJourney>
+		<VehicleJourney>
+			<PrivateCode>tfl-32-CCR-_-y05-14-117-TA</PrivateCode>
+			<Operational>
+				<VehicleType>
+					<VehicleTypeCode>FW</VehicleTypeCode>
+					<Description>Ferry (Wheelchair accessible)</Description>
+				</VehicleType>
+			</Operational>
+			<VehicleJourneyCode>VJ_32-CCR-_-y05-14-117-TA</VehicleJourneyCode>
+			<ServiceRef>32-CCR-_-y05-14</ServiceRef>
+			<LineRef>32-CCR-_-y05-14</LineRef>
+			<JourneyPatternRef>JP_32-CCR-_-y05-14-10-I-3</JourneyPatternRef>
+			<DepartureTime>13:00:00</DepartureTime>
+		</VehicleJourney>
+		<VehicleJourney>
+			<PrivateCode>tfl-32-CCR-_-y05-14-118-TA</PrivateCode>
+			<Operational>
+				<VehicleType>
+					<VehicleTypeCode>FW</VehicleTypeCode>
+					<Description>Ferry (Wheelchair accessible)</Description>
+				</VehicleType>
+			</Operational>
+			<VehicleJourneyCode>VJ_32-CCR-_-y05-14-118-TA</VehicleJourneyCode>
+			<ServiceRef>32-CCR-_-y05-14</ServiceRef>
+			<LineRef>32-CCR-_-y05-14</LineRef>
+			<JourneyPatternRef>JP_32-CCR-_-y05-14-9-I-3</JourneyPatternRef>
+			<DepartureTime>14:00:00</DepartureTime>
+		</VehicleJourney>
+		<VehicleJourney>
+			<PrivateCode>tfl-32-CCR-_-y05-14-119-TA</PrivateCode>
+			<Operational>
+				<VehicleType>
+					<VehicleTypeCode>FW</VehicleTypeCode>
+					<Description>Ferry (Wheelchair accessible)</Description>
+				</VehicleType>
+			</Operational>
+			<VehicleJourneyCode>VJ_32-CCR-_-y05-14-119-TA</VehicleJourneyCode>
+			<ServiceRef>32-CCR-_-y05-14</ServiceRef>
+			<LineRef>32-CCR-_-y05-14</LineRef>
+			<JourneyPatternRef>JP_32-CCR-_-y05-14-9-I-3</JourneyPatternRef>
+			<DepartureTime>14:30:00</DepartureTime>
+		</VehicleJourney>
+		<VehicleJourney>
+			<PrivateCode>tfl-32-CCR-_-y05-14-120-TA</PrivateCode>
+			<Operational>
+				<VehicleType>
+					<VehicleTypeCode>FW</VehicleTypeCode>
+					<Description>Ferry (Wheelchair accessible)</Description>
+				</VehicleType>
+			</Operational>
+			<VehicleJourneyCode>VJ_32-CCR-_-y05-14-120-TA</VehicleJourneyCode>
+			<ServiceRef>32-CCR-_-y05-14</ServiceRef>
+			<LineRef>32-CCR-_-y05-14</LineRef>
+			<JourneyPatternRef>JP_32-CCR-_-y05-14-9-I-3</JourneyPatternRef>
+			<DepartureTime>15:00:00</DepartureTime>
+		</VehicleJourney>
+		<VehicleJourney>
+			<PrivateCode>tfl-32-CCR-_-y05-14-121-TA</PrivateCode>
+			<Operational>
+				<VehicleType>
+					<VehicleTypeCode>FW</VehicleTypeCode>
+					<Description>Ferry (Wheelchair accessible)</Description>
+				</VehicleType>
+			</Operational>
+			<VehicleJourneyCode>VJ_32-CCR-_-y05-14-121-TA</VehicleJourneyCode>
+			<ServiceRef>32-CCR-_-y05-14</ServiceRef>
+			<LineRef>32-CCR-_-y05-14</LineRef>
+			<JourneyPatternRef>JP_32-CCR-_-y05-14-9-I-3</JourneyPatternRef>
+			<DepartureTime>15:30:00</DepartureTime>
+		</VehicleJourney>
+		<VehicleJourney>
+			<PrivateCode>tfl-32-CCR-_-y05-14-122-TA</PrivateCode>
+			<Operational>
+				<VehicleType>
+					<VehicleTypeCode>FW</VehicleTypeCode>
+					<Description>Ferry (Wheelchair accessible)</Description>
+				</VehicleType>
+			</Operational>
+			<VehicleJourneyCode>VJ_32-CCR-_-y05-14-122-TA</VehicleJourneyCode>
+			<ServiceRef>32-CCR-_-y05-14</ServiceRef>
+			<LineRef>32-CCR-_-y05-14</LineRef>
+			<JourneyPatternRef>JP_32-CCR-_-y05-14-9-I-3</JourneyPatternRef>
+			<DepartureTime>16:00:00</DepartureTime>
+		</VehicleJourney>
+		<VehicleJourney>
+			<PrivateCode>tfl-32-CCR-_-y05-14-123-TA</PrivateCode>
+			<Operational>
+				<VehicleType>
+					<VehicleTypeCode>FW</VehicleTypeCode>
+					<Description>Ferry (Wheelchair accessible)</Description>
+				</VehicleType>
+			</Operational>
+			<VehicleJourneyCode>VJ_32-CCR-_-y05-14-123-TA</VehicleJourneyCode>
+			<ServiceRef>32-CCR-_-y05-14</ServiceRef>
+			<LineRef>32-CCR-_-y05-14</LineRef>
+			<JourneyPatternRef>JP_32-CCR-_-y05-14-9-I-3</JourneyPatternRef>
+			<DepartureTime>16:30:00</DepartureTime>
+		</VehicleJourney>
+		<VehicleJourney>
+			<PrivateCode>tfl-32-CCR-_-y05-14-124-TA</PrivateCode>
+			<Operational>
+				<VehicleType>
+					<VehicleTypeCode>FW</VehicleTypeCode>
+					<Description>Ferry (Wheelchair accessible)</Description>
+				</VehicleType>
+			</Operational>
+			<VehicleJourneyCode>VJ_32-CCR-_-y05-14-124-TA</VehicleJourneyCode>
+			<ServiceRef>32-CCR-_-y05-14</ServiceRef>
+			<LineRef>32-CCR-_-y05-14</LineRef>
+			<JourneyPatternRef>JP_32-CCR-_-y05-14-9-I-3</JourneyPatternRef>
+			<DepartureTime>17:10:00</DepartureTime>
+		</VehicleJourney>
+		<VehicleJourney>
+			<PrivateCode>tfl-32-CCR-_-y05-14-125-TA</PrivateCode>
+			<Operational>
+				<VehicleType>
+					<VehicleTypeCode>FW</VehicleTypeCode>
+					<Description>Ferry (Wheelchair accessible)</Description>
+				</VehicleType>
+			</Operational>
+			<VehicleJourneyCode>VJ_32-CCR-_-y05-14-125-TA</VehicleJourneyCode>
+			<ServiceRef>32-CCR-_-y05-14</ServiceRef>
+			<LineRef>32-CCR-_-y05-14</LineRef>
+			<JourneyPatternRef>JP_32-CCR-_-y05-14-9-I-3</JourneyPatternRef>
+			<DepartureTime>17:40:00</DepartureTime>
+		</VehicleJourney>
+		<VehicleJourney>
+			<PrivateCode>tfl-32-CCR-_-y05-14-126-TA</PrivateCode>
+			<Operational>
+				<VehicleType>
+					<VehicleTypeCode>FW</VehicleTypeCode>
+					<Description>Ferry (Wheelchair accessible)</Description>
+				</VehicleType>
+			</Operational>
+			<VehicleJourneyCode>VJ_32-CCR-_-y05-14-126-TA</VehicleJourneyCode>
+			<ServiceRef>32-CCR-_-y05-14</ServiceRef>
+			<LineRef>32-CCR-_-y05-14</LineRef>
+			<JourneyPatternRef>JP_32-CCR-_-y05-14-23-O-7</JourneyPatternRef>
+			<DepartureTime>10:00:00</DepartureTime>
+		</VehicleJourney>
+		<VehicleJourney>
+			<PrivateCode>tfl-32-CCR-_-y05-14-127-TA</PrivateCode>
+			<Operational>
+				<VehicleType>
+					<VehicleTypeCode>FW</VehicleTypeCode>
+					<Description>Ferry (Wheelchair accessible)</Description>
+				</VehicleType>
+			</Operational>
+			<VehicleJourneyCode>VJ_32-CCR-_-y05-14-127-TA</VehicleJourneyCode>
+			<ServiceRef>32-CCR-_-y05-14</ServiceRef>
+			<LineRef>32-CCR-_-y05-14</LineRef>
+			<JourneyPatternRef>JP_32-CCR-_-y05-14-23-O-7</JourneyPatternRef>
+			<DepartureTime>10:30:00</DepartureTime>
+		</VehicleJourney>
+		<VehicleJourney>
+			<PrivateCode>tfl-32-CCR-_-y05-14-128-TA</PrivateCode>
+			<Operational>
+				<VehicleType>
+					<VehicleTypeCode>FW</VehicleTypeCode>
+					<Description>Ferry (Wheelchair accessible)</Description>
+				</VehicleType>
+			</Operational>
+			<VehicleJourneyCode>VJ_32-CCR-_-y05-14-128-TA</VehicleJourneyCode>
+			<ServiceRef>32-CCR-_-y05-14</ServiceRef>
+			<LineRef>32-CCR-_-y05-14</LineRef>
+			<JourneyPatternRef>JP_32-CCR-_-y05-14-23-O-7</JourneyPatternRef>
+			<DepartureTime>11:00:00</DepartureTime>
+		</VehicleJourney>
+		<VehicleJourney>
+			<PrivateCode>tfl-32-CCR-_-y05-14-129-TA</PrivateCode>
+			<Operational>
+				<VehicleType>
+					<VehicleTypeCode>FW</VehicleTypeCode>
+					<Description>Ferry (Wheelchair accessible)</Description>
+				</VehicleType>
+			</Operational>
+			<VehicleJourneyCode>VJ_32-CCR-_-y05-14-129-TA</VehicleJourneyCode>
+			<ServiceRef>32-CCR-_-y05-14</ServiceRef>
+			<LineRef>32-CCR-_-y05-14</LineRef>
+			<JourneyPatternRef>JP_32-CCR-_-y05-14-23-O-7</JourneyPatternRef>
+			<DepartureTime>11:30:00</DepartureTime>
+		</VehicleJourney>
+		<VehicleJourney>
+			<PrivateCode>tfl-32-CCR-_-y05-14-130-TA</PrivateCode>
+			<Operational>
+				<VehicleType>
+					<VehicleTypeCode>FW</VehicleTypeCode>
+					<Description>Ferry (Wheelchair accessible)</Description>
+				</VehicleType>
+			</Operational>
+			<VehicleJourneyCode>VJ_32-CCR-_-y05-14-130-TA</VehicleJourneyCode>
+			<ServiceRef>32-CCR-_-y05-14</ServiceRef>
+			<LineRef>32-CCR-_-y05-14</LineRef>
+			<JourneyPatternRef>JP_32-CCR-_-y05-14-23-O-7</JourneyPatternRef>
+			<DepartureTime>12:10:00</DepartureTime>
+		</VehicleJourney>
+		<VehicleJourney>
+			<PrivateCode>tfl-32-CCR-_-y05-14-131-TA</PrivateCode>
+			<Operational>
+				<VehicleType>
+					<VehicleTypeCode>FW</VehicleTypeCode>
+					<Description>Ferry (Wheelchair accessible)</Description>
+				</VehicleType>
+			</Operational>
+			<VehicleJourneyCode>VJ_32-CCR-_-y05-14-131-TA</VehicleJourneyCode>
+			<ServiceRef>32-CCR-_-y05-14</ServiceRef>
+			<LineRef>32-CCR-_-y05-14</LineRef>
+			<JourneyPatternRef>JP_32-CCR-_-y05-14-23-O-7</JourneyPatternRef>
+			<DepartureTime>12:40:00</DepartureTime>
+		</VehicleJourney>
+		<VehicleJourney>
+			<PrivateCode>tfl-32-CCR-_-y05-14-132-TA</PrivateCode>
+			<Operational>
+				<VehicleType>
+					<VehicleTypeCode>FW</VehicleTypeCode>
+					<Description>Ferry (Wheelchair accessible)</Description>
+				</VehicleType>
+			</Operational>
+			<VehicleJourneyCode>VJ_32-CCR-_-y05-14-132-TA</VehicleJourneyCode>
+			<ServiceRef>32-CCR-_-y05-14</ServiceRef>
+			<LineRef>32-CCR-_-y05-14</LineRef>
+			<JourneyPatternRef>JP_32-CCR-_-y05-14-23-O-7</JourneyPatternRef>
+			<DepartureTime>13:10:00</DepartureTime>
+		</VehicleJourney>
+		<VehicleJourney>
+			<PrivateCode>tfl-32-CCR-_-y05-14-133-TA</PrivateCode>
+			<Operational>
+				<VehicleType>
+					<VehicleTypeCode>FW</VehicleTypeCode>
+					<Description>Ferry (Wheelchair accessible)</Description>
+				</VehicleType>
+			</Operational>
+			<VehicleJourneyCode>VJ_32-CCR-_-y05-14-133-TA</VehicleJourneyCode>
+			<ServiceRef>32-CCR-_-y05-14</ServiceRef>
+			<LineRef>32-CCR-_-y05-14</LineRef>
+			<JourneyPatternRef>JP_32-CCR-_-y05-14-23-O-7</JourneyPatternRef>
+			<DepartureTime>13:40:00</DepartureTime>
+		</VehicleJourney>
+		<VehicleJourney>
+			<PrivateCode>tfl-32-CCR-_-y05-14-134-TA</PrivateCode>
+			<Operational>
+				<VehicleType>
+					<VehicleTypeCode>FW</VehicleTypeCode>
+					<Description>Ferry (Wheelchair accessible)</Description>
+				</VehicleType>
+			</Operational>
+			<VehicleJourneyCode>VJ_32-CCR-_-y05-14-134-TA</VehicleJourneyCode>
+			<ServiceRef>32-CCR-_-y05-14</ServiceRef>
+			<LineRef>32-CCR-_-y05-14</LineRef>
+			<JourneyPatternRef>JP_32-CCR-_-y05-14-23-O-7</JourneyPatternRef>
+			<DepartureTime>14:10:00</DepartureTime>
+		</VehicleJourney>
+		<VehicleJourney>
+			<PrivateCode>tfl-32-CCR-_-y05-14-135-TA</PrivateCode>
+			<Operational>
+				<VehicleType>
+					<VehicleTypeCode>FW</VehicleTypeCode>
+					<Description>Ferry (Wheelchair accessible)</Description>
+				</VehicleType>
+			</Operational>
+			<VehicleJourneyCode>VJ_32-CCR-_-y05-14-135-TA</VehicleJourneyCode>
+			<ServiceRef>32-CCR-_-y05-14</ServiceRef>
+			<LineRef>32-CCR-_-y05-14</LineRef>
+			<JourneyPatternRef>JP_32-CCR-_-y05-14-23-O-7</JourneyPatternRef>
+			<DepartureTime>14:40:00</DepartureTime>
+		</VehicleJourney>
+		<VehicleJourney>
+			<PrivateCode>tfl-32-CCR-_-y05-14-136-TA</PrivateCode>
+			<Operational>
+				<VehicleType>
+					<VehicleTypeCode>FW</VehicleTypeCode>
+					<Description>Ferry (Wheelchair accessible)</Description>
+				</VehicleType>
+			</Operational>
+			<VehicleJourneyCode>VJ_32-CCR-_-y05-14-136-TA</VehicleJourneyCode>
+			<ServiceRef>32-CCR-_-y05-14</ServiceRef>
+			<LineRef>32-CCR-_-y05-14</LineRef>
+			<JourneyPatternRef>JP_32-CCR-_-y05-14-23-O-7</JourneyPatternRef>
+			<DepartureTime>15:20:00</DepartureTime>
+		</VehicleJourney>
+		<VehicleJourney>
+			<PrivateCode>tfl-32-CCR-_-y05-14-137-TA</PrivateCode>
+			<Operational>
+				<VehicleType>
+					<VehicleTypeCode>FW</VehicleTypeCode>
+					<Description>Ferry (Wheelchair accessible)</Description>
+				</VehicleType>
+			</Operational>
+			<VehicleJourneyCode>VJ_32-CCR-_-y05-14-137-TA</VehicleJourneyCode>
+			<ServiceRef>32-CCR-_-y05-14</ServiceRef>
+			<LineRef>32-CCR-_-y05-14</LineRef>
+			<JourneyPatternRef>JP_32-CCR-_-y05-14-23-O-7</JourneyPatternRef>
+			<DepartureTime>15:50:00</DepartureTime>
+		</VehicleJourney>
+		<VehicleJourney>
+			<PrivateCode>tfl-32-CCR-_-y05-14-138-TA</PrivateCode>
+			<Operational>
+				<VehicleType>
+					<VehicleTypeCode>FW</VehicleTypeCode>
+					<Description>Ferry (Wheelchair accessible)</Description>
+				</VehicleType>
+			</Operational>
+			<VehicleJourneyCode>VJ_32-CCR-_-y05-14-138-TA</VehicleJourneyCode>
+			<ServiceRef>32-CCR-_-y05-14</ServiceRef>
+			<LineRef>32-CCR-_-y05-14</LineRef>
+			<JourneyPatternRef>JP_32-CCR-_-y05-14-24-O-9</JourneyPatternRef>
+			<DepartureTime>16:20:00</DepartureTime>
+		</VehicleJourney>
+		<VehicleJourney>
+			<PrivateCode>tfl-32-CCR-_-y05-14-139-TA</PrivateCode>
+			<Operational>
+				<VehicleType>
+					<VehicleTypeCode>FW</VehicleTypeCode>
+					<Description>Ferry (Wheelchair accessible)</Description>
+				</VehicleType>
+			</Operational>
+			<VehicleJourneyCode>VJ_32-CCR-_-y05-14-139-TA</VehicleJourneyCode>
+			<ServiceRef>32-CCR-_-y05-14</ServiceRef>
+			<LineRef>32-CCR-_-y05-14</LineRef>
+			<JourneyPatternRef>JP_32-CCR-_-y05-14-24-O-9</JourneyPatternRef>
+			<DepartureTime>16:50:00</DepartureTime>
+		</VehicleJourney>
+		<VehicleJourney>
+			<PrivateCode>tfl-32-CCR-_-y05-14-140-TA</PrivateCode>
+			<Operational>
+				<VehicleType>
+					<VehicleTypeCode>FW</VehicleTypeCode>
+					<Description>Ferry (Wheelchair accessible)</Description>
+				</VehicleType>
+			</Operational>
+			<VehicleJourneyCode>VJ_32-CCR-_-y05-14-140-TA</VehicleJourneyCode>
+			<ServiceRef>32-CCR-_-y05-14</ServiceRef>
+			<LineRef>32-CCR-_-y05-14</LineRef>
+			<JourneyPatternRef>JP_32-CCR-_-y05-14-7-O-2</JourneyPatternRef>
+			<DepartureTime>17:20:00</DepartureTime>
+		</VehicleJourney>
+		<VehicleJourney>
+			<PrivateCode>tfl-32-CCR-_-y05-14-141-TA</PrivateCode>
+			<Operational>
+				<VehicleType>
+					<VehicleTypeCode>FW</VehicleTypeCode>
+					<Description>Ferry (Wheelchair accessible)</Description>
+				</VehicleType>
+			</Operational>
+			<VehicleJourneyCode>VJ_32-CCR-_-y05-14-141-TA</VehicleJourneyCode>
+			<ServiceRef>32-CCR-_-y05-14</ServiceRef>
+			<LineRef>32-CCR-_-y05-14</LineRef>
+			<JourneyPatternRef>JP_32-CCR-_-y05-14-7-O-2</JourneyPatternRef>
+			<DepartureTime>17:50:00</DepartureTime>
+		</VehicleJourney>
+		<VehicleJourney>
+			<PrivateCode>tfl-32-CCR-_-y05-14-142-TA</PrivateCode>
+			<Operational>
+				<VehicleType>
+					<VehicleTypeCode>FW</VehicleTypeCode>
+					<Description>Ferry (Wheelchair accessible)</Description>
+				</VehicleType>
+			</Operational>
+			<VehicleJourneyCode>VJ_32-CCR-_-y05-14-142-TA</VehicleJourneyCode>
+			<ServiceRef>32-CCR-_-y05-14</ServiceRef>
+			<LineRef>32-CCR-_-y05-14</LineRef>
+			<JourneyPatternRef>JP_32-CCR-_-y05-14-7-O-2</JourneyPatternRef>
+			<DepartureTime>18:30:00</DepartureTime>
+		</VehicleJourney>
+		<VehicleJourney>
+			<PrivateCode>tfl-32-CCR-_-y05-14-143-TA</PrivateCode>
+			<Operational>
+				<VehicleType>
+					<VehicleTypeCode>FW</VehicleTypeCode>
+					<Description>Ferry (Wheelchair accessible)</Description>
+				</VehicleType>
+			</Operational>
+			<VehicleJourneyCode>VJ_32-CCR-_-y05-14-143-TA</VehicleJourneyCode>
+			<ServiceRef>32-CCR-_-y05-14</ServiceRef>
+			<LineRef>32-CCR-_-y05-14</LineRef>
+			<JourneyPatternRef>JP_32-CCR-_-y05-14-7-O-2</JourneyPatternRef>
+			<DepartureTime>19:00:00</DepartureTime>
+		</VehicleJourney>
+		<VehicleJourney>
+			<PrivateCode>tfl-32-CCR-_-y05-14-144-TA</PrivateCode>
+			<Operational>
+				<VehicleType>
+					<VehicleTypeCode>FW</VehicleTypeCode>
+					<Description>Ferry (Wheelchair accessible)</Description>
+				</VehicleType>
+			</Operational>
+			<VehicleJourneyCode>VJ_32-CCR-_-y05-14-144-TA</VehicleJourneyCode>
+			<ServiceRef>32-CCR-_-y05-14</ServiceRef>
+			<LineRef>32-CCR-_-y05-14</LineRef>
+			<JourneyPatternRef>JP_32-CCR-_-y05-14-9-I-3</JourneyPatternRef>
+			<DepartureTime>18:10:00</DepartureTime>
+		</VehicleJourney>
+		<VehicleJourney>
+			<PrivateCode>tfl-32-CCR-_-y05-14-145-TA</PrivateCode>
+			<Operational>
+				<VehicleType>
+					<VehicleTypeCode>FW</VehicleTypeCode>
+					<Description>Ferry (Wheelchair accessible)</Description>
+				</VehicleType>
+			</Operational>
+			<VehicleJourneyCode>VJ_32-CCR-_-y05-14-145-TA</VehicleJourneyCode>
+			<ServiceRef>32-CCR-_-y05-14</ServiceRef>
+			<LineRef>32-CCR-_-y05-14</LineRef>
+			<JourneyPatternRef>JP_32-CCR-_-y05-14-25-I-10</JourneyPatternRef>
+			<DepartureTime>18:40:00</DepartureTime>
+		</VehicleJourney>
+		<VehicleJourney>
+			<PrivateCode>tfl-32-CCR-_-y05-14-146-TA</PrivateCode>
+			<Operational>
+				<VehicleType>
+					<VehicleTypeCode>FW</VehicleTypeCode>
+					<Description>Ferry (Wheelchair accessible)</Description>
+				</VehicleType>
+			</Operational>
+			<VehicleJourneyCode>VJ_32-CCR-_-y05-14-146-TA</VehicleJourneyCode>
+			<ServiceRef>32-CCR-_-y05-14</ServiceRef>
+			<LineRef>32-CCR-_-y05-14</LineRef>
+			<JourneyPatternRef>JP_32-CCR-_-y05-14-15-I-11</JourneyPatternRef>
+			<DepartureTime>19:20:00</DepartureTime>
+		</VehicleJourney>
+	</VehicleJourneys>
+</TransXChange>

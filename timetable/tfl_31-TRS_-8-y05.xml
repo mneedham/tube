@@ -1,0 +1,887 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<TransXChange CreationDateTime="2015-05-21T03:37:22.9728973+01:00" ModificationDateTime="2015-05-21T03:37:22.9728973+01:00" Modification="new" FileName="tfl_31-TRS_-8-y05.xml" RevisionNumber="3" SchemaVersion="2.1" xml:lang="en" xsi:schemaLocation="http://www.transxchange.org.uk/ http://www.transxchange.org.uk/schema/2.1/TransXChange_general.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.transxchange.org.uk/">
+	<NptgLocalities>
+		<AnnotatedNptgLocalityRef>
+			<NptgLocalityRef>E0034338</NptgLocalityRef>
+			<LocalityName>Woolwich</LocalityName>
+		</AnnotatedNptgLocalityRef>
+		<AnnotatedNptgLocalityRef>
+			<NptgLocalityRef>E0034328</NptgLocalityRef>
+			<LocalityName>Greenwich (London)</LocalityName>
+		</AnnotatedNptgLocalityRef>
+		<AnnotatedNptgLocalityRef>
+			<NptgLocalityRef>E0034863</NptgLocalityRef>
+			<LocalityName>Wapping (London)</LocalityName>
+		</AnnotatedNptgLocalityRef>
+		<AnnotatedNptgLocalityRef>
+			<NptgLocalityRef>E0034961</NptgLocalityRef>
+			<LocalityName>Westminster</LocalityName>
+		</AnnotatedNptgLocalityRef>
+	</NptgLocalities>
+	<StopPoints>
+		<StopPoint CreationDateTime="2015-04-22T00:00:00">
+			<AtcoCode>9300BGP1</AtcoCode>
+			<Descriptor>
+				<CommonName>Barrier Gardens Pier</CommonName>
+			</Descriptor>
+			<Place>
+				<NptgLocalityRef>E0034338</NptgLocalityRef>
+				<Location Precision="1m">
+					<Easting>541869</Easting>
+					<Northing>179397</Northing>
+				</Location>
+			</Place>
+			<StopClassification>
+				<StopType>FBT</StopType>
+				<OffStreet>
+					<Ferry>
+						<Berth />
+					</Ferry>
+				</OffStreet>
+			</StopClassification>
+			<AdministrativeAreaRef>000</AdministrativeAreaRef>
+			<Notes>Barrier Gardens Pier</Notes>
+		</StopPoint>
+		<StopPoint CreationDateTime="2013-08-29T00:00:00">
+			<AtcoCode>9300GNW1</AtcoCode>
+			<Descriptor>
+				<CommonName>Greenwich Pier</CommonName>
+			</Descriptor>
+			<Place>
+				<NptgLocalityRef>E0034328</NptgLocalityRef>
+				<Location Precision="1m">
+					<Easting>538310</Easting>
+					<Northing>178012</Northing>
+				</Location>
+			</Place>
+			<StopClassification>
+				<StopType>FBT</StopType>
+				<OffStreet>
+					<Ferry>
+						<Berth />
+					</Ferry>
+				</OffStreet>
+			</StopClassification>
+			<AdministrativeAreaRef>000</AdministrativeAreaRef>
+			<Notes>Greenwich Pier</Notes>
+		</StopPoint>
+		<StopPoint CreationDateTime="2013-08-29T00:00:00">
+			<AtcoCode>9300STC1</AtcoCode>
+			<Descriptor>
+				<CommonName>St. Katharine's Pier</CommonName>
+			</Descriptor>
+			<Place>
+				<NptgLocalityRef>E0034863</NptgLocalityRef>
+				<Location Precision="1m">
+					<Easting>533792</Easting>
+					<Northing>180338</Northing>
+				</Location>
+			</Place>
+			<StopClassification>
+				<StopType>FBT</StopType>
+				<OffStreet>
+					<Ferry>
+						<Berth />
+					</Ferry>
+				</OffStreet>
+			</StopClassification>
+			<AdministrativeAreaRef>000</AdministrativeAreaRef>
+			<Notes>St. Katharine's Pier</Notes>
+		</StopPoint>
+		<StopPoint CreationDateTime="2013-08-29T00:00:00">
+			<AtcoCode>9300WMR1</AtcoCode>
+			<Descriptor>
+				<CommonName>Westminster Pier</CommonName>
+			</Descriptor>
+			<Place>
+				<NptgLocalityRef>E0034961</NptgLocalityRef>
+				<Location Precision="1m">
+					<Easting>530351</Easting>
+					<Northing>179748</Northing>
+				</Location>
+			</Place>
+			<StopClassification>
+				<StopType>FBT</StopType>
+				<OffStreet>
+					<Ferry>
+						<Berth />
+					</Ferry>
+				</OffStreet>
+			</StopClassification>
+			<AdministrativeAreaRef>000</AdministrativeAreaRef>
+			<Notes>Westminster Pier</Notes>
+		</StopPoint>
+	</StopPoints>
+	<RouteSections>
+		<RouteSection id="RS_31-TRS-_-y05-8-O-1">
+			<RouteLink id="RL_31-TRS-_-y05-8-O-1-1">
+				<From>
+					<StopPointRef>9300WMR1</StopPointRef>
+				</From>
+				<To>
+					<StopPointRef>9300STC1</StopPointRef>
+				</To>
+				<Distance>4129</Distance>
+				<Direction>outbound</Direction>
+			</RouteLink>
+			<RouteLink id="RL_31-TRS-_-y05-8-O-1-2">
+				<From>
+					<StopPointRef>9300STC1</StopPointRef>
+				</From>
+				<To>
+					<StopPointRef>9300GNW1</StopPointRef>
+				</To>
+				<Distance>6785</Distance>
+				<Direction>outbound</Direction>
+			</RouteLink>
+		</RouteSection>
+		<RouteSection id="RS_31-TRS-_-y05-8-I-3">
+			<RouteLink id="RL_31-TRS-_-y05-8-I-3-1">
+				<From>
+					<StopPointRef>9300GNW1</StopPointRef>
+				</From>
+				<To>
+					<StopPointRef>9300STC1</StopPointRef>
+				</To>
+				<Distance>6785</Distance>
+				<Direction>inbound</Direction>
+			</RouteLink>
+			<RouteLink id="RL_31-TRS-_-y05-8-I-3-2">
+				<From>
+					<StopPointRef>9300STC1</StopPointRef>
+				</From>
+				<To>
+					<StopPointRef>9300WMR1</StopPointRef>
+				</To>
+				<Distance>4129</Distance>
+				<Direction>inbound</Direction>
+			</RouteLink>
+		</RouteSection>
+		<RouteSection id="RS_31-TRS-_-y05-8-O-4">
+			<RouteLink id="RL_31-TRS-_-y05-8-O-4-1">
+				<From>
+					<StopPointRef>9300WMR1</StopPointRef>
+				</From>
+				<To>
+					<StopPointRef>9300STC1</StopPointRef>
+				</To>
+				<Distance>4129</Distance>
+				<Direction>outbound</Direction>
+			</RouteLink>
+			<RouteLink id="RL_31-TRS-_-y05-8-O-4-2">
+				<From>
+					<StopPointRef>9300STC1</StopPointRef>
+				</From>
+				<To>
+					<StopPointRef>9300GNW1</StopPointRef>
+				</To>
+				<Distance>6785</Distance>
+				<Direction>outbound</Direction>
+			</RouteLink>
+			<RouteLink id="RL_31-TRS-_-y05-8-O-4-3">
+				<From>
+					<StopPointRef>9300GNW1</StopPointRef>
+				</From>
+				<To>
+					<StopPointRef>9300BGP1</StopPointRef>
+				</To>
+				<Direction>outbound</Direction>
+			</RouteLink>
+		</RouteSection>
+		<RouteSection id="RS_31-TRS-_-y05-8-I-5">
+			<RouteLink id="RL_31-TRS-_-y05-8-I-5-1">
+				<From>
+					<StopPointRef>9300BGP1</StopPointRef>
+				</From>
+				<To>
+					<StopPointRef>9300GNW1</StopPointRef>
+				</To>
+				<Direction>inbound</Direction>
+			</RouteLink>
+			<RouteLink id="RL_31-TRS-_-y05-8-I-5-2">
+				<From>
+					<StopPointRef>9300GNW1</StopPointRef>
+				</From>
+				<To>
+					<StopPointRef>9300STC1</StopPointRef>
+				</To>
+				<Distance>6785</Distance>
+				<Direction>inbound</Direction>
+			</RouteLink>
+			<RouteLink id="RL_31-TRS-_-y05-8-I-5-3">
+				<From>
+					<StopPointRef>9300STC1</StopPointRef>
+				</From>
+				<To>
+					<StopPointRef>9300WMR1</StopPointRef>
+				</To>
+				<Distance>4129</Distance>
+				<Direction>inbound</Direction>
+			</RouteLink>
+		</RouteSection>
+	</RouteSections>
+	<Routes>
+		<Route id="R_31-TRS-_-y05-8-O-1">
+			<PrivateCode>R_31-TRS-_-y05-8-O-1</PrivateCode>
+			<Description>Westminster Pier - Greenwich Pier</Description>
+			<RouteSectionRef>RS_31-TRS-_-y05-8-O-1</RouteSectionRef>
+		</Route>
+		<Route id="R_31-TRS-_-y05-8-I-3">
+			<PrivateCode>R_31-TRS-_-y05-8-I-3</PrivateCode>
+			<Description>Greenwich Pier - Westminster Pier</Description>
+			<RouteSectionRef>RS_31-TRS-_-y05-8-I-3</RouteSectionRef>
+		</Route>
+		<Route id="R_31-TRS-_-y05-8-O-4">
+			<PrivateCode>R_31-TRS-_-y05-8-O-4</PrivateCode>
+			<Description>Westminster Pier - Barrier Gardens Pier</Description>
+			<RouteSectionRef>RS_31-TRS-_-y05-8-O-4</RouteSectionRef>
+		</Route>
+		<Route id="R_31-TRS-_-y05-8-I-5">
+			<PrivateCode>R_31-TRS-_-y05-8-I-5</PrivateCode>
+			<Description>Barrier Gardens Pier - Westminster Pier</Description>
+			<RouteSectionRef>RS_31-TRS-_-y05-8-I-5</RouteSectionRef>
+		</Route>
+	</Routes>
+	<JourneyPatternSections>
+		<JourneyPatternSection id="JPS_31-TRS-_-y05-8-1-1-O">
+			<JourneyPatternTimingLink id="JPL_31-TRS-_-y05-8-1-O-1-2">
+				<From SequenceNumber="1">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300WMR1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</From>
+				<To SequenceNumber="2">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300STC1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</To>
+				<RouteLinkRef>RL_31-TRS-_-y05-8-O-1-1</RouteLinkRef>
+				<RunTime>PT20M</RunTime>
+			</JourneyPatternTimingLink>
+			<JourneyPatternTimingLink id="JPL_31-TRS-_-y05-8-1-O-1-3">
+				<From SequenceNumber="2">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300STC1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</From>
+				<To SequenceNumber="3">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300GNW1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</To>
+				<RouteLinkRef>RL_31-TRS-_-y05-8-O-1-2</RouteLinkRef>
+				<RunTime>PT40M</RunTime>
+			</JourneyPatternTimingLink>
+		</JourneyPatternSection>
+		<JourneyPatternSection id="JPS_31-TRS-_-y05-8-4-3-I">
+			<JourneyPatternTimingLink id="JPL_31-TRS-_-y05-8-4-I-3-2">
+				<From SequenceNumber="1">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300GNW1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</From>
+				<To SequenceNumber="2">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300STC1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</To>
+				<RouteLinkRef>RL_31-TRS-_-y05-8-I-3-1</RouteLinkRef>
+				<RunTime>PT35M</RunTime>
+			</JourneyPatternTimingLink>
+			<JourneyPatternTimingLink id="JPL_31-TRS-_-y05-8-4-I-3-3">
+				<From SequenceNumber="2">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300STC1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</From>
+				<To SequenceNumber="3">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300WMR1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</To>
+				<RouteLinkRef>RL_31-TRS-_-y05-8-I-3-2</RouteLinkRef>
+				<RunTime>PT25M</RunTime>
+			</JourneyPatternTimingLink>
+		</JourneyPatternSection>
+		<JourneyPatternSection id="JPS_31-TRS-_-y05-8-6-5-I">
+			<JourneyPatternTimingLink id="JPL_31-TRS-_-y05-8-6-I-5-2">
+				<From SequenceNumber="1">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300BGP1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</From>
+				<To SequenceNumber="2">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300GNW1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</To>
+				<RouteLinkRef>RL_31-TRS-_-y05-8-I-5-1</RouteLinkRef>
+				<RunTime>PT30M</RunTime>
+			</JourneyPatternTimingLink>
+			<JourneyPatternTimingLink id="JPL_31-TRS-_-y05-8-6-I-5-3">
+				<From SequenceNumber="2">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300GNW1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</From>
+				<To SequenceNumber="3">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300STC1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</To>
+				<RouteLinkRef>RL_31-TRS-_-y05-8-I-5-2</RouteLinkRef>
+				<RunTime>PT35M</RunTime>
+			</JourneyPatternTimingLink>
+			<JourneyPatternTimingLink id="JPL_31-TRS-_-y05-8-6-I-5-4">
+				<From SequenceNumber="3">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300STC1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</From>
+				<To SequenceNumber="4">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300WMR1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</To>
+				<RouteLinkRef>RL_31-TRS-_-y05-8-I-5-3</RouteLinkRef>
+				<RunTime>PT25M</RunTime>
+			</JourneyPatternTimingLink>
+		</JourneyPatternSection>
+		<JourneyPatternSection id="JPS_31-TRS-_-y05-8-4-4-O">
+			<JourneyPatternTimingLink id="JPL_31-TRS-_-y05-8-4-O-4-2">
+				<From SequenceNumber="1">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300WMR1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</From>
+				<To SequenceNumber="2">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300STC1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</To>
+				<RouteLinkRef>RL_31-TRS-_-y05-8-O-4-1</RouteLinkRef>
+				<RunTime>PT20M</RunTime>
+			</JourneyPatternTimingLink>
+			<JourneyPatternTimingLink id="JPL_31-TRS-_-y05-8-4-O-4-3">
+				<From SequenceNumber="2">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300STC1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</From>
+				<To SequenceNumber="3">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300GNW1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</To>
+				<RouteLinkRef>RL_31-TRS-_-y05-8-O-4-2</RouteLinkRef>
+				<RunTime>PT40M</RunTime>
+			</JourneyPatternTimingLink>
+			<JourneyPatternTimingLink id="JPL_31-TRS-_-y05-8-4-O-4-4">
+				<From SequenceNumber="3">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300GNW1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</From>
+				<To SequenceNumber="4">
+					<Activity>pickUpAndSetDown</Activity>
+					<StopPointRef>9300BGP1</StopPointRef>
+					<TimingStatus>PTP</TimingStatus>
+				</To>
+				<RouteLinkRef>RL_31-TRS-_-y05-8-O-4-3</RouteLinkRef>
+				<RunTime>PT30M</RunTime>
+			</JourneyPatternTimingLink>
+		</JourneyPatternSection>
+	</JourneyPatternSections>
+	<Operators>
+		<Operator id="OId_TRS">
+			<OperatorCode>TRS</OperatorCode>
+			<OperatorShortName>Thames River Services</OperatorShortName>
+			<OperatorNameOnLicence>Thames River Services</OperatorNameOnLicence>
+			<TradingName>Thames River Services</TradingName>
+		</Operator>
+	</Operators>
+	<Services>
+		<Service>
+			<ServiceCode>31-TRS-_-y05-8</ServiceCode>
+			<PrivateCode>31-TRS-_-y05-8</PrivateCode>
+			<Lines>
+				<Line id="31-TRS-_-y05-8">
+					<LineName>Thames River Services</LineName>
+				</Line>
+			</Lines>
+			<OperatingPeriod>
+				<StartDate>2015-06-01</StartDate>
+				<EndDate>2015-09-06</EndDate>
+			</OperatingPeriod>
+			<OperatingProfile>
+				<RegularDayType>
+					<DaysOfWeek>
+						<MondayToSunday />
+					</DaysOfWeek>
+				</RegularDayType>
+			</OperatingProfile>
+			<RegisteredOperatorRef>OId_TRS</RegisteredOperatorRef>
+			<StopRequirements>
+				<NoNewStopsRequired />
+			</StopRequirements>
+			<Mode>ferry</Mode>
+			<Description>Westminster - St Katherine's - Greenwich</Description>
+			<StandardService>
+				<Origin>Westminster Pier</Origin>
+				<Destination>Barrier Gardens Pier</Destination>
+				<JourneyPattern id="JP_31-TRS-_-y05-8-1-O-1">
+					<Direction>outbound</Direction>
+					<Operational>
+						<VehicleType>
+							<VehicleTypeCode>FW</VehicleTypeCode>
+							<Description>Ferry (Wheelchair accessible)</Description>
+						</VehicleType>
+					</Operational>
+					<RouteRef>R_31-TRS-_-y05-8-O-1</RouteRef>
+					<JourneyPatternSectionRefs>JPS_31-TRS-_-y05-8-1-1-O</JourneyPatternSectionRefs>
+				</JourneyPattern>
+				<JourneyPattern id="JP_31-TRS-_-y05-8-4-I-3">
+					<Direction>inbound</Direction>
+					<Operational>
+						<VehicleType>
+							<VehicleTypeCode>FW</VehicleTypeCode>
+							<Description>Ferry (Wheelchair accessible)</Description>
+						</VehicleType>
+					</Operational>
+					<RouteRef>R_31-TRS-_-y05-8-I-3</RouteRef>
+					<JourneyPatternSectionRefs>JPS_31-TRS-_-y05-8-4-3-I</JourneyPatternSectionRefs>
+				</JourneyPattern>
+				<JourneyPattern id="JP_31-TRS-_-y05-8-6-I-5">
+					<Direction>inbound</Direction>
+					<Operational>
+						<VehicleType>
+							<VehicleTypeCode>FW</VehicleTypeCode>
+							<Description>Ferry (Wheelchair accessible)</Description>
+						</VehicleType>
+					</Operational>
+					<RouteRef>R_31-TRS-_-y05-8-I-5</RouteRef>
+					<JourneyPatternSectionRefs>JPS_31-TRS-_-y05-8-6-5-I</JourneyPatternSectionRefs>
+				</JourneyPattern>
+				<JourneyPattern id="JP_31-TRS-_-y05-8-4-O-4">
+					<Direction>outbound</Direction>
+					<Operational>
+						<VehicleType>
+							<VehicleTypeCode>FW</VehicleTypeCode>
+							<Description>Ferry (Wheelchair accessible)</Description>
+						</VehicleType>
+					</Operational>
+					<RouteRef>R_31-TRS-_-y05-8-O-4</RouteRef>
+					<JourneyPatternSectionRefs>JPS_31-TRS-_-y05-8-4-4-O</JourneyPatternSectionRefs>
+				</JourneyPattern>
+			</StandardService>
+		</Service>
+	</Services>
+	<VehicleJourneys>
+		<VehicleJourney>
+			<PrivateCode>tfl-31-TRS-_-y05-8-24-TA</PrivateCode>
+			<Operational>
+				<VehicleType>
+					<VehicleTypeCode>FW</VehicleTypeCode>
+					<Description>Ferry (Wheelchair accessible)</Description>
+				</VehicleType>
+			</Operational>
+			<VehicleJourneyCode>VJ_31-TRS-_-y05-8-24-TA</VehicleJourneyCode>
+			<ServiceRef>31-TRS-_-y05-8</ServiceRef>
+			<LineRef>31-TRS-_-y05-8</LineRef>
+			<JourneyPatternRef>JP_31-TRS-_-y05-8-1-O-1</JourneyPatternRef>
+			<DepartureTime>11:00:00</DepartureTime>
+		</VehicleJourney>
+		<VehicleJourney>
+			<PrivateCode>tfl-31-TRS-_-y05-8-32-TA</PrivateCode>
+			<Operational>
+				<VehicleType>
+					<VehicleTypeCode>FW</VehicleTypeCode>
+					<Description>Ferry (Wheelchair accessible)</Description>
+				</VehicleType>
+			</Operational>
+			<VehicleJourneyCode>VJ_31-TRS-_-y05-8-32-TA</VehicleJourneyCode>
+			<ServiceRef>31-TRS-_-y05-8</ServiceRef>
+			<LineRef>31-TRS-_-y05-8</LineRef>
+			<JourneyPatternRef>JP_31-TRS-_-y05-8-4-I-3</JourneyPatternRef>
+			<DepartureTime>11:00:00</DepartureTime>
+		</VehicleJourney>
+		<VehicleJourney>
+			<PrivateCode>tfl-31-TRS-_-y05-8-33-TA</PrivateCode>
+			<Operational>
+				<VehicleType>
+					<VehicleTypeCode>FW</VehicleTypeCode>
+					<Description>Ferry (Wheelchair accessible)</Description>
+				</VehicleType>
+			</Operational>
+			<VehicleJourneyCode>VJ_31-TRS-_-y05-8-33-TA</VehicleJourneyCode>
+			<ServiceRef>31-TRS-_-y05-8</ServiceRef>
+			<LineRef>31-TRS-_-y05-8</LineRef>
+			<JourneyPatternRef>JP_31-TRS-_-y05-8-4-I-3</JourneyPatternRef>
+			<DepartureTime>12:00:00</DepartureTime>
+		</VehicleJourney>
+		<VehicleJourney>
+			<PrivateCode>tfl-31-TRS-_-y05-8-42-TA</PrivateCode>
+			<Operational>
+				<VehicleType>
+					<VehicleTypeCode>FW</VehicleTypeCode>
+					<Description>Ferry (Wheelchair accessible)</Description>
+				</VehicleType>
+			</Operational>
+			<VehicleJourneyCode>VJ_31-TRS-_-y05-8-42-TA</VehicleJourneyCode>
+			<ServiceRef>31-TRS-_-y05-8</ServiceRef>
+			<LineRef>31-TRS-_-y05-8</LineRef>
+			<JourneyPatternRef>JP_31-TRS-_-y05-8-6-I-5</JourneyPatternRef>
+			<DepartureTime>12:00:00</DepartureTime>
+		</VehicleJourney>
+		<VehicleJourney>
+			<PrivateCode>tfl-31-TRS-_-y05-8-44-TA</PrivateCode>
+			<Operational>
+				<VehicleType>
+					<VehicleTypeCode>FW</VehicleTypeCode>
+					<Description>Ferry (Wheelchair accessible)</Description>
+				</VehicleType>
+			</Operational>
+			<VehicleJourneyCode>VJ_31-TRS-_-y05-8-44-TA</VehicleJourneyCode>
+			<ServiceRef>31-TRS-_-y05-8</ServiceRef>
+			<LineRef>31-TRS-_-y05-8</LineRef>
+			<JourneyPatternRef>JP_31-TRS-_-y05-8-6-I-5</JourneyPatternRef>
+			<DepartureTime>13:00:00</DepartureTime>
+		</VehicleJourney>
+		<VehicleJourney>
+			<PrivateCode>tfl-31-TRS-_-y05-8-45-TA</PrivateCode>
+			<Operational>
+				<VehicleType>
+					<VehicleTypeCode>FW</VehicleTypeCode>
+					<Description>Ferry (Wheelchair accessible)</Description>
+				</VehicleType>
+			</Operational>
+			<VehicleJourneyCode>VJ_31-TRS-_-y05-8-45-TA</VehicleJourneyCode>
+			<ServiceRef>31-TRS-_-y05-8</ServiceRef>
+			<LineRef>31-TRS-_-y05-8</LineRef>
+			<JourneyPatternRef>JP_31-TRS-_-y05-8-4-I-3</JourneyPatternRef>
+			<DepartureTime>14:00:00</DepartureTime>
+		</VehicleJourney>
+		<VehicleJourney>
+			<PrivateCode>tfl-31-TRS-_-y05-8-46-TA</PrivateCode>
+			<Operational>
+				<VehicleType>
+					<VehicleTypeCode>FW</VehicleTypeCode>
+					<Description>Ferry (Wheelchair accessible)</Description>
+				</VehicleType>
+			</Operational>
+			<VehicleJourneyCode>VJ_31-TRS-_-y05-8-46-TA</VehicleJourneyCode>
+			<ServiceRef>31-TRS-_-y05-8</ServiceRef>
+			<LineRef>31-TRS-_-y05-8</LineRef>
+			<JourneyPatternRef>JP_31-TRS-_-y05-8-6-I-5</JourneyPatternRef>
+			<DepartureTime>14:00:00</DepartureTime>
+		</VehicleJourney>
+		<VehicleJourney>
+			<PrivateCode>tfl-31-TRS-_-y05-8-48-TA</PrivateCode>
+			<Operational>
+				<VehicleType>
+					<VehicleTypeCode>FW</VehicleTypeCode>
+					<Description>Ferry (Wheelchair accessible)</Description>
+				</VehicleType>
+			</Operational>
+			<VehicleJourneyCode>VJ_31-TRS-_-y05-8-48-TA</VehicleJourneyCode>
+			<ServiceRef>31-TRS-_-y05-8</ServiceRef>
+			<LineRef>31-TRS-_-y05-8</LineRef>
+			<JourneyPatternRef>JP_31-TRS-_-y05-8-6-I-5</JourneyPatternRef>
+			<DepartureTime>15:00:00</DepartureTime>
+		</VehicleJourney>
+		<VehicleJourney>
+			<PrivateCode>tfl-31-TRS-_-y05-8-49-TA</PrivateCode>
+			<Operational>
+				<VehicleType>
+					<VehicleTypeCode>FW</VehicleTypeCode>
+					<Description>Ferry (Wheelchair accessible)</Description>
+				</VehicleType>
+			</Operational>
+			<VehicleJourneyCode>VJ_31-TRS-_-y05-8-49-TA</VehicleJourneyCode>
+			<ServiceRef>31-TRS-_-y05-8</ServiceRef>
+			<LineRef>31-TRS-_-y05-8</LineRef>
+			<JourneyPatternRef>JP_31-TRS-_-y05-8-4-I-3</JourneyPatternRef>
+			<DepartureTime>16:00:00</DepartureTime>
+		</VehicleJourney>
+		<VehicleJourney>
+			<PrivateCode>tfl-31-TRS-_-y05-8-52-TA</PrivateCode>
+			<Operational>
+				<VehicleType>
+					<VehicleTypeCode>FW</VehicleTypeCode>
+					<Description>Ferry (Wheelchair accessible)</Description>
+				</VehicleType>
+			</Operational>
+			<VehicleJourneyCode>VJ_31-TRS-_-y05-8-52-TA</VehicleJourneyCode>
+			<ServiceRef>31-TRS-_-y05-8</ServiceRef>
+			<LineRef>31-TRS-_-y05-8</LineRef>
+			<JourneyPatternRef>JP_31-TRS-_-y05-8-1-O-1</JourneyPatternRef>
+			<DepartureTime>10:00:00</DepartureTime>
+		</VehicleJourney>
+		<VehicleJourney>
+			<PrivateCode>tfl-31-TRS-_-y05-8-56-TA</PrivateCode>
+			<Operational>
+				<VehicleType>
+					<VehicleTypeCode>FW</VehicleTypeCode>
+					<Description>Ferry (Wheelchair accessible)</Description>
+				</VehicleType>
+			</Operational>
+			<VehicleJourneyCode>VJ_31-TRS-_-y05-8-56-TA</VehicleJourneyCode>
+			<ServiceRef>31-TRS-_-y05-8</ServiceRef>
+			<LineRef>31-TRS-_-y05-8</LineRef>
+			<JourneyPatternRef>JP_31-TRS-_-y05-8-4-O-4</JourneyPatternRef>
+			<DepartureTime>12:30:00</DepartureTime>
+		</VehicleJourney>
+		<VehicleJourney>
+			<PrivateCode>tfl-31-TRS-_-y05-8-57-TA</PrivateCode>
+			<Operational>
+				<VehicleType>
+					<VehicleTypeCode>FW</VehicleTypeCode>
+					<Description>Ferry (Wheelchair accessible)</Description>
+				</VehicleType>
+			</Operational>
+			<VehicleJourneyCode>VJ_31-TRS-_-y05-8-57-TA</VehicleJourneyCode>
+			<ServiceRef>31-TRS-_-y05-8</ServiceRef>
+			<LineRef>31-TRS-_-y05-8</LineRef>
+			<JourneyPatternRef>JP_31-TRS-_-y05-8-1-O-1</JourneyPatternRef>
+			<DepartureTime>13:00:00</DepartureTime>
+		</VehicleJourney>
+		<VehicleJourney>
+			<PrivateCode>tfl-31-TRS-_-y05-8-58-TA</PrivateCode>
+			<Operational>
+				<VehicleType>
+					<VehicleTypeCode>FW</VehicleTypeCode>
+					<Description>Ferry (Wheelchair accessible)</Description>
+				</VehicleType>
+			</Operational>
+			<VehicleJourneyCode>VJ_31-TRS-_-y05-8-58-TA</VehicleJourneyCode>
+			<ServiceRef>31-TRS-_-y05-8</ServiceRef>
+			<LineRef>31-TRS-_-y05-8</LineRef>
+			<JourneyPatternRef>JP_31-TRS-_-y05-8-4-O-4</JourneyPatternRef>
+			<DepartureTime>13:30:00</DepartureTime>
+		</VehicleJourney>
+		<VehicleJourney>
+			<PrivateCode>tfl-31-TRS-_-y05-8-60-TA</PrivateCode>
+			<Operational>
+				<VehicleType>
+					<VehicleTypeCode>FW</VehicleTypeCode>
+					<Description>Ferry (Wheelchair accessible)</Description>
+				</VehicleType>
+			</Operational>
+			<VehicleJourneyCode>VJ_31-TRS-_-y05-8-60-TA</VehicleJourneyCode>
+			<ServiceRef>31-TRS-_-y05-8</ServiceRef>
+			<LineRef>31-TRS-_-y05-8</LineRef>
+			<JourneyPatternRef>JP_31-TRS-_-y05-8-1-O-1</JourneyPatternRef>
+			<DepartureTime>14:00:00</DepartureTime>
+		</VehicleJourney>
+		<VehicleJourney>
+			<PrivateCode>tfl-31-TRS-_-y05-8-61-TA</PrivateCode>
+			<Operational>
+				<VehicleType>
+					<VehicleTypeCode>FW</VehicleTypeCode>
+					<Description>Ferry (Wheelchair accessible)</Description>
+				</VehicleType>
+			</Operational>
+			<VehicleJourneyCode>VJ_31-TRS-_-y05-8-61-TA</VehicleJourneyCode>
+			<ServiceRef>31-TRS-_-y05-8</ServiceRef>
+			<LineRef>31-TRS-_-y05-8</LineRef>
+			<JourneyPatternRef>JP_31-TRS-_-y05-8-1-O-1</JourneyPatternRef>
+			<DepartureTime>15:00:00</DepartureTime>
+		</VehicleJourney>
+		<VehicleJourney>
+			<PrivateCode>tfl-31-TRS-_-y05-8-62-TA</PrivateCode>
+			<Operational>
+				<VehicleType>
+					<VehicleTypeCode>FW</VehicleTypeCode>
+					<Description>Ferry (Wheelchair accessible)</Description>
+				</VehicleType>
+			</Operational>
+			<VehicleJourneyCode>VJ_31-TRS-_-y05-8-62-TA</VehicleJourneyCode>
+			<ServiceRef>31-TRS-_-y05-8</ServiceRef>
+			<LineRef>31-TRS-_-y05-8</LineRef>
+			<JourneyPatternRef>JP_31-TRS-_-y05-8-4-O-4</JourneyPatternRef>
+			<DepartureTime>10:30:00</DepartureTime>
+		</VehicleJourney>
+		<VehicleJourney>
+			<PrivateCode>tfl-31-TRS-_-y05-8-63-TA</PrivateCode>
+			<Operational>
+				<VehicleType>
+					<VehicleTypeCode>FW</VehicleTypeCode>
+					<Description>Ferry (Wheelchair accessible)</Description>
+				</VehicleType>
+			</Operational>
+			<VehicleJourneyCode>VJ_31-TRS-_-y05-8-63-TA</VehicleJourneyCode>
+			<ServiceRef>31-TRS-_-y05-8</ServiceRef>
+			<LineRef>31-TRS-_-y05-8</LineRef>
+			<JourneyPatternRef>JP_31-TRS-_-y05-8-4-O-4</JourneyPatternRef>
+			<DepartureTime>11:30:00</DepartureTime>
+		</VehicleJourney>
+		<VehicleJourney>
+			<PrivateCode>tfl-31-TRS-_-y05-8-64-TA</PrivateCode>
+			<Operational>
+				<VehicleType>
+					<VehicleTypeCode>FW</VehicleTypeCode>
+					<Description>Ferry (Wheelchair accessible)</Description>
+				</VehicleType>
+			</Operational>
+			<VehicleJourneyCode>VJ_31-TRS-_-y05-8-64-TA</VehicleJourneyCode>
+			<ServiceRef>31-TRS-_-y05-8</ServiceRef>
+			<LineRef>31-TRS-_-y05-8</LineRef>
+			<JourneyPatternRef>JP_31-TRS-_-y05-8-1-O-1</JourneyPatternRef>
+			<DepartureTime>12:00:00</DepartureTime>
+		</VehicleJourney>
+		<VehicleJourney>
+			<PrivateCode>tfl-31-TRS-_-y05-8-65-TA</PrivateCode>
+			<Operational>
+				<VehicleType>
+					<VehicleTypeCode>FW</VehicleTypeCode>
+					<Description>Ferry (Wheelchair accessible)</Description>
+				</VehicleType>
+			</Operational>
+			<VehicleJourneyCode>VJ_31-TRS-_-y05-8-65-TA</VehicleJourneyCode>
+			<ServiceRef>31-TRS-_-y05-8</ServiceRef>
+			<LineRef>31-TRS-_-y05-8</LineRef>
+			<JourneyPatternRef>JP_31-TRS-_-y05-8-4-O-4</JourneyPatternRef>
+			<DepartureTime>14:30:00</DepartureTime>
+		</VehicleJourney>
+		<VehicleJourney>
+			<PrivateCode>tfl-31-TRS-_-y05-8-66-TA</PrivateCode>
+			<Operational>
+				<VehicleType>
+					<VehicleTypeCode>FW</VehicleTypeCode>
+					<Description>Ferry (Wheelchair accessible)</Description>
+				</VehicleType>
+			</Operational>
+			<VehicleJourneyCode>VJ_31-TRS-_-y05-8-66-TA</VehicleJourneyCode>
+			<ServiceRef>31-TRS-_-y05-8</ServiceRef>
+			<LineRef>31-TRS-_-y05-8</LineRef>
+			<JourneyPatternRef>JP_31-TRS-_-y05-8-1-O-1</JourneyPatternRef>
+			<DepartureTime>15:30:00</DepartureTime>
+		</VehicleJourney>
+		<VehicleJourney>
+			<PrivateCode>tfl-31-TRS-_-y05-8-67-TA</PrivateCode>
+			<Operational>
+				<VehicleType>
+					<VehicleTypeCode>FW</VehicleTypeCode>
+					<Description>Ferry (Wheelchair accessible)</Description>
+				</VehicleType>
+			</Operational>
+			<VehicleJourneyCode>VJ_31-TRS-_-y05-8-67-TA</VehicleJourneyCode>
+			<ServiceRef>31-TRS-_-y05-8</ServiceRef>
+			<LineRef>31-TRS-_-y05-8</LineRef>
+			<JourneyPatternRef>JP_31-TRS-_-y05-8-1-O-1</JourneyPatternRef>
+			<DepartureTime>16:00:00</DepartureTime>
+		</VehicleJourney>
+		<VehicleJourney>
+			<PrivateCode>tfl-31-TRS-_-y05-8-68-TA</PrivateCode>
+			<Operational>
+				<VehicleType>
+					<VehicleTypeCode>FW</VehicleTypeCode>
+					<Description>Ferry (Wheelchair accessible)</Description>
+				</VehicleType>
+			</Operational>
+			<VehicleJourneyCode>VJ_31-TRS-_-y05-8-68-TA</VehicleJourneyCode>
+			<ServiceRef>31-TRS-_-y05-8</ServiceRef>
+			<LineRef>31-TRS-_-y05-8</LineRef>
+			<JourneyPatternRef>JP_31-TRS-_-y05-8-4-I-3</JourneyPatternRef>
+			<DepartureTime>13:00:00</DepartureTime>
+		</VehicleJourney>
+		<VehicleJourney>
+			<PrivateCode>tfl-31-TRS-_-y05-8-69-TA</PrivateCode>
+			<Operational>
+				<VehicleType>
+					<VehicleTypeCode>FW</VehicleTypeCode>
+					<Description>Ferry (Wheelchair accessible)</Description>
+				</VehicleType>
+			</Operational>
+			<VehicleJourneyCode>VJ_31-TRS-_-y05-8-69-TA</VehicleJourneyCode>
+			<ServiceRef>31-TRS-_-y05-8</ServiceRef>
+			<LineRef>31-TRS-_-y05-8</LineRef>
+			<JourneyPatternRef>JP_31-TRS-_-y05-8-4-I-3</JourneyPatternRef>
+			<DepartureTime>15:00:00</DepartureTime>
+		</VehicleJourney>
+		<VehicleJourney>
+			<PrivateCode>tfl-31-TRS-_-y05-8-70-TA</PrivateCode>
+			<Operational>
+				<VehicleType>
+					<VehicleTypeCode>FW</VehicleTypeCode>
+					<Description>Ferry (Wheelchair accessible)</Description>
+				</VehicleType>
+			</Operational>
+			<VehicleJourneyCode>VJ_31-TRS-_-y05-8-70-TA</VehicleJourneyCode>
+			<ServiceRef>31-TRS-_-y05-8</ServiceRef>
+			<LineRef>31-TRS-_-y05-8</LineRef>
+			<JourneyPatternRef>JP_31-TRS-_-y05-8-6-I-5</JourneyPatternRef>
+			<DepartureTime>16:00:00</DepartureTime>
+		</VehicleJourney>
+		<VehicleJourney>
+			<PrivateCode>tfl-31-TRS-_-y05-8-71-TA</PrivateCode>
+			<Operational>
+				<VehicleType>
+					<VehicleTypeCode>FW</VehicleTypeCode>
+					<Description>Ferry (Wheelchair accessible)</Description>
+				</VehicleType>
+			</Operational>
+			<VehicleJourneyCode>VJ_31-TRS-_-y05-8-71-TA</VehicleJourneyCode>
+			<ServiceRef>31-TRS-_-y05-8</ServiceRef>
+			<LineRef>31-TRS-_-y05-8</LineRef>
+			<JourneyPatternRef>JP_31-TRS-_-y05-8-4-I-3</JourneyPatternRef>
+			<DepartureTime>17:00:00</DepartureTime>
+		</VehicleJourney>
+		<VehicleJourney>
+			<PrivateCode>tfl-31-TRS-_-y05-8-72-TA</PrivateCode>
+			<Operational>
+				<VehicleType>
+					<VehicleTypeCode>FW</VehicleTypeCode>
+					<Description>Ferry (Wheelchair accessible)</Description>
+				</VehicleType>
+			</Operational>
+			<VehicleJourneyCode>VJ_31-TRS-_-y05-8-72-TA</VehicleJourneyCode>
+			<ServiceRef>31-TRS-_-y05-8</ServiceRef>
+			<LineRef>31-TRS-_-y05-8</LineRef>
+			<JourneyPatternRef>JP_31-TRS-_-y05-8-1-O-1</JourneyPatternRef>
+			<DepartureTime>16:30:00</DepartureTime>
+		</VehicleJourney>
+		<VehicleJourney>
+			<PrivateCode>tfl-31-TRS-_-y05-8-73-TA</PrivateCode>
+			<Operational>
+				<VehicleType>
+					<VehicleTypeCode>FW</VehicleTypeCode>
+					<Description>Ferry (Wheelchair accessible)</Description>
+				</VehicleType>
+			</Operational>
+			<VehicleJourneyCode>VJ_31-TRS-_-y05-8-73-TA</VehicleJourneyCode>
+			<ServiceRef>31-TRS-_-y05-8</ServiceRef>
+			<LineRef>31-TRS-_-y05-8</LineRef>
+			<JourneyPatternRef>JP_31-TRS-_-y05-8-1-O-1</JourneyPatternRef>
+			<DepartureTime>17:00:00</DepartureTime>
+		</VehicleJourney>
+		<VehicleJourney>
+			<PrivateCode>tfl-31-TRS-_-y05-8-74-TA</PrivateCode>
+			<Operational>
+				<VehicleType>
+					<VehicleTypeCode>FW</VehicleTypeCode>
+					<Description>Ferry (Wheelchair accessible)</Description>
+				</VehicleType>
+			</Operational>
+			<VehicleJourneyCode>VJ_31-TRS-_-y05-8-74-TA</VehicleJourneyCode>
+			<ServiceRef>31-TRS-_-y05-8</ServiceRef>
+			<LineRef>31-TRS-_-y05-8</LineRef>
+			<JourneyPatternRef>JP_31-TRS-_-y05-8-4-I-3</JourneyPatternRef>
+			<DepartureTime>17:30:00</DepartureTime>
+		</VehicleJourney>
+		<VehicleJourney>
+			<PrivateCode>tfl-31-TRS-_-y05-8-75-TA</PrivateCode>
+			<Operational>
+				<VehicleType>
+					<VehicleTypeCode>FW</VehicleTypeCode>
+					<Description>Ferry (Wheelchair accessible)</Description>
+				</VehicleType>
+			</Operational>
+			<VehicleJourneyCode>VJ_31-TRS-_-y05-8-75-TA</VehicleJourneyCode>
+			<ServiceRef>31-TRS-_-y05-8</ServiceRef>
+			<LineRef>31-TRS-_-y05-8</LineRef>
+			<JourneyPatternRef>JP_31-TRS-_-y05-8-4-I-3</JourneyPatternRef>
+			<DepartureTime>18:00:00</DepartureTime>
+		</VehicleJourney>
+	</VehicleJourneys>
+</TransXChange>

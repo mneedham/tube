@@ -47,10 +47,10 @@ public class TubeSearch
 
     public TubeSearchResult between( String from, String to, PathExpander expander )
     {
+
         try ( Transaction tx = db.beginTx() )
         {
-            PathFinder<WeightedPath> shortestPath = GraphAlgoFactory.aStar( expander, runningTime(),
-                    new NaiveEstimateEvaluator() );
+            PathFinder<WeightedPath> shortestPath = GraphAlgoFactory.aStar( expander, runningTime(), new NaiveEstimateEvaluator() );
             Pair<Node, Node> stationNodes = getStations( executionEngine, from, to );
             Iterable<WeightedPath> paths = shortestPath.findAllPaths( stationNodes.first(), stationNodes.second() );
 
@@ -85,12 +85,9 @@ public class TubeSearch
                     if ( relationship.isType( withName( "WAIT" ) ) )
                     {
                         Node platform1 = relationship.getStartNode();
-                        Node platform1Direction = platform1.getSingleRelationship( withName( "ON" ),
-                                OUTGOING ).getEndNode();
-                        Node platform1Line = platform1Direction.getSingleRelationship( withName( "DIRECTION" ),
-                                INCOMING ).getStartNode();
-                        Node platform1Station = platform1.getSingleRelationship( withName( "AT" ),
-                                OUTGOING ).getEndNode();
+                        Node platform1Direction = platform1.getSingleRelationship( withName( "ON" ), OUTGOING ).getEndNode();
+                        Node platform1Line = platform1Direction.getSingleRelationship( withName( "DIRECTION" ), INCOMING ).getStartNode();
+                        Node platform1Station = platform1.getSingleRelationship( withName( "AT" ), OUTGOING ).getEndNode();
 
                         String stationName = platform1Station.getProperty( "stationName" ).toString();
                         String lineName = platform1Line.getProperty( "lineName" ).toString();

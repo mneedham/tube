@@ -7,6 +7,7 @@ import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
 
 import com.codahale.metrics.annotation.Timed;
+import com.google.common.base.Optional;
 
 import org.neo4j.tube.TubeSearch;
 import org.neo4j.tube.TubeSearchResult;
@@ -33,10 +34,11 @@ public class TubeResource {
     @GET
     @Timed
     @Path( "/tube" )
-    public ResultsView search(@QueryParam("from") String fromStation, @QueryParam( "to" ) String toStation, @QueryParam( "lineToAvoid" ) String lineToAvoid) {
+    public ResultsView search(@QueryParam("from") String fromStation, @QueryParam( "to" ) String toStation, @QueryParam( "lineToAvoid" ) Optional<String> avoidLine) {
 
         TubeSearchResult tubeSearchResult;
-        if ( lineToAvoid.equals( "None" ) )
+        String lineToAvoid = avoidLine.or( "None" );
+        if ( lineToAvoid.equals( "None" ) || lineToAvoid.isEmpty() )
         {
             tubeSearchResult = tubeSearch.between( fromStation, toStation, allConnections() );
         }
